@@ -12,7 +12,7 @@ import pandas as pd
 ##################
 
 # RKI Datensatz
-data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/RKI_COVID19.csv")
+data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID19.csv")
 
 # https://www-genesis.destatis.de/genesis/online#astructure
 
@@ -170,4 +170,4 @@ data_frame = data_frame[cols]
 
 data_frame.rename(columns={'IdLandkreis': 'ID_LK_SK'}, inplace=True)
 
-data_frame.to_csv("C:/Users/Stefan Klug/data-science-project/data/Kreise_Sterberate.csv")
+data_frame.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")
