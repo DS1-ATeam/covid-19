@@ -1,0 +1,402 @@
+,ID_LK_SK,Kreisname,Prävalenz (Anteil mit mindestens einer Vorerkrankung in %),Prävalenz-Schätzwerte plausibles Intervall Untergrenze,Prävalenz-Schätzwerte plausibles Intervall Obergrenze
+0,7131,Ahrweiler,28.2,22.1,38.1
+1,9771,Aichach-Friedberg,20.5,17.2,26.5
+2,8425,Alb-Donau-Kreis,25.7,22.4,30.8
+3,16077,Altenburger Land,38.0,33.5,43.6
+4,7132,Altenkirchen,29.9,24.4,36.1
+5,15081,Altmarkkreis Salzwedel,37.8,30.7,42.6
+6,9171,Altötting,25.4,21.9,30.5
+7,7331,Alzey-Worms,26.8,20.8,33.2
+8,9361,Amberg,28.8,24.2,35.6
+9,9371,Amberg-Sulzbach,29.2,24.6,35.0
+10,3451,Ammerland,23.6,20.5,26.9
+11,15082,Anhalt-Bitterfeld,40.8,31.8,45.8
+12,9561,Ansbach,24.5,19.4,29.8
+13,9571,"Ansbach, Landkreis",26.0,21.4,33.8
+14,9661,Aschaffenburg,22.8,20.0,25.3
+15,9671,"Aschaffenburg, Landkreis",23.7,21.5,28.4
+16,9761,Augsburg,22.0,18.0,27.8
+17,9772,"Augsburg, Landkreis",23.3,19.8,29.0
+18,3452,Aurich,28.0,24.1,33.0
+19,7332,Bad Dürkheim,28.0,22.2,33.1
+20,9672,Bad Kissingen,32.2,26.7,39.5
+21,7133,Bad Kreuznach,29.3,22.8,38.4
+22,9173,Bad Tölz-Wolfratshausen,23.9,19.4,29.2
+23,8211,Baden-Baden,26.1,20.9,33.6
+24,9461,Bamberg,21.4,17.3,26.4
+25,9471,"Bamberg, Landkreis",26.1,21.5,31.6
+26,12060,Barnim,29.5,23.3,36.8
+27,14625,Bautzen,33.3,27.2,41.2
+28,9462,Bayreuth,24.1,20.5,29.3
+29,9472,"Bayreuth, Landkreis",29.4,25.4,34.2
+30,9172,Berchtesgadener Land,23.8,20.0,31.1
+31,6431,Bergstraße,22.4,19.4,28.9
+32,11000,Berlin,22.2,19.6,25.7
+33,7231,Bernkastel-Wittlich,28.7,23.3,33.8
+34,8426,Biberach,21.9,19.0,28.1
+35,5711,Bielefeld,23.6,18.9,28.6
+36,7134,Birkenfeld,31.2,25.3,38.2
+37,8115,Böblingen,22.6,19.5,28.4
+38,5911,Bochum,28.7,23.7,32.6
+39,8435,Bodenseekreis,20.7,17.4,28.7
+40,5314,Bonn,20.5,16.7,26.3
+41,15083,Börde,33.0,27.1,39.4
+42,5554,Borken,23.3,19.3,29.0
+43,5512,Bottrop,33.3,28.7,40.7
+44,12051,Brandenburg a.d,34.7,23.4,43.2
+45,3101,Braunschweig,22.8,20.4,26.5
+46,8315,Breisgau-Hochschwarzwald,21.8,18.1,27.9
+47,4011,Bremen,23.3,19.7,27.3
+48,4012,Bremerhaven,27.9,23.5,32.1
+49,15084,Burgenlandkreis,39.2,34.6,43.3
+50,8235,Calw,24.9,21.2,30.3
+51,3351,Celle,23.5,20.1,31.3
+52,9372,Cham,27.8,24.4,33.1
+53,14511,Chemnitz,30.6,27.4,36.4
+54,3453,Cloppenburg,23.5,20.5,28.0
+55,9463,Coburg,26.1,21.8,33.2
+56,9473,"Coburg, Landkreis",32.2,26.3,36.4
+57,7135,Cochem-Zell,34.5,29.1,40.2
+58,5558,Coesfeld,27.5,21.0,34.3
+59,12052,Cottbus,29.7,23.0,35.1
+60,3352,Cuxhaven,28.3,24.3,32.9
+61,9174,Dachau,22.5,18.8,27.7
+62,12061,Dahme-Spreewald,29.6,23.2,35.5
+63,6411,Darmstadt,18.6,16.5,21.9
+64,6432,Darmstadt-Dieburg,24.9,21.2,30.8
+65,9271,Deggendorf,26.0,22.2,32.8
+66,3401,Delmenhorst,25.9,22.6,30.2
+67,15001,Dessau-Roßlau,36.7,31.3,41.7
+68,3251,Diepholz,25.8,22.4,31.7
+69,9773,Dillingen a.d.D,27.6,23.5,32.3
+70,9279,Dingolfing-Landau,28.0,23.4,34.8
+71,1051,Dithmarschen,27.1,22.0,32.7
+72,9779,Donau-Ries,27.2,23.3,32.4
+73,7333,Donnersbergkreis,30.3,24.4,37.6
+74,5913,Dortmund,26.6,22.4,31.1
+75,14612,Dresden,24.5,20.4,30.2
+76,5112,Duisburg,30.2,26.0,34.2
+77,5358,Düren,30.0,26.7,34.0
+78,5111,Düsseldorf,23.5,20.6,28.1
+79,9175,Ebersberg,21.0,17.5,26.8
+80,16061,Eichsfeld,34.3,29.8,39.2
+81,9176,Eichstätt,22.3,17.6,28.8
+82,7232,Bitburg-Prüm,28.1,22.4,36.5
+83,16056,Eisenach,33.8,29.0,38.9
+84,12062,Elbe-Elster,37.1,28.8,42.0
+85,3402,Emden,22.9,18.2,28.4
+86,8316,Emmendingen,23.2,19.6,29.1
+87,3454,Emsland,25.7,22.6,30.7
+88,5954,Ennepe-Ruhr-Kreis,31.8,27.1,36.2
+89,8236,Enzkreis,25.1,20.9,30.4
+90,9177,Erding,21.4,18.2,28.1
+91,16051,Erfurt,27.2,23.2,33.4
+92,9562,Erlangen,20.6,17.2,27.3
+93,9572,Erlangen-Höchstadt,24.6,20.3,30.8
+94,14521,Erzgebirgskreis,38.1,33.9,42.7
+95,5113,Essen,29.1,25.0,33.6
+96,8116,Esslingen,24.5,20.0,31.4
+97,5366,Euskirchen,28.4,22.3,33.3
+98,1001,Flensburg,24.7,20.8,28.8
+99,9474,Forchheim,26.1,21.9,32.0
+100,7311,Frankenthal,23.8,20.4,30.8
+101,12053,Frankfurt (Oder),35.1,29.9,45.3
+102,6412,Frankfurt am Main,19.4,17.1,23.9
+103,8311,Freiburg i.Brei,16.1,13.2,22.2
+104,9178,Freising,20.4,16.8,25.7
+105,8237,Freudenstadt,24.4,20.7,29.1
+106,9272,Freyung-Grafenau,28.7,24.2,33.8
+107,3455,Friesland,28.5,24.2,34.0
+108,6631,Fulda,28.0,23.6,32.5
+109,9179,Fürstenfeldbruck,22.0,18.1,27.5
+110,9563,Fürth,24.4,19.9,29.9
+111,9573,"Fürth, Landkreis",26.6,22.2,32.5
+112,9180,Garmisch-Partenkirchen,23.0,18.0,29.0
+113,5513,Gelsenkirchen,33.7,27.2,38.9
+114,16052,Gera,32.6,27.6,39.7
+115,7334,Germersheim,27.0,23.6,32.2
+116,6531,Gießen,24.5,21.2,27.9
+117,3151,Gifhorn,27.3,22.9,32.5
+118,8117,Göppingen,23.5,20.6,28.1
+119,14626,Görlitz,36.5,33.0,42.5
+120,3153,Goslar,30.6,26.9,35.0
+121,16067,Gotha,34.4,29.8,38.7
+122,3159,Göttingen,27.4,24.2,31.9
+123,3456,Grafschaft Bentheim,25.3,21.8,30.9
+124,16076,Greiz,36.5,31.4,41.6
+125,6433,Groß-Gerau,23.0,19.8,27.8
+126,9774,Günzburg,26.5,20.9,30.5
+127,5754,Gütersloh,25.2,21.3,29.7
+128,5914,Hagen,28.8,23.1,34.6
+129,15002,Halle,28.5,23.7,32.9
+130,2000,Hamburg,21.4,17.9,25.4
+131,3252,Hameln-Pyrmont,28.0,24.1,33.5
+132,5915,Hamm,31.4,25.8,36.5
+133,3353,Harburg,23.5,19.6,27.8
+134,15085,Harz,33.4,27.2,41.9
+135,9674,Haßberge,33.0,28.5,38.0
+136,12063,Havelland,28.9,21.5,36.0
+137,3358,Heidekreis,27.8,23.8,32.2
+138,8221,Heidelberg,13.9,11.0,21.9
+139,8135,Heidenheim,27.1,22.2,33.0
+140,8121,Heilbronn,23.3,19.9,28.2
+141,8125,"Heilbronn, Landkreis",23.7,20.9,29.8
+142,5370,Heinsberg,26.3,23.0,32.5
+143,3154,Helmstedt,32.1,26.3,39.3
+144,5758,Herford,27.5,23.3,32.3
+145,5916,Herne,33.4,29.7,37.6
+146,6632,Hersfeld-Rotenburg,31.8,25.9,37.5
+147,1053,Herzogtum Lauenburg,25.4,20.1,28.1
+148,16069,Hildburghausen,38.7,33.1,44.1
+149,3254,Hildesheim,26.1,23.5,30.3
+150,5958,Hochsauerlandkreis,31.8,29.6,34.5
+151,6434,Hochtaunuskreis,20.5,16.1,25.4
+152,9464,Hof,31.8,26.4,38.4
+153,9475,"Hof, Landkreis",34.1,30.1,38.7
+154,8126,Hohenlohekreis,26.2,23.0,31.7
+155,3255,Holzminden,33.8,29.5,39.3
+156,5762,Höxter,28.9,25.3,33.3
+157,16070,Ilm-Kreis,36.1,31.8,42.2
+158,9161,Ingolstadt,21.7,17.9,25.7
+159,16053,Jena,19.6,15.5,28.9
+160,15086,Jerichower Land,38.0,32.3,44.8
+161,7312,Kaiserslautern,23.0,18.3,30.8
+162,7335,"Kaiserslautern, Landkreis",25.0,20.2,32.7
+163,8212,Karlsruhe,19.9,16.1,25.2
+164,8215,"Karlsruhe, Landkreis",26.6,22.2,33.0
+165,6611,Kassel,21.5,17.1,25.0
+166,6633,"Kassel, Landkreis",27.9,23.9,34.1
+167,9762,Kaufbeuren,30.5,25.3,36.1
+168,9273,Kelheim,25.5,21.9,29.5
+169,9763,Kempten,22.2,18.6,28.8
+170,1002,Kiel,20.6,18.1,28.2
+171,9675,Kitzingen,28.2,24.5,33.9
+172,5154,Kleve,29.7,27.1,33.1
+173,7111,Koblenz,22.2,18.0,28.5
+174,5315,Köln,21.6,18.9,26.9
+175,8335,Konstanz,19.8,15.0,27.9
+176,5114,Krefeld,28.0,22.2,32.0
+177,9476,Kronach,35.6,30.6,41.6
+178,9477,Kulmbach,31.8,26.3,36.8
+179,7336,Kusel,28.7,24.1,36.1
+180,16065,Kyffhäuserkreis,37.1,30.9,43.7
+181,6532,Lahn-Dill-Kreis,29.6,24.6,34.5
+182,7313,Landau i.d.Pfalz,24.7,20.1,30.2
+183,9181,Landsberg a.Lec,22.3,18.3,28.2
+184,9261,Landshut,25.0,21.2,33.5
+185,9274,"Landshut, Landkreis",24.9,21.2,31.6
+186,3457,Leer,28.0,24.3,32.6
+187,14713,Leipzig,26.0,23.8,30.0
+188,14729,"Leipzig, Landkreis",37.7,34.1,42.1
+189,5316,Leverkusen,26.6,23.0,31.0
+190,9478,Lichtenfels,31.4,26.7,37.1
+191,6533,Limburg-Weilburg,26.6,22.0,32.2
+192,9776,Lindau,22.6,19.5,28.0
+193,5766,Lippe,26.5,23.4,31.7
+194,8336,Lörrach,21.1,17.9,27.1
+195,1003,Lübeck,26.4,21.6,30.0
+196,3354,Lüchow-Dannenberg,35.2,28.0,41.1
+197,8118,Ludwigsburg,22.1,19.2,28.8
+198,7314,Ludwigshafen,24.2,19.2,28.3
+199,13076,Ludwigslust-Parchim,34.8,30.3,38.9
+200,3355,Lüneburg,22.9,19.1,27.7
+201,15003,Magdeburg,31.4,25.3,35.8
+202,6435,Main-Kinzig-Kreis,25.1,21.8,30.3
+203,9677,Main-Spessart,29.6,25.5,34.3
+204,8128,Main-Tauber-Kreis,29.1,25.4,34.0
+205,6436,Main-Taunus-Kreis,19.3,16.7,23.9
+206,7315,Mainz,20.1,16.6,27.1
+207,7339,Mainz-Bingen,23.9,17.7,31.2
+208,8222,Mannheim,22.1,18.3,26.6
+209,15087,Mansfeld-Südharz,43.5,33.9,49.6
+210,6534,Marburg-Biedenkopf,22.1,19.7,29.0
+211,5962,Märkischer Kreis,30.9,27.3,35.7
+212,12064,Märkisch-Oderland,27.2,21.9,45.2
+213,7137,Mayen-Koblenz,28.0,23.4,34.5
+214,13071,Mecklenburgische Seenplatte,34.6,29.9,40.7
+215,14627,Meißen,34.2,31.3,39.9
+216,9764,Memmingen,27.0,22.5,32.1
+217,10042,Merzig-Wadern,31.7,23.9,38.7
+218,5158,Mettmann,30.5,27.6,34.6
+219,9182,Miesbach,24.1,20.7,31.2
+220,9676,Miltenberg,28.9,24.2,33.8
+221,5770,Minden-Lübbecke,26.9,21.7,33.9
+222,14522,Mittelsachsen,35.3,31.8,39.7
+223,5116,Mönchengladbach,29.0,23.9,33.3
+224,9183,Mühldorf a.Inn,25.1,20.8,31.5
+225,5117,Mülheim a.d.Ruh,26.5,20.7,31.1
+226,9162,München,19.5,16.4,24.0
+227,9184,"München, Landkreis",20.7,16.7,27.1
+228,5515,Münster,17.1,14.4,24.9
+229,8225,Neckar-Odenwald-Kreis,30.5,27.3,35.9
+230,9185,Neuburg-Schrobenhausen,23.9,19.8,28.1
+231,9373,Neumarkt i.d.OP,24.9,21.3,29.4
+232,1004,Neumünster,28.1,25.0,32.8
+233,10043,Neunkirchen,31.9,25.2,36.9
+234,9575,Neustadt a.d.Ai,29.9,24.3,34.7
+235,9374,Neustadt a.d.Wa,28.3,23.5,33.0
+236,7316,Neustadt a.d.We,24.6,20.6,34.2
+237,9775,Neu-Ulm,23.5,19.8,27.9
+238,7138,Neuwied,28.8,23.3,35.1
+239,3256,Nienburg (Weser),30.4,26.4,34.9
+240,1054,Nordfriesland,24.2,18.4,34.1
+241,16062,Nordhausen,38.4,32.2,44.3
+242,14730,Nordsachsen,37.4,33.1,42.5
+243,13074,Nordwestmecklenburg,31.5,27.1,38.8
+244,3155,Northeim,33.4,29.0,37.9
+245,9564,Nürnberg,25.5,22.7,30.6
+246,9574,Nürnberger Land,26.5,22.4,31.5
+247,9780,Oberallgäu,22.3,19.5,30.1
+248,5374,Oberbergischer Kreis,26.5,22.9,31.4
+249,5119,Oberhausen,28.1,23.5,33.3
+250,12065,Oberhavel,28.5,23.1,36.7
+251,12066,Oberspreewald-Lausitz,33.8,27.0,40.5
+252,6437,Odenwaldkreis,28.0,24.3,32.5
+253,12067,Oder-Spree,29.8,24.4,47.4
+254,6413,Offenbach,22.2,18.8,26.5
+255,6438,"Offenbach, Landkreis",21.7,17.9,27.5
+256,3403,Oldenburg,19.5,16.6,24.2
+257,3458,"Oldenburg, Landkreis",22.6,19.6,26.9
+258,5966,Olpe,28.0,25.0,33.5
+259,8317,Ortenaukreis,26.0,20.8,31.4
+260,3404,Osnabrück,22.9,18.4,29.1
+261,3459,"Osnabrück, Landkreis",27.6,24.0,34.1
+262,8136,Ostalbkreis,23.2,19.1,30.1
+263,9777,Ostallgäu,25.6,20.6,30.3
+264,3356,Osterholz,25.5,21.1,31.5
+265,1055,Ostholstein,29.0,24.6,33.8
+266,12068,Ostprignitz-Ruppin,32.8,25.7,41.2
+267,5774,Paderborn,24.1,20.6,28.1
+268,9262,Passau,24.7,21.4,32.1
+269,9275,"Passau, Landkreis",26.9,22.4,33.2
+270,3157,Peine,27.0,23.4,31.3
+271,9186,Pfaffenhofen a.,21.9,18.3,26.5
+272,8231,Pforzheim,25.5,21.6,29.5
+273,1056,Pinneberg,23.9,19.6,29.3
+274,7317,Pirmasens,31.3,25.5,37.1
+275,1057,Plön,25.1,20.4,30.4
+276,12054,Potsdam,20.7,16.2,24.7
+277,12069,Potsdam-Mittelmark,26.9,20.3,31.1
+278,12070,Prignitz,37.9,29.2,44.9
+279,8216,Rastatt,23.7,20.8,29.5
+280,8436,Ravensburg,20.1,16.4,27.3
+281,5562,Recklinghausen,31.4,25.2,36.1
+282,9276,Regen,29.0,24.5,32.9
+283,9362,Regensburg,18.0,15.4,24.2
+284,9375,"Regensburg, Landkreis",23.2,20.1,28.6
+285,3241,Hannover,25.8,22.1,30.2
+286,10041,Stadtverband Saarbrückenau,28.4,25.2,33.6
+287,5120,Remscheid,37.0,29.0,43.9
+288,8119,Rems-Murr-Kreis,24.7,21.4,30.9
+289,1058,Rendsburg-Eckernförde,24.4,20.8,29.0
+290,8415,Reutlingen,23.2,20.3,29.4
+291,5362,Rhein-Erft-Kreis,24.3,20.7,31.4
+292,6439,Rheingau-Taunus-Kreis,24.5,20.4,30.5
+293,7140,Rhein-Hunsrück-Kreis,29.2,24.1,35.3
+294,5378,Rheinisch-Bergischer Kreis,26.9,22.7,31.7
+295,5162,Rhein-Kreis Neuss,25.6,23.2,31.7
+296,7141,Rhein-Lahn-Kreis,28.4,22.4,34.5
+297,8226,Rhein-Neckar-Kreis,24.0,20.7,31.1
+298,7338,Rhein-Pfalz-Kreis,22.8,17.0,30.2
+299,5382,Rhein-Sieg-Kreis,24.6,19.6,30.6
+300,9673,Rhön-Grabfeld,30.0,25.2,35.0
+301,9163,Rosenheim,21.7,18.8,26.3
+302,9187,"Rosenheim, Landkreis",21.7,18.6,27.4
+303,13003,Rostock,28.3,22.7,32.8
+304,13072,"Rostock, Landkreis",31.6,26.1,41.3
+305,3357,Rotenburg (Wümme),27.4,22.1,32.3
+306,9576,Roth,24.1,19.1,30.8
+307,9277,Rottal-Inn,26.1,22.7,32.3
+308,8325,Rottweil,25.0,21.9,29.2
+309,16074,Saale-Holzland-Kreis,32.1,27.2,35.9
+310,15088,Saalekreis,33.3,29.7,38.0
+311,16075,Saale-Orla-Kreis,35.5,30.9,40.7
+312,16073,Saalfeld-Rudolstadt,40.3,35.6,45.0
+313,10044,Saarlouis,30.5,26.8,35.6
+314,10045,Saar-Pfalz-Kreis,28.4,22.3,35.9
+315,14628,Sächsische Schweiz-Osterzgebirge,34.8,31.7,39.2
+316,3102,Salzgitter,30.5,26.2,36.9
+317,15089,Salzlandkreis,36.8,31.5,44.2
+318,3257,Schaumburg,23.7,20.2,28.5
+319,1059,Schleswig-Flensburg,26.6,22.0,31.3
+320,16066,Schmalkalden-Meiningen,36.9,30.7,43.7
+321,9565,Schwabach,25.2,20.4,30.9
+322,8127,Schwäbisch Hall,24.8,21.7,29.5
+323,6634,Schwalm-Eder-Kreis,29.5,25.4,34.6
+324,9376,Schwandorf,28.3,24.1,33.4
+325,8326,Schwarzwald-Baar-Kreis,23.9,21.1,30.3
+326,9662,Schweinfurt,32.7,26.5,38.7
+327,9678,"Schweinfurt, Landkreis",30.2,24.3,38.3
+328,13004,Schwerin,27.2,21.7,30.6
+329,1060,Segeberg,25.4,18.6,33.7
+330,5970,Siegen-Wittgenstein,29.2,25.5,33.4
+331,8437,Sigmaringen,23.0,20.3,29.0
+332,5974,Soest,29.6,24.8,35.7
+333,5122,Solingen,29.5,25.7,33.1
+334,16068,Sömmerda,33.7,29.8,39.3
+335,16072,Sonneberg,42.1,35.6,47.5
+336,7318,Speyer,24.5,19.6,30.0
+337,12071,Spree-Neiße,37.5,29.9,43.6
+338,10046,Sankt Wendel,32.5,27.4,37.7
+339,3359,Stade,26.2,22.2,31.1
+340,5334,Aachen,25.8,22.3,30.1
+341,9188,Starnberg,21.3,16.3,28.2
+342,1061,Steinburg,29.5,23.6,37.6
+343,5566,Steinfurt,26.3,21.6,31.6
+344,15090,Stendal,32.2,27.0,39.2
+345,1062,Stormarn,22.9,17.2,28.2
+346,9263,Straubing,29.2,23.7,34.3
+347,9278,Straubing-Bogen,28.0,22.1,33.2
+348,8111,Stuttgart,19.7,16.9,25.4
+349,7337,Südliche Weinstraße,26.8,21.0,32.2
+350,7340,Südwestpfalz,30.0,24.8,39.4
+351,16054,Suhl,42.8,35.4,48.7
+352,12072,Teltow-Fläming,29.5,23.6,34.5
+353,9377,Tirschenreuth,31.0,28.1,35.7
+354,9189,Traunstein,23.9,19.8,29.1
+355,7211,Trier,24.8,19.4,32.1
+356,7235,Trier-Saarburg,26.4,20.2,35.1
+357,8416,Tübingen,19.1,16.5,24.6
+358,8327,Tuttlingen,24.0,20.4,29.0
+359,12073,Uckermark,37.1,28.9,42.3
+360,3360,Uelzen,32.1,25.8,38.7
+361,8421,Ulm,21.7,18.4,26.8
+362,5978,Unna,31.7,27.1,36.9
+363,16064,Unstrut-Hainich-Kreis,38.1,32.4,43.5
+364,9778,Unterallgäu,25.0,19.8,31.6
+365,3460,Vechta,23.5,20.8,27.2
+366,3361,Verden,27.2,23.3,32.6
+367,5166,Viersen,30.1,25.1,35.9
+368,6535,Vogelsbergkreis,33.0,27.7,38.9
+369,14523,Vogtlandkreis,37.8,33.4,42.6
+370,13075,Vorpommern-Greifswald,33.4,27.8,39.6
+371,13073,Vorpommern-Rügen,32.6,27.4,37.6
+372,7233,Vulkaneifel,34.8,29.9,39.5
+373,6635,Waldeck-Frankenberg,32.2,27.3,39.4
+374,8337,Waldshut,21.8,18.1,27.1
+375,5570,Warendorf,28.8,25.1,32.3
+376,16063,Wartburgkreis,36.4,31.0,41.9
+377,9363,Weiden i.d.OPf.,28.6,24.0,33.7
+378,9190,Weilheim-Schongau,24.0,18.8,30.2
+379,16055,Weimar,31.4,26.8,37.3
+380,16071,Weimarer Land,35.0,30.1,40.3
+381,9577,Weißenburg-Gunzenhausen,27.0,22.0,32.9
+382,6636,Werra-Meißner-Kreis,32.3,26.9,38.1
+383,5170,Wesel,33.5,29.5,38.1
+384,3461,Wesermarsch,31.3,25.6,38.1
+385,7143,Westerwaldkreis,29.7,24.2,34.4
+386,6440,Wetteraukreis,26.3,22.7,30.5
+387,6414,Wiesbaden,22.7,19.5,26.1
+388,3405,Wilhelmshaven,30.8,25.9,36.3
+389,15091,Wittenberg,36.7,29.8,41.5
+390,3462,Wittmund,31.2,25.7,37.1
+391,3158,Wolfenbüttel,24.2,20.9,28.8
+392,3103,Wolfsburg,26.8,22.1,31.0
+393,7319,Worms,26.3,20.9,33.1
+394,9479,Wunsiedel i.Fic,33.3,28.5,38.5
+395,5124,Wuppertal,28.2,24.3,33.0
+396,9663,Würzburg,22.4,18.5,26.7
+397,9679,"Würzburg, Landkreis",24.5,20.1,30.5
+398,8417,Zollernalbkreis,26.5,22.2,32.1
+399,7320,Zweibrücken,28.5,23.5,34.8
+400,14524,Zwickau,37.4,33.1,41.4

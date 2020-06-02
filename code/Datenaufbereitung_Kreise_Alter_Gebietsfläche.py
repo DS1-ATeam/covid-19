@@ -71,12 +71,12 @@ data_new_final = data_new[['ID_LK_SK' ,'age_0_34_%', 'age_35_59_%' , 'age_60+_%'
 
 #x = [11004, 11002, 11011, 11010, 11001, 11008, 11003, 11012, 11005, 11006, 11007, 11009]
 
-x_sorted = [11001, 11002, 11003, 11004, 11005, 11006, 11007, 11008, 11009, 11010, 11011, 11012]
+#x_sorted = [11001, 11002, 11003, 11004, 11005, 11006, 11007, 11008, 11009, 11010, 11011, 11012]
 
-for x in x_sorted:
+#for x in x_sorted:
     
-    new_row = {'ID_LK_SK':x, 'age_0_34_%':40.448, 'age_35_59_%':34.8899, 'age_60+_%':24.6621, 'Einw_pro_qm':891.12}
-    data_new_final = data_new_final.append(new_row, ignore_index=True)
+#    new_row = {'ID_LK_SK':x, 'age_0_34_%':40.448, 'age_35_59_%':34.8899, 'age_60+_%':24.6621, 'Einw_pro_qm':891.12}
+#    data_new_final = data_new_final.append(new_row, ignore_index=True)
 
 data_new_final.fillna(0, inplace=True)
 

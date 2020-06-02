@@ -1,4 +1,4 @@
-Kreisname;Anzahl Patienten mit mindestens einer Vorerkrankung;Prävalenz (Anteil mit mindestens einer Vorerkrankung in %);Prävalenz-Schätzwerte plausibles Intervall Untergrenze;Prävalenz-Schätzwerte plausibles Intervall Obergrenze
+Kreisname;Anzahl Patienten mit mindestens einer Vorerkrankung;Prävalenz (Anteil mit mindestens einer Vorerkrankung in %);Prävalenz-Schätzwerte plausibles Intervall Untergrenze; Prävalenz-Schätzwerte plausibles Intervall Obergrenze
 Ahrweiler;37,000;28.2;22.1;38.1
 Aichach-Friedberg;27,000;20.5;17.2;26.5
 Alb-Donau-Kreis;50,000;25.7;22.4;30.8
@@ -258,7 +258,7 @@ Offenbach, Landkreis;76,000;21.7;17.9;27.5
 Oldenburg;33,000;19.5;16.6;24.2
 Oldenburg, Landkreis;29,000;22.6;19.6;26.9
 Olpe;38,000;28.0;25.0;33.5
-Ortenaukreis;111,000;26.0;20.8;31.4
+Orte naukreis;111,000;26.0;20.8;31.4
 Osnabrück;38,000;22.9;18.4;29.1
 Osnabrück, Landkreis;99,000;27.6;24.0;34.1
 Ostalbkreis;73,000;23.2;19.1;30.1

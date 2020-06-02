@@ -6,6 +6,7 @@ Created on Tue May 26 21:27:31 2020
 """
 
 import pandas as pd
+import numpy as np
 
 ##################
 # Daten einlesen #
@@ -16,6 +17,8 @@ data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID1
 
 # https://www-genesis.destatis.de/genesis/online#astructure
 
+data["Landkreis"] = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)
+data["IdLandkreis"] = np.where(data.Landkreis == "SK Berlin", 11000, data.IdLandkreis)
 
 ############################
 # Datensatz transformieren #
@@ -35,14 +38,6 @@ temp = df.groupby(['Landkreis', 'Altersgruppe']).sum()
 
 data_frame = temp.unstack(level=-1).droplevel(level=0, axis=1)
 
-#data_frame.rename(columns={"A00-A04":   "group_A00-A04",
-#                           "A05-A14":   "group_A05-A14",
-#                           "A15-A34":   "group_A15-A34",
-#                           "A35-A59":   "group_A35-A59",
-#                           "A60-A79":   "group_A60-A79",
-#                           "A80+":      "group_A80+",
-#                           "unbekannt": "group_unknown"}, inplace=True)
-
 # Missings mit 0 befüllen
 data_frame.fillna(value=0, inplace=True)
 
@@ -53,6 +48,7 @@ data_frame["age_covid_35_59"]   = data_frame["A35-A59"]
 data_frame["age_covid_60+"]     = data_frame["A60-A79"] + data_frame["A80+"]
 
 data_frame["age_covid_unknown"] = data_frame["unbekannt"]
+
 
 data_frame["sum"] = data_frame["age_covid_0_34"] + data_frame["age_covid_35_59"] + data_frame["age_covid_60+"] + data_frame["age_covid_unknown"]
 
@@ -85,6 +81,7 @@ temp['Sterberate_%'] = (temp.AnzahlTodesfall / temp.AnzahlFall)*100
 data_frame = data_frame.merge(temp, left_index=True, right_index=True)
 
 data_frame.drop(columns=["AnzahlTodesfall", "AnzahlFall"], inplace=True)
+
 
 ##############################
 # IdLandkreis und Bundesland #
