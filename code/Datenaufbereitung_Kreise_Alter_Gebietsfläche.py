@@ -12,10 +12,10 @@ import pandas as pd
 ##################
 
 # Datensatz Geschlecht, Alter
-data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_Kreise_Alter_Geschlecht.csv", sep=';')
+data = pd.read_csv("../data/00_Kreise_Alter_Geschlecht.csv", sep=';')
 
 # Datensatz Kreise Gebietsfläche
-data_flaeche = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_Kreise_Gebietsfläche.csv", sep=';', decimal=",")
+data_flaeche = pd.read_csv("../data/00_Kreise_Gebietsfläche.csv", sep=';', decimal=",")
 
 #data_flaeche.fillna(0, inplace=True)
 
@@ -80,5 +80,5 @@ data_new_final = data_new[['ID_LK_SK' ,'age_0_34_%', 'age_35_59_%' , 'age_60+_%'
 
 data_new_final.fillna(0, inplace=True)
 
-data_new_final.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_Kreise_Altersverteilung_Fläche.csv")
+data_new_final.to_csv("../data/01_Kreise_Altersverteilung_Fläche.csv")
 

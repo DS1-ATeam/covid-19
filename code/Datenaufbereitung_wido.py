@@ -100,4 +100,4 @@ columns = ["ID_LK_SK",
 
 new = new[columns]
 
-new.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_AOK_aufbereitet.csv")
+new.to_csv("../data/01_AOK_aufbereitet.csv")
