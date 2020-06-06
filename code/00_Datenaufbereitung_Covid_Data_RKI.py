@@ -10,21 +10,22 @@ import numpy as np
 
 import sqlalchemy as db
 
-##################
-# Daten einlesen #
-##################
+###########################################################
+# Daten einlesen                                          #
+###########################################################
+
+# Quelle: # https://www-genesis.destatis.de/genesis/online#astructure
 
 # RKI Datensatz
 data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID19_06_06_20.csv")
 
-# https://www-genesis.destatis.de/genesis/online#astructure
-
+# Berlin zu SK Berlin zusammenfassen
 data["Landkreis"] = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)
 data["IdLandkreis"] = np.where(data.Landkreis == "SK Berlin", 11000, data.IdLandkreis)
 
-############################
-# Datensatz transformieren #
-############################
+###########################################################
+# Datensatz transformieren                                #
+###########################################################
 
 #################
 # Altersgruppen #
@@ -43,32 +44,28 @@ data_frame = temp.unstack(level=-1).droplevel(level=0, axis=1)
 # Missings mit 0 befüllen
 data_frame.fillna(value=0, inplace=True)
 
+# Altersgruppen zusammenfassen
 data_frame["age_covid_0_34"]    = data_frame["A00-A04"] + data_frame["A05-A14"] + data_frame["A15-A34"]
-
 data_frame["age_covid_35_59"]   = data_frame["A35-A59"]
-
 data_frame["age_covid_60+"]     = data_frame["A60-A79"] + data_frame["A80+"]
-
 data_frame["age_covid_unknown"] = data_frame["unbekannt"]
 
-
+# Anzahl der Fälle pro Landkreis
 data_frame["sum"] = data_frame["age_covid_0_34"] + data_frame["age_covid_35_59"] + data_frame["age_covid_60+"] + data_frame["age_covid_unknown"]
 
+# Prozentanteil berechnen
 data_frame["age_covid_0_34_%"]    = (data_frame["age_covid_0_34"]       / data_frame["sum"]) * 100
-
 data_frame["age_covid_35_59_%"]   = (data_frame["age_covid_35_59"]      / data_frame["sum"]) * 100
-
 data_frame["age_covid_60+_%"]     = (data_frame["age_covid_60+"]        / data_frame["sum"]) * 100
-
 data_frame["age_covid_unknown_%"] = (data_frame["age_covid_unknown"]    / data_frame["sum"]) * 100
 
+# unwichtige Spalten löschen
 data_frame.drop(columns=["A00-A04", "A05-A14", "A15-A34", "A35-A59", "A60-A79", "A80+", "unbekannt",
                          "age_covid_0_34", "age_covid_35_59", "age_covid_60+", "age_covid_unknown", "sum"], inplace=True)
 
-
-##############
-# Sterberate #
-##############
+#############################
+# Sterberate  pro Landkreis #
+#############################
 
 columns = ['Landkreis',
            'AnzahlTodesfall',
@@ -78,10 +75,13 @@ df = data[columns]
 
 temp = df.groupby('Landkreis').sum()
 
+# Sterberate pro Landkreis
 temp['Sterberate_%'] = (temp.AnzahlTodesfall / temp.AnzahlFall)*100
 
+# Daten mergen
 data_frame = data_frame.merge(temp, left_index=True, right_index=True)
 
+# unwichtige Spalten löschen
 data_frame.drop(columns=["AnzahlTodesfall", "AnzahlFall"], inplace=True)
 
 
@@ -99,6 +99,7 @@ temp = df.drop_duplicates(keep='first',inplace=False)
 
 temp.set_index(keys='Landkreis', drop=True, append=False, inplace=True, verify_integrity=False)
 
+# Daten mergen
 data_frame = data_frame.merge(temp, left_index=True, right_index=True)
 
 ###################
@@ -116,6 +117,7 @@ temp = temp.unstack(level=-1)
 
 temp.rename(columns={"M": "gender_m", "W": "gender_f", "unbekannt": "gender_unknown"}, inplace=True)
 
+# Daten mergen
 data_frame = data_frame.merge(temp, left_index=True, right_index=True)
 
 # Missings mit 0 befüllen
@@ -123,14 +125,15 @@ data_frame["gender_m"].fillna(value=0, inplace=True)
 data_frame["gender_f"].fillna(value=0, inplace=True)
 data_frame["gender_unknown"].fillna(value=0, inplace=True)
 
+# Anzahl aller Fälle berechnen
 data_frame["sum_gender"] = data_frame["gender_m"] + data_frame["gender_f"] + data_frame["gender_unknown"]
 
+# Prozentanteil berechnen
 data_frame["gender_covid_m_%"]        = (data_frame["gender_m"] / data_frame["sum_gender"]) * 100
-
 data_frame["gender_covid_f_%"]        = (data_frame["gender_f"] / data_frame["sum_gender"]) * 100
-
 data_frame["gender_covid_unknown_%"]  = (data_frame["gender_unknown"] / data_frame["sum_gender"]) * 100
 
+# unwichtige Spalten löschen
 data_frame.drop(columns=["sum_gender", "gender_m", "gender_f", "gender_unknown"], inplace=True)
 
 ##############
@@ -168,6 +171,10 @@ cols = ['IdLandkreis',
 data_frame = data_frame[cols]
 
 data_frame.rename(columns={'IdLandkreis': 'ID_LK_SK'}, inplace=True)
+
+#####################
+# Daten exportieren #
+#####################
 
 data_frame.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")
 

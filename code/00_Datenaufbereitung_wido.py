@@ -8,17 +8,21 @@ Created on Thu May 28 09:45:21 2020
 import pandas as pd
 import numpy as np
 
+##################
+# Daten einlesen # 
+##################
 
 df = pd.read_csv(filepath_or_buffer="../data/00_AOK_wido_c_12.csv", sep=';')
 
-# convert "Anzahl Patienten mit mindestens einer Vorerkrankung" to int
+landkreise_ID = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")[["Landkreis","ID_LK_SK"]]
+
+
+# convert "Anzahl Patienten mit mindestens einer Vorerkrankung" zu Integer
 df["Anz_Pati_mind_einer_Vorerkrankung"] = df["Anzahl Patienten mit mindestens einer Vorerkrankung"].str.replace(',','').astype(int)
 
-
-#####################################
-# Bezeichnungen kongruent gestalten #
-#####################################
-
+#######################################
+# Bezeichnungen einheitlich gestalten #
+#######################################
 
 df.loc[df.Kreisname == 'Altenkirchen (Westerwald)',             'Kreisname'] = "Altenkirchen"
 df.loc[df.Kreisname == 'Brandenburg an der Havel',              'Kreisname'] = "Brandenburg a.d"
@@ -53,8 +57,6 @@ df.loc[df.Kreisname == 'Wunsiedel im Fichtelgebirge',           'Kreisname'] = "
 # Daten mergen #
 ################
 
-landkreise_ID = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")[["Landkreis","ID_LK_SK"]]
-
 landkreise_ID["sub_L"] = landkreise_ID.Landkreis.str.slice(3, 18)
 
 df["Kreisname_2"] = np.where(df.Kreisname.str.contains("Landkreis"), 'LK ' + df.Kreisname, df.Kreisname)
@@ -64,7 +66,6 @@ df["sub_L"] = df.Kreisname_2.str.slice(0, 15)
 merged = landkreise_ID
 
 merged = merged.merge(df[['Kreisname', 'sub_L']], on='sub_L', how='left')
-
 
 merged["sub_L_2"] = np.where(merged.Landkreis.str.contains("LK"), 'LK ' + landkreise_ID.sub_L, landkreise_ID.sub_L)
 
@@ -81,9 +82,9 @@ merged = merged.merge(df[['Kreisname', 'sub_L_2']], on='sub_L_2', how='left')
 
 merged['Kreisname_aktuell'] = np.where(merged.Kreisname_y.isnull() , merged.Kreisname_x, merged.Kreisname_y)
 
-#####
-#   #
-#####
+##################################
+# Kreisname und ID_LK_SK mergen  #
+##################################
 
 keys = merged[["Kreisname_aktuell", "ID_LK_SK"]]
 
@@ -99,5 +100,9 @@ columns = ["ID_LK_SK",
            "Prävalenz-Schätzwerte plausibles Intervall Obergrenze"]
 
 new = new[columns]
+
+#####################
+# Daten exportieren #
+#####################
 
 new.to_csv("../data/01_AOK_aufbereitet.csv")
