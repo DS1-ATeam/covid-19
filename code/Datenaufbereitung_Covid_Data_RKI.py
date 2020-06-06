@@ -8,12 +8,14 @@ Created on Tue May 26 21:27:31 2020
 import pandas as pd
 import numpy as np
 
+import sqlalchemy as db
+
 ##################
 # Daten einlesen #
 ##################
 
 # RKI Datensatz
-data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID19.csv")
+data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID19_06_06_20.csv")
 
 # https://www-genesis.destatis.de/genesis/online#astructure
 
@@ -168,3 +170,24 @@ data_frame = data_frame[cols]
 data_frame.rename(columns={'IdLandkreis': 'ID_LK_SK'}, inplace=True)
 
 data_frame.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")
+
+#####################
+# Datenbank beladen # 
+#####################
+
+engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
+con     = engine.connect()
+
+data_frame.to_sql(name='kreise_sterberate',          con=engine, if_exists='replace',
+                  dtype={"Landkreis":                db.types.NVARCHAR(length=100),
+                         "ID_LK_SK":                 db.types.INTEGER(),
+                         "LK_SK":                    db.types.NVARCHAR(length=5),
+                         "Bundesland":               db.types.NVARCHAR(length=100),
+                         "age_covid_0_34_%":         db.types.Float(precision=3, asdecimal=True),
+                         "age_covid_35_59_%":        db.types.Float(precision=3, asdecimal=True),
+                         "age_covid_60+_%":          db.types.Float(precision=3, asdecimal=True),
+                         "age_covid_unknown_%":      db.types.Float(precision=3, asdecimal=True),
+                         "gender_covid_f_%":         db.types.Float(precision=3, asdecimal=True),
+                         "gender_covid_m_%":         db.types.Float(precision=3, asdecimal=True),
+                         "gender_covid_unknown_%":   db.types.Float(precision=3, asdecimal=True),
+                         "Sterberate_%":             db.types.Float(precision=3, asdecimal=True)})
