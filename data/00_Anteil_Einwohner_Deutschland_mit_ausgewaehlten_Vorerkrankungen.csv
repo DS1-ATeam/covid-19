@@ -1,0 +1,402 @@
+BL;BL_NAME;KREIS;KREIS_NAME;Patientenanzahl (gerundet);Prävalenz;plausibles Intervall
+SH;Schleswig-Holstein;01001;Flensburg; 22.000 ; 24,7 ; 20,8 - 28,8 
+SH;Schleswig-Holstein;01002;Kiel; 51.000 ; 20,6 ; 18,1 - 28,2 
+SH;Schleswig-Holstein;01003;Lübeck; 57.000 ; 26,4 ; 21,6 - 30,0 
+SH;Schleswig-Holstein;01004;Neumünster; 22.000 ; 28,1 ; 25,0 - 32,8 
+SH;Schleswig-Holstein;01051;Dithmarschen; 36.000 ; 27,1 ; 22,0 - 32,7 
+SH;Schleswig-Holstein;01053;Herzogtum Lauenburg; 50.000 ; 25,4 ; 20,1 - 28,1 
+SH;Schleswig-Holstein;01054;Nordfriesland; 40.000 ; 24,2 ; 18,4 - 34,1 
+SH;Schleswig-Holstein;01055;Ostholstein; 58.000 ; 29,0 ; 24,6 - 33,8 
+SH;Schleswig-Holstein;01056;Pinneberg; 75.000 ; 23,9 ; 19,6 - 29,3 
+SH;Schleswig-Holstein;01057;Plön; 32.000 ; 25,1 ; 20,4 - 30,4 
+SH;Schleswig-Holstein;01058;Rendsburg-Eckernförde; 67.000 ; 24,4 ; 20,8 - 29,0 
+SH;Schleswig-Holstein;01059;Schleswig-Flensburg; 53.000 ; 26,6 ; 22,0 - 31,3 
+SH;Schleswig-Holstein;01060;Segeberg; 70.000 ; 25,4 ; 18,6 - 33,7 
+SH;Schleswig-Holstein;01061;Steinburg; 39.000 ; 29,5 ; 23,6 - 37,6 
+SH;Schleswig-Holstein;01062;Stormarn; 56.000 ; 22,9 ; 17,2 - 28,2 
+HH;Hamburg;02000;Hamburg; 392.000 ; 21,4 ; 17,9 - 25,4 
+NI;Niedersachsen;03101;Braunschweig; 56.000 ; 22,8 ; 20,4 - 26,5 
+NI;Niedersachsen;03102;Salzgitter; 32.000 ; 30,5 ; 26,2 - 36,9 
+NI;Niedersachsen;03103;Wolfsburg; 33.000 ; 26,8 ; 22,1 - 31,0 
+NI;Niedersachsen;03151;Gifhorn; 48.000 ; 27,3 ; 22,9 - 32,5 
+NI;Niedersachsen;03153;Goslar; 42.000 ; 30,6 ; 26,9 - 35,0 
+NI;Niedersachsen;03154;Helmstedt; 29.000 ; 32,1 ; 26,3 - 39,3 
+NI;Niedersachsen;03155;Northeim; 44.000 ; 33,4 ; 29,0 - 37,9 
+NI;Niedersachsen;03157;Peine; 36.000 ; 27,0 ; 23,4 - 31,3 
+NI;Niedersachsen;03158;Wolfenbüttel; 29.000 ; 24,2 ; 20,9 - 28,8 
+NI;Niedersachsen;03159;Göttingen; 90.000 ; 27,4 ; 24,2 - 31,9 
+NI;Niedersachsen;03241;Region Hannover; 298.000 ;25,8;22,1 - 30,2
+NI;Niedersachsen;03251;Diepholz; 56.000 ;25,8;22,4 - 31,7
+NI;Niedersachsen;03252;Hameln-Pyrmont; 42.000 ;28;24,1 - 33,5
+NI;Niedersachsen;03254;Hildesheim; 72.000 ;26,1;23,5 - 30,3
+NI;Niedersachsen;03255;Holzminden; 24.000 ;33,8;29,5 - 39,3
+NI;Niedersachsen;03256;Nienburg (Weser); 37.000 ;30,4;26,4 - 34,9
+NI;Niedersachsen;03257;Schaumburg; 37.000 ; 23,7 ; 20,2 - 28,5 
+NI;Niedersachsen;03351;Celle; 42.000 ; 23,5 ; 20,1 - 31,3 
+NI;Niedersachsen;03352;Cuxhaven; 56.000 ; 28,3 ; 24,3 - 32,9 
+NI;Niedersachsen;03353;Harburg; 59.000 ; 23,5 ; 19,6 - 27,8 
+NI;Niedersachsen;03354;Lüchow-Dannenberg; 17.000 ; 35,2 ; 28,0 - 41,1 
+NI;Niedersachsen;03355;Lüneburg; 42.000 ; 22,9 ; 19,1 - 27,7 
+NI;Niedersachsen;03356;Osterholz; 29.000 ; 25,5 ; 21,1 - 31,5 
+NI;Niedersachsen;03357;Rotenburg (Wümme); 45.000 ; 27,4 ; 22,1 - 32,3 
+NI;Niedersachsen;03358;Heidekreis; 39.000 ; 27,8 ; 23,8 - 32,2 
+NI;Niedersachsen;03359;Stade; 53.000 ; 26,2 ; 22,2 - 31,1 
+NI;Niedersachsen;03360;Uelzen; 30.000 ; 32,1 ; 25,8 - 38,7 
+NI;Niedersachsen;03361;Verden; 37.000 ; 27,2 ; 23,3 - 32,6 
+NI;Niedersachsen;03401;Delmenhorst; 20.000 ; 25,9 ; 22,6 - 30,2 
+NI;Niedersachsen;03402;Emden; 12.000 ; 22,9 ; 18,2 - 28,4 
+NI;Niedersachsen;03403;Oldenburg; 33.000 ; 19,5 ; 16,6 - 24,2 
+NI;Niedersachsen;03404;Osnabrück; 38.000 ; 22,9 ; 18,4 - 29,1 
+NI;Niedersachsen;03405;Wilhelmshaven; 23.000 ; 30,8 ; 25,9 - 36,3 
+NI;Niedersachsen;03451;Ammerland; 29.000 ; 23,6 ; 20,5 - 26,9 
+NI;Niedersachsen;03452;Aurich; 53.000 ; 28,0 ; 24,1 - 33,0 
+NI;Niedersachsen;03453;Cloppenburg; 40.000 ; 23,5 ; 20,5 - 28,0 
+NI;Niedersachsen;03454;Emsland; 83.000 ; 25,7 ; 22,6 - 30,7 
+NI;Niedersachsen;03455;Friesland; 28.000 ; 28,5 ; 24,2 - 34,0 
+NI;Niedersachsen;03456;Grafschaft Bentheim; 34.000 ; 25,3 ; 21,8 - 30,9 
+NI;Niedersachsen;03457;Leer; 47.000 ; 28,0 ; 24,3 - 32,6 
+NI;Niedersachsen;03458;Oldenburg, Landkreis; 29.000 ; 22,6 ; 19,6 - 26,9 
+NI;Niedersachsen;03459;Osnabrück, Landkreis; 99.000 ; 27,6 ; 24,0 - 34,1 
+NI;Niedersachsen;03460;Vechta; 33.000 ; 23,5 ; 20,8 - 27,2 
+NI;Niedersachsen;03461;Wesermarsch; 28.000 ; 31,3 ; 25,6 - 38,1 
+NI;Niedersachsen;03462;Wittmund; 18.000 ; 31,2 ; 25,7 - 37,1 
+HB;Bremen;04011;Bremen; 133.000 ; 23,3 ; 19,7 - 27,3 
+HB;Bremen;04012;Bremerhaven; 32.000 ; 27,9 ; 23,5 - 32,1 
+NW;Nordrhein-Westfalen;05111;Düsseldorf; 145.000 ; 23,5 ; 20,6 - 28,1 
+NW;Nordrhein-Westfalen;05112;Duisburg; 151.000 ; 30,2 ; 26,0 - 34,2 
+NW;Nordrhein-Westfalen;05113;Essen; 170.000 ; 29,1 ; 25,0 - 33,6 
+NW;Nordrhein-Westfalen;05114;Krefeld; 64.000 ; 28,0 ; 22,2 - 32,0 
+NW;Nordrhein-Westfalen;05116;Mönchengladbach; 76.000 ; 29,0 ; 23,9 - 33,3 
+NW;Nordrhein-Westfalen;05117;Mülheim an der Ruhr; 45.000 ; 26,5 ; 20,7 - 31,1 
+NW;Nordrhein-Westfalen;05119;Oberhausen; 59.000 ; 28,1 ; 23,5 - 33,3 
+NW;Nordrhein-Westfalen;05120;Remscheid; 41.000 ; 37,0 ; 29,0 - 43,9 
+NW;Nordrhein-Westfalen;05122;Solingen; 47.000 ; 29,5 ; 25,7 - 33,1 
+NW;Nordrhein-Westfalen;05124;Wuppertal; 100.000 ; 28,2 ; 24,3 - 33,0 
+NW;Nordrhein-Westfalen;05154;Kleve; 93.000 ; 29,7 ; 27,1 - 33,1 
+NW;Nordrhein-Westfalen;05158;Mettmann; 148.000 ; 30,5 ; 27,6 - 34,6 
+NW;Nordrhein-Westfalen;05162;Rhein-Kreis Neuss; 115.000 ; 25,6 ; 23,2 - 31,7 
+NW;Nordrhein-Westfalen;05166;Viersen; 90.000 ; 30,1 ; 25,1 - 35,9 
+NW;Nordrhein-Westfalen;05170;Wesel; 154.000 ; 33,5 ; 29,5 - 38,1 
+NW;Nordrhein-Westfalen;05314;Bonn; 67.000 ; 20,5 ; 16,7 - 26,3 
+NW;Nordrhein-Westfalen;05315;Köln; 234.000 ; 21,6 ; 18,9 - 26,9 
+NW;Nordrhein-Westfalen;05316;Leverkusen; 44.000 ; 26,6 ; 23,0 - 31,0 
+NW;Nordrhein-Westfalen;05334;Städteregion Aachen; 143.000 ; 25,8 ; 22,3 - 30,1 
+NW;Nordrhein-Westfalen;05358;Düren; 79.000 ; 30,0 ; 26,7 - 34,0 
+NW;Nordrhein-Westfalen;05362;Rhein-Erft-Kreis; 114.000 ; 24,3 ; 20,7 - 31,4 
+NW;Nordrhein-Westfalen;05366;Euskirchen; 55.000 ; 28,4 ; 22,3 - 33,3 
+NW;Nordrhein-Westfalen;05370;Heinsberg; 67.000 ; 26,3 ; 23,0 - 32,5 
+NW;Nordrhein-Westfalen;05374;Oberbergischer Kreis; 72.000 ; 26,5 ; 22,9 - 31,4 
+NW;Nordrhein-Westfalen;05378;Rheinisch-Bergischer Kreis; 76.000 ; 26,9 ; 22,7 - 31,7 
+NW;Nordrhein-Westfalen;05382;Rhein-Sieg-Kreis; 147.000 ; 24,6 ; 19,6 - 30,6 
+NW;Nordrhein-Westfalen;05512;Bottrop; 39.000 ; 33,3 ; 28,7 - 40,7 
+NW;Nordrhein-Westfalen;05513;Gelsenkirchen; 88.000 ; 33,7 ; 27,2 - 38,9 
+NW;Nordrhein-Westfalen;05515;Münster; 54.000 ; 17,1 ; 14,4 - 24,9 
+NW;Nordrhein-Westfalen;05554;Borken; 86.000 ; 23,3 ; 19,3 - 29,0 
+NW;Nordrhein-Westfalen;05558;Coesfeld; 60.000 ; 27,5 ; 21,0 - 34,3 
+NW;Nordrhein-Westfalen;05562;Recklinghausen; 193.000 ; 31,4 ; 25,2 - 36,1 
+NW;Nordrhein-Westfalen;05566;Steinfurt; 118.000 ; 26,3 ; 21,6 - 31,6 
+NW;Nordrhein-Westfalen;05570;Warendorf; 80.000 ; 28,8 ; 25,1 - 32,3 
+NW;Nordrhein-Westfalen;05711;Bielefeld; 79.000 ; 23,6 ; 18,9 - 28,6 
+NW;Nordrhein-Westfalen;05754;Gütersloh; 91.000 ; 25,2 ; 21,3 - 29,7 
+NW;Nordrhein-Westfalen;05758;Herford; 69.000 ; 27,5 ; 23,3 - 32,3 
+NW;Nordrhein-Westfalen;05762;Höxter; 41.000 ; 28,9 ; 25,3 - 33,3 
+NW;Nordrhein-Westfalen;05766;Lippe; 92.000 ; 26,5 ; 23,4 - 31,7 
+NW;Nordrhein-Westfalen;05770;Minden-Lübbecke; 84.000 ; 26,9 ; 21,7 - 33,9 
+NW;Nordrhein-Westfalen;05774;Paderborn; 74.000 ; 24,1 ; 20,6 - 28,1 
+NW;Nordrhein-Westfalen;05911;Bochum; 105.000 ; 28,7 ; 23,7 - 32,6 
+NW;Nordrhein-Westfalen;05913;Dortmund; 156.000 ; 26,6 ; 22,4 - 31,1 
+NW;Nordrhein-Westfalen;05914;Hagen; 54.000 ; 28,8 ; 23,1 - 34,6 
+NW;Nordrhein-Westfalen;05915;Hamm; 56.000 ; 31,4 ; 25,8 - 36,5 
+NW;Nordrhein-Westfalen;05916;Herne; 52.000 ; 33,4 ; 29,7 - 37,6 
+NW;Nordrhein-Westfalen;05954;Ennepe-Ruhr-Kreis; 103.000 ; 31,8 ; 27,1 - 36,2 
+NW;Nordrhein-Westfalen;05958;Hochsauerlandkreis; 83.000 ; 31,8 ; 29,6 - 34,5 
+NW;Nordrhein-Westfalen;05962;Märkischer Kreis; 127.000 ; 30,9 ; 27,3 - 35,7 
+NW;Nordrhein-Westfalen;05966;Olpe; 38.000 ; 28,0 ; 25,0 - 33,5 
+NW;Nordrhein-Westfalen;05970;Siegen-Wittgenstein; 81.000 ; 29,2 ; 25,5 - 33,4 
+NW;Nordrhein-Westfalen;05974;Soest; 89.000 ; 29,6 ; 24,8 - 35,7 
+NW;Nordrhein-Westfalen;05978;Unna; 125.000 ; 31,7 ; 27,1 - 36,9 
+HE;Hessen;06411;Darmstadt; 30.000 ; 18,6 ; 16,5 - 21,9 
+HE;Hessen;06412;Frankfurt am Main; 145.000 ; 19,4 ; 17,1 - 23,9 
+HE;Hessen;06413;Offenbach am Main; 28.000 ; 22,2 ; 18,8 - 26,5 
+HE;Hessen;06414;Wiesbaden; 63.000 ; 22,7 ; 19,5 - 26,1 
+HE;Hessen;06431;Bergstraße; 60.000 ; 22,4 ; 19,4 - 28,9 
+HE;Hessen;06432;Darmstadt-Dieburg; 74.000 ; 24,9 ; 21,2 - 30,8 
+HE;Hessen;06433;Groß-Gerau; 63.000 ; 23,0 ; 19,8 - 27,8 
+HE;Hessen;06434;Hochtaunuskreis; 48.000 ; 20,5 ; 16,1 - 25,4 
+HE;Hessen;06435;Main-Kinzig-Kreis; 105.000 ; 25,1 ; 21,8 - 30,3 
+HE;Hessen;06436;Main-Taunus-Kreis; 46.000 ; 19,3 ; 16,7 - 23,9 
+HE;Hessen;06437;Odenwaldkreis; 27.000 ; 28,0 ; 24,3 - 32,5 
+HE;Hessen;06438;Offenbach, Landkreis; 76.000 ; 21,7 ; 17,9 - 27,5 
+HE;Hessen;06439;Rheingau-Taunus-Kreis; 46.000 ; 24,5 ; 20,4 - 30,5 
+HE;Hessen;06440;Wetteraukreis; 80.000 ; 26,3 ; 22,7 - 30,5 
+HE;Hessen;06531;Gießen; 66.000 ; 24,5 ; 21,2 - 27,9 
+HE;Hessen;06532;Lahn-Dill-Kreis; 75.000 ; 29,6 ; 24,6 - 34,5 
+HE;Hessen;06533;Limburg-Weilburg; 46.000 ; 26,6 ; 22,0 - 32,2 
+HE;Hessen;06534;Marburg-Biedenkopf; 54.000 ; 22,1 ; 19,7 - 29,0 
+HE;Hessen;06535;Vogelsbergkreis; 35.000 ; 33,0 ; 27,7 - 38,9 
+HE;Hessen;06611;Kassel; 43.000 ; 21,5 ; 17,1 - 25,0 
+HE;Hessen;06631;Fulda; 62.000 ; 28,0 ; 23,6 - 32,5 
+HE;Hessen;06632;Hersfeld-Rotenburg; 38.000 ; 31,8 ; 25,9 - 37,5 
+HE;Hessen;06633;Kassel, Landkreis; 66.000 ; 27,9 ; 23,9 - 34,1 
+HE;Hessen;06634;Schwalm-Eder-Kreis; 53.000 ; 29,5 ; 25,4 - 34,6 
+HE;Hessen;06635;Waldeck-Frankenberg; 51.000 ; 32,2 ; 27,3 - 39,4 
+HE;Hessen;06636;Werra-Meißner-Kreis; 33.000 ; 32,3 ; 26,9 - 38,1 
+RP;Rheinland-Pfalz;07111;Koblenz; 25.000 ; 22,2 ; 18,0 - 28,5 
+RP;Rheinland-Pfalz;07131;Ahrweiler; 37.000 ; 28,2 ; 22,1 - 38,1 
+RP;Rheinland-Pfalz;07132;Altenkirchen (Westerwald); 38.000 ; 29,9 ; 24,4 - 36,1 
+RP;Rheinland-Pfalz;07133;Bad Kreuznach; 46.000 ; 29,3 ; 22,8 - 38,4 
+RP;Rheinland-Pfalz;07134;Birkenfeld; 25.000 ; 31,2 ; 25,3 - 38,2 
+RP;Rheinland-Pfalz;07135;Cochem-Zell; 21.000 ; 34,5 ; 29,1 - 40,2 
+RP;Rheinland-Pfalz;07137;Mayen-Koblenz; 60.000 ; 28,0 ; 23,4 - 34,5 
+RP;Rheinland-Pfalz;07138;Neuwied; 52.000 ; 28,8 ; 23,3 - 35,1 
+RP;Rheinland-Pfalz;07140;Rhein-Hunsrück-Kreis; 30.000 ; 29,2 ; 24,1 - 35,3 
+RP;Rheinland-Pfalz;07141;Rhein-Lahn-Kreis; 35.000 ; 28,4 ; 22,4 - 34,5 
+RP;Rheinland-Pfalz;07143;Westerwaldkreis; 60.000 ; 29,7 ; 24,2 - 34,4 
+RP;Rheinland-Pfalz;07211;Trier; 27.000 ; 24,8 ; 19,4 - 32,1 
+RP;Rheinland-Pfalz;07231;Bernkastel-Wittlich; 32.000 ; 28,7 ; 23,3 - 33,8 
+RP;Rheinland-Pfalz;07232;Eifelkreis Bitburg-Prüm; 28.000 ; 28,1 ; 22,4 - 36,5 
+RP;Rheinland-Pfalz;07233;Vulkaneifel; 21.000 ; 34,8 ; 29,9 - 39,5 
+RP;Rheinland-Pfalz;07235;Trier-Saarburg; 39.000 ; 26,4 ; 20,2 - 35,1 
+RP;Rheinland-Pfalz;07311;Frankenthal (Pfalz); 12.000 ; 23,8 ; 20,4 - 30,8 
+RP;Rheinland-Pfalz;07312;Kaiserslautern; 23.000 ; 23,0 ; 18,3 - 30,8 
+RP;Rheinland-Pfalz;07313;Landau in der Pfalz; 11.000 ; 24,7 ; 20,1 - 30,2 
+RP;Rheinland-Pfalz;07314;Ludwigshafen am Rhein; 41.000 ; 24,2 ; 19,2 - 28,3 
+RP;Rheinland-Pfalz;07315;Mainz; 44.000 ; 20,1 ; 16,6 - 27,1 
+RP;Rheinland-Pfalz;07316;Neustadt an der Weinstraße; 13.000 ; 24,6 ; 20,6 - 34,2 
+RP;Rheinland-Pfalz;07317;Pirmasens; 13.000 ; 31,3 ; 25,5 - 37,1 
+RP;Rheinland-Pfalz;07318;Speyer; 12.000 ; 24,5 ; 19,6 - 30,0 
+RP;Rheinland-Pfalz;07319;Worms; 22.000 ; 26,3 ; 20,9 - 33,1 
+RP;Rheinland-Pfalz;07320;Zweibrücken; 10.000 ; 28,5 ; 23,5 - 34,8 
+RP;Rheinland-Pfalz;07331;Alzey-Worms; 35.000 ; 26,8 ; 20,8 - 33,2 
+RP;Rheinland-Pfalz;07332;Bad Dürkheim; 37.000 ; 28,0 ; 22,2 - 33,1 
+RP;Rheinland-Pfalz;07333;Donnersbergkreis; 23.000 ; 30,3 ; 24,4 - 37,6 
+RP;Rheinland-Pfalz;07334;Germersheim; 35.000 ; 27,0 ; 23,6 - 32,2 
+RP;Rheinland-Pfalz;07335;Kaiserslautern, Landkreis; 27.000 ; 25,0 ; 20,2 - 32,7 
+RP;Rheinland-Pfalz;07336;Kusel; 20.000 ; 28,7 ; 24,1 - 36,1 
+RP;Rheinland-Pfalz;07337;Südliche Weinstraße; 30.000 ; 26,8 ; 21,0 - 32,2 
+RP;Rheinland-Pfalz;07338;Rhein-Pfalz-Kreis; 35.000 ; 22,8 ; 17,0 - 30,2 
+RP;Rheinland-Pfalz;07339;Mainz-Bingen; 50.000 ; 23,9 ; 17,7 - 31,2 
+RP;Rheinland-Pfalz;07340;Südwestpfalz; 29.000 ; 30,0 ; 24,8 - 39,4 
+BW;Baden-Württemberg;08111;Stuttgart; 125.000 ; 19,7 ; 16,9 - 25,4 
+BW;Baden-Württemberg;08115;Böblingen; 88.000 ; 22,6 ; 19,5 - 28,4 
+BW;Baden-Württemberg;08116;Esslingen; 131.000 ; 24,5 ; 20,0 - 31,4 
+BW;Baden-Württemberg;08117;Göppingen; 60.000 ; 23,5 ; 20,6 - 28,1 
+BW;Baden-Württemberg;08118;Ludwigsburg; 120.000 ; 22,1 ; 19,2 - 28,8 
+BW;Baden-Württemberg;08119;Rems-Murr-Kreis; 105.000 ; 24,7 ; 21,4 - 30,9 
+BW;Baden-Württemberg;08121;Heilbronn; 29.000 ; 23,3 ; 19,9 - 28,2 
+BW;Baden-Württemberg;08125;Heilbronn, Landkreis; 81.000 ; 23,7 ; 20,9 - 29,8 
+BW;Baden-Württemberg;08126;Hohenlohekreis; 29.000 ; 26,2 ; 23,0 - 31,7 
+BW;Baden-Württemberg;08127;Schwäbisch Hall; 48.000 ; 24,8 ; 21,7 - 29,5 
+BW;Baden-Württemberg;08128;Main-Tauber-Kreis; 39.000 ; 29,1 ; 25,4 - 34,0 
+BW;Baden-Württemberg;08135;Heidenheim; 36.000 ; 27,1 ; 22,2 - 33,0 
+BW;Baden-Württemberg;08136;Ostalbkreis; 73.000 ; 23,2 ; 19,1 - 30,1 
+BW;Baden-Württemberg;08211;Baden-Baden; 14.000 ; 26,1 ; 20,9 - 33,6 
+BW;Baden-Württemberg;08212;Karlsruhe; 62.000 ; 19,9 ; 16,1 - 25,2 
+BW;Baden-Württemberg;08215;Karlsruhe, Landkreis; 118.000 ; 26,6 ; 22,2 - 33,0 
+BW;Baden-Württemberg;08216;Rastatt; 55.000 ; 23,7 ; 20,8 - 29,5 
+BW;Baden-Württemberg;08221;Heidelberg; 22.000 ; 13,9 ; 11,0 - 21,9 
+BW;Baden-Württemberg;08222;Mannheim; 68.000 ; 22,1 ; 18,3 - 26,6 
+BW;Baden-Württemberg;08225;Neckar-Odenwald-Kreis; 44.000 ; 30,5 ; 27,3 - 35,9 
+BW;Baden-Württemberg;08226;Rhein-Neckar-Kreis; 131.000 ; 24,0 ; 20,7 - 31,1 
+BW;Baden-Württemberg;08231;Pforzheim; 32.000 ; 25,5 ; 21,6 - 29,5 
+BW;Baden-Württemberg;08235;Calw; 39.000 ; 24,9 ; 21,2 - 30,3 
+BW;Baden-Württemberg;08236;Enzkreis; 50.000 ; 25,1 ; 20,9 - 30,4 
+BW;Baden-Württemberg;08237;Freudenstadt; 29.000 ; 24,4 ; 20,7 - 29,1 
+BW;Baden-Württemberg;08311;Freiburg im Breisgau; 37.000 ; 16,1 ; 13,2 - 22,2 
+BW;Baden-Württemberg;08315;Breisgau-Hochschwarzwald; 57.000 ; 21,8 ; 18,1 - 27,9 
+BW;Baden-Württemberg;08316;Emmendingen; 38.000 ; 23,2 ; 19,6 - 29,1 
+BW;Baden-Württemberg;08317;Ortenaukreis; 111.000 ; 26,0 ; 20,8 - 31,4 
+BW;Baden-Württemberg;08325;Rottweil; 35.000 ; 25,0 ; 21,9 - 29,2 
+BW;Baden-Württemberg;08326;Schwarzwald-Baar-Kreis; 51.000 ; 23,9 ; 21,1 - 30,3 
+BW;Baden-Württemberg;08327;Tuttlingen; 34.000 ; 24,0 ; 20,4 - 29,0 
+BW;Baden-Württemberg;08335;Konstanz; 56.000 ; 19,8 ; 15,0 - 27,9 
+BW;Baden-Württemberg;08336;Lörrach; 48.000 ; 21,1 ; 17,9 - 27,1 
+BW;Baden-Württemberg;08337;Waldshut; 37.000 ; 21,8 ; 18,1 - 27,1 
+BW;Baden-Württemberg;08415;Reutlingen; 66.000 ; 23,2 ; 20,3 - 29,4 
+BW;Baden-Württemberg;08416;Tübingen; 43.000 ; 19,1 ; 16,5 - 24,6 
+BW;Baden-Württemberg;08417;Zollernalbkreis; 50.000 ; 26,5 ; 22,2 - 32,1 
+BW;Baden-Württemberg;08421;Ulm; 27.000 ; 21,7 ; 18,4 - 26,8 
+BW;Baden-Württemberg;08425;Alb-Donau-Kreis; 50.000 ; 25,7 ; 22,4 - 30,8 
+BW;Baden-Württemberg;08426;Biberach; 44.000 ; 21,9 ; 19,0 - 28,1 
+BW;Baden-Württemberg;08435;Bodenseekreis; 45.000 ; 20,7 ; 17,4 - 28,7 
+BW;Baden-Württemberg;08436;Ravensburg; 57.000 ; 20,1 ; 16,4 - 27,3 
+BW;Baden-Württemberg;08437;Sigmaringen; 30.000 ; 23,0 ; 20,3 - 29,0 
+BY;Bayern;09161;Ingolstadt; 29.000 ; 21,7 ; 17,9 - 25,7 
+BY;Bayern;09162;München; 286.000 ; 19,5 ; 16,4 - 24,0 
+BY;Bayern;09163;Rosenheim; 14.000 ; 21,7 ; 18,8 - 26,3 
+BY;Bayern;09171;Altötting; 28.000 ; 25,4 ; 21,9 - 30,5 
+BY;Bayern;09172;Berchtesgadener Land; 25.000 ; 23,8 ; 20,0 - 31,1 
+BY;Bayern;09173;Bad Tölz-Wolfratshausen; 30.000 ; 23,9 ; 19,4 - 29,2 
+BY;Bayern;09174;Dachau; 34.000 ; 22,5 ; 18,8 - 27,7 
+BY;Bayern;09175;Ebersberg; 30.000 ; 21,0 ; 17,5 - 26,8 
+BY;Bayern;09176;Eichstätt; 29.000 ; 22,3 ; 17,6 - 28,8 
+BY;Bayern;09177;Erding; 29.000 ; 21,4 ; 18,2 - 28,1 
+BY;Bayern;09178;Freising; 36.000 ; 20,4 ; 16,8 - 25,7 
+BY;Bayern;09179;Fürstenfeldbruck; 48.000 ; 22,0 ; 18,1 - 27,5 
+BY;Bayern;09180;Garmisch-Partenkirchen; 20.000 ; 23,0 ; 18,0 - 29,0 
+BY;Bayern;09181;Landsberg am Lech; 27.000 ; 22,3 ; 18,3 - 28,2 
+BY;Bayern;09182;Miesbach; 24.000 ; 24,1 ; 20,7 - 31,2 
+BY;Bayern;09183;Mühldorf am Inn; 29.000 ; 25,1 ; 20,8 - 31,5 
+BY;Bayern;09184;München, Landkreis; 72.000 ; 20,7 ; 16,7 - 27,1 
+BY;Bayern;09185;Neuburg-Schrobenhausen; 23.000 ; 23,9 ; 19,8 - 28,1 
+BY;Bayern;09186;Pfaffenhofen an der Ilm; 28.000 ; 21,9 ; 18,3 - 26,5 
+BY;Bayern;09187;Rosenheim, Landkreis; 57.000 ; 21,7 ; 18,6 - 27,4 
+BY;Bayern;09188;Starnberg; 29.000 ; 21,3 ; 16,3 - 28,2 
+BY;Bayern;09189;Traunstein; 42.000 ; 23,9 ; 19,8 - 29,1 
+BY;Bayern;09190;Weilheim-Schongau; 32.000 ; 24,0 ; 18,8 - 30,2 
+BY;Bayern;09261;Landshut; 18.000 ; 25,0 ; 21,2 - 33,5 
+BY;Bayern;09262;Passau; 13.000 ; 24,7 ; 21,4 - 32,1 
+BY;Bayern;09263;Straubing; 14.000 ; 29,2 ; 23,7 - 34,3 
+BY;Bayern;09271;Deggendorf; 31.000 ; 26,0 ; 22,2 - 32,8 
+BY;Bayern;09272;Freyung-Grafenau; 23.000 ; 28,7 ; 24,2 - 33,8 
+BY;Bayern;09273;Kelheim; 31.000 ; 25,5 ; 21,9 - 29,5 
+BY;Bayern;09274;Landshut, Landkreis; 39.000 ; 24,9 ; 21,2 - 31,6 
+BY;Bayern;09275;Passau, Landkreis; 51.000 ; 26,9 ; 22,4 - 33,2 
+BY;Bayern;09276;Regen; 22.000 ; 29,0 ; 24,5 - 32,9 
+BY;Bayern;09277;Rottal-Inn; 31.000 ; 26,1 ; 22,7 - 32,3 
+BY;Bayern;09278;Straubing-Bogen; 28.000 ; 28,0 ; 22,1 - 33,2 
+BY;Bayern;09279;Dingolfing-Landau; 27.000 ; 28,0 ; 23,4 - 34,8 
+BY;Bayern;09361;Amberg; 12.000 ; 28,8 ; 24,2 - 35,6 
+BY;Bayern;09362;Regensburg; 27.000 ; 18,0 ; 15,4 - 24,2 
+BY;Bayern;09363;Weiden in der Oberpfalz; 12.000 ; 28,6 ; 24,0 - 33,7 
+BY;Bayern;09371;Amberg-Sulzbach; 30.000 ; 29,2 ; 24,6 - 35,0 
+BY;Bayern;09372;Cham; 36.000 ; 27,8 ; 24,4 - 33,1 
+BY;Bayern;09373;Neumarkt in der Oberpfalz; 33.000 ; 24,9 ; 21,3 - 29,4 
+BY;Bayern;09374;Neustadt an der Waldnaab; 27.000 ; 28,3 ; 23,5 - 33,0 
+BY;Bayern;09375;Regensburg, Landkreis; 45.000 ; 23,2 ; 20,1 - 28,6 
+BY;Bayern;09376;Schwandorf; 42.000 ; 28,3 ; 24,1 - 33,4 
+BY;Bayern;09377;Tirschenreuth; 22.000 ; 31,0 ; 28,1 - 35,7 
+BY;Bayern;09461;Bamberg; 17.000 ; 21,4 ; 17,3 - 26,4 
+BY;Bayern;09462;Bayreuth; 18.000 ; 24,1 ; 20,5 - 29,3 
+BY;Bayern;09463;Coburg; 11.000 ; 26,1 ; 21,8 - 33,2 
+BY;Bayern;09464;Hof; 15.000 ; 31,8 ; 26,4 - 38,4 
+BY;Bayern;09471;Bamberg, Landkreis; 38.000 ; 26,1 ; 21,5 - 31,6 
+BY;Bayern;09472;Bayreuth, Landkreis; 30.000 ; 29,4 ; 25,4 - 34,2 
+BY;Bayern;09473;Coburg, Landkreis; 28.000 ; 32,2 ; 26,3 - 36,4 
+BY;Bayern;09474;Forchheim; 30.000 ; 26,1 ; 21,9 - 32,0 
+BY;Bayern;09475;Hof, Landkreis; 33.000 ; 34,1 ; 30,1 - 38,7 
+BY;Bayern;09476;Kronach; 24.000 ; 35,6 ; 30,6 - 41,6 
+BY;Bayern;09477;Kulmbach; 23.000 ; 31,8 ; 26,3 - 36,8 
+BY;Bayern;09478;Lichtenfels; 21.000 ; 31,4 ; 26,7 - 37,1 
+BY;Bayern;09479;Wunsiedel im Fichtelgebirge; 24.000 ; 33,3 ; 28,5 - 38,5 
+BY;Bayern;09561;Ansbach; 10.000 ; 24,5 ; 19,4 - 29,8 
+BY;Bayern;09562;Erlangen; 23.000 ; 20,6 ; 17,2 - 27,3 
+BY;Bayern;09563;Fürth; 31.000 ; 24,4 ; 19,9 - 29,9 
+BY;Bayern;09564;Nürnberg; 132.000 ; 25,5 ; 22,7 - 30,6 
+BY;Bayern;09565;Schwabach; 10.000 ; 25,2 ; 20,4 - 30,9 
+BY;Bayern;09571;Ansbach, Landkreis; 48.000 ; 26,0 ; 21,4 - 33,8 
+BY;Bayern;09572;Erlangen-Höchstadt; 33.000 ; 24,6 ; 20,3 - 30,8 
+BY;Bayern;09573;Fürth, Landkreis; 31.000 ; 26,6 ; 22,2 - 32,5 
+BY;Bayern;09574;Nürnberger Land; 45.000 ; 26,5 ; 22,4 - 31,5 
+BY;Bayern;09575;Neustadt an der Aisch - Bad Windsheim; 30.000 ; 29,9 ; 24,3 - 34,7 
+BY;Bayern;09576;Roth; 31.000 ; 24,1 ; 19,1 - 30,8 
+BY;Bayern;09577;Weißenburg-Gunzenhausen; 25.000 ; 27,0 ; 22,0 - 32,9 
+BY;Bayern;09661;Aschaffenburg; 16.000 ; 22,8 ; 20,0 - 25,3 
+BY;Bayern;09662;Schweinfurt; 18.000 ; 32,7 ; 26,5 - 38,7 
+BY;Bayern;09663;Würzburg; 28.000 ; 22,4 ; 18,5 - 26,7 
+BY;Bayern;09671;Aschaffenburg, Landkreis; 41.000 ; 23,7 ; 21,5 - 28,4 
+BY;Bayern;09672;Bad Kissingen; 33.000 ; 32,2 ; 26,7 - 39,5 
+BY;Bayern;09673;Rhön-Grabfeld; 24.000 ; 30,0 ; 25,2 - 35,0 
+BY;Bayern;09674;Haßberge; 28.000 ; 33,0 ; 28,5 - 38,0 
+BY;Bayern;09675;Kitzingen; 26.000 ; 28,2 ; 24,5 - 33,9 
+BY;Bayern;09676;Miltenberg; 37.000 ; 28,9 ; 24,2 - 33,8 
+BY;Bayern;09677;Main-Spessart; 37.000 ; 29,6 ; 25,5 - 34,3 
+BY;Bayern;09678;Schweinfurt, Landkreis; 35.000 ; 30,2 ; 24,3 - 38,3 
+BY;Bayern;09679;Würzburg, Landkreis; 40.000 ; 24,5 ; 20,1 - 30,5 
+BY;Bayern;09761;Augsburg; 65.000 ; 22,0 ; 18,0 - 27,8 
+BY;Bayern;09762;Kaufbeuren; 13.000 ; 30,5 ; 25,3 - 36,1 
+BY;Bayern;09763;Kempten (Allgäu); 15.000 ; 22,2 ; 18,6 - 28,8 
+BY;Bayern;09764;Memmingen; 12.000 ; 27,0 ; 22,5 - 32,1 
+BY;Bayern;09771;Aichach-Friedberg; 27.000 ; 20,5 ; 17,2 - 26,5 
+BY;Bayern;09772;Augsburg, Landkreis; 59.000 ; 23,3 ; 19,8 - 29,0 
+BY;Bayern;09773;Dillingen an der Donau; 26.000 ; 27,6 ; 23,5 - 32,3 
+BY;Bayern;09774;Günzburg; 33.000 ; 26,5 ; 20,9 - 30,5 
+BY;Bayern;09775;Neu-Ulm; 41.000 ; 23,5 ; 19,8 - 27,9 
+BY;Bayern;09776;Lindau (Bodensee); 18.000 ; 22,6 ; 19,5 - 28,0 
+BY;Bayern;09777;Ostallgäu; 36.000 ; 25,6 ; 20,6 - 30,3 
+BY;Bayern;09778;Unterallgäu; 36.000 ; 25,0 ; 19,8 - 31,6 
+BY;Bayern;09779;Donau-Ries; 36.000 ; 27,2 ; 23,3 - 32,4 
+BY;Bayern;09780;Oberallgäu; 35.000 ; 22,3 ; 19,5 - 30,1 
+SL;Saarland;10041;Regionalverband Saarbrücken; 94.000 ; 28,4 ; 25,2 - 33,6 
+SL;Saarland;10042;Merzig-Wadern; 33.000 ; 31,7 ; 23,9 - 38,7 
+SL;Saarland;10043;Neunkirchen; 42.000 ; 31,9 ; 25,2 - 36,9 
+SL;Saarland;10044;Saarlouis; 60.000 ; 30,5 ; 26,8 - 35,6 
+SL;Saarland;10045;Saarpfalz-Kreis; 41.000 ; 28,4 ; 22,3 - 35,9 
+SL;Saarland;10046;St. Wendel; 28.000 ; 32,5 ; 27,4 - 37,7 
+BE;Berlin;11000;Berlin; 805.000 ; 22,2 ; 19,6 - 25,7 
+BB;Brandenburg;12051;Brandenburg an der Havel; 25.000 ; 34,7 ; 23,4 - 43,2 
+BB;Brandenburg;12052;Cottbus; 30.000 ; 29,7 ; 23,0 - 35,1 
+BB;Brandenburg;12053;Frankfurt (Oder); 20.000 ; 35,1 ; 29,9 - 45,3 
+BB;Brandenburg;12054;Potsdam; 37.000 ; 20,7 ; 16,2 - 24,7 
+BB;Brandenburg;12060;Barnim; 54.000 ; 29,5 ; 23,3 - 36,8 
+BB;Brandenburg;12061;Dahme-Spreewald; 50.000 ; 29,6 ; 23,2 - 35,5 
+BB;Brandenburg;12062;Elbe-Elster; 38.000 ; 37,1 ; 28,8 - 42,0 
+BB;Brandenburg;12063;Havelland; 47.000 ; 28,9 ; 21,5 - 36,0 
+BB;Brandenburg;12064;Märkisch-Oderland; 53.000 ; 27,2 ; 21,9 - 45,2 
+BB;Brandenburg;12065;Oberhavel; 60.000 ; 28,5 ; 23,1 - 36,7 
+BB;Brandenburg;12066;Oberspreewald-Lausitz; 37.000 ; 33,8 ; 27,0 - 40,5 
+BB;Brandenburg;12067;Oder-Spree; 53.000 ; 29,8 ; 24,4 - 47,4 
+BB;Brandenburg;12068;Ostprignitz-Ruppin; 33.000 ; 32,8 ; 25,7 - 41,2 
+BB;Brandenburg;12069;Potsdam-Mittelmark; 58.000 ; 26,9 ; 20,3 - 31,1 
+BB;Brandenburg;12070;Prignitz; 29.000 ; 37,9 ; 29,2 - 44,9 
+BB;Brandenburg;12071;Spree-Neiße; 43.000 ; 37,5 ; 29,9 - 43,6 
+BB;Brandenburg;12072;Teltow-Fläming; 49.000 ; 29,5 ; 23,6 - 34,5 
+BB;Brandenburg;12073;Uckermark; 45.000 ; 37,1 ; 28,9 - 42,3 
+MV;Mecklenburg-Vorpommern;13003;Rostock; 59.000 ; 28,3 ; 22,7 - 32,8 
+MV;Mecklenburg-Vorpommern;13004;Schwerin; 26.000 ; 27,2 ; 21,7 - 30,6 
+MV;Mecklenburg-Vorpommern;13071;Mecklenburgische Seenplatte; 90.000 ; 34,6 ; 29,9 - 40,7 
+MV;Mecklenburg-Vorpommern;13072;Rostock, Landkreis; 68.000 ; 31,6 ; 26,1 - 41,3 
+MV;Mecklenburg-Vorpommern;13073;Vorpommern-Rügen; 73.000 ; 32,6 ; 27,4 - 37,6 
+MV;Mecklenburg-Vorpommern;13074;Nordwestmecklenburg; 49.000 ; 31,5 ; 27,1 - 38,8 
+MV;Mecklenburg-Vorpommern;13075;Vorpommern-Greifswald; 79.000 ; 33,4 ; 27,8 - 39,6 
+MV;Mecklenburg-Vorpommern;13076;Ludwigslust-Parchim; 74.000 ; 34,8 ; 30,3 - 38,9 
+SN;Sachsen;14511;Chemnitz; 76.000 ; 30,6 ; 27,4 - 36,4 
+SN;Sachsen;14521;Erzgebirgskreis; 129.000 ; 38,1 ; 33,9 - 42,7 
+SN;Sachsen;14522;Mittelsachsen; 108.000 ; 35,3 ; 31,8 - 39,7 
+SN;Sachsen;14523;Vogtlandkreis; 86.000 ; 37,8 ; 33,4 - 42,6 
+SN;Sachsen;14524;Zwickau; 119.000 ; 37,4 ; 33,1 - 41,4 
+SN;Sachsen;14612;Dresden; 136.000 ; 24,5 ; 20,4 - 30,2 
+SN;Sachsen;14625;Bautzen; 101.000 ; 33,3 ; 27,2 - 41,2 
+SN;Sachsen;14626;Görlitz; 93.000 ; 36,5 ; 33,0 - 42,5 
+SN;Sachsen;14627;Meißen; 83.000 ; 34,2 ; 31,3 - 39,9 
+SN;Sachsen;14628;Sächsische Schweiz-Osterzgebirge; 85.000 ; 34,8 ; 31,7 - 39,2 
+SN;Sachsen;14713;Leipzig; 152.000 ; 26,0 ; 23,8 - 30,0 
+SN;Sachsen;14729;Leipzig, Landkreis; 97.000 ; 37,7 ; 34,1 - 42,1 
+SN;Sachsen;14730;Nordsachsen; 74.000 ; 37,4 ; 33,1 - 42,5 
+ST;Sachsen-Anhalt;15001;Dessau-Roßlau; 30.000 ; 36,7 ; 31,3 - 41,7 
+ST;Sachsen-Anhalt;15002;Halle (Saale); 68.000 ; 28,5 ; 23,7 - 32,9 
+ST;Sachsen-Anhalt;15003;Magdeburg; 75.000 ; 31,4 ; 25,3 - 35,8 
+ST;Sachsen-Anhalt;15081;Altmarkkreis Salzwedel; 32.000 ; 37,8 ; 30,7 - 42,6 
+ST;Sachsen-Anhalt;15082;Anhalt-Bitterfeld; 65.000 ; 40,8 ; 31,8 - 45,8 
+ST;Sachsen-Anhalt;15083;Börde; 57.000 ; 33,0 ; 27,1 - 39,4 
+ST;Sachsen-Anhalt;15084;Burgenlandkreis; 71.000 ; 39,2 ; 34,6 - 43,3 
+ST;Sachsen-Anhalt;15085;Harz; 72.000 ; 33,4 ; 27,2 - 41,9 
+ST;Sachsen-Anhalt;15086;Jerichower Land; 34.000 ; 38,0 ; 32,3 - 44,8 
+ST;Sachsen-Anhalt;15087;Mansfeld-Südharz; 60.000 ; 43,5 ; 33,9 - 49,6 
+ST;Sachsen-Anhalt;15088;Saalekreis; 62.000 ; 33,3 ; 29,7 - 38,0 
+ST;Sachsen-Anhalt;15089;Salzlandkreis; 70.000 ; 36,8 ; 31,5 - 44,2 
+ST;Sachsen-Anhalt;15090;Stendal; 36.000 ; 32,2 ; 27,0 - 39,2 
+ST;Sachsen-Anhalt;15091;Wittenberg; 46.000 ; 36,7 ; 29,8 - 41,5 
+TH;Thüringen;16051;Erfurt; 58.000 ; 27,2 ; 23,2 - 33,4 
+TH;Thüringen;16052;Gera; 31.000 ; 32,6 ; 27,6 - 39,7 
+TH;Thüringen;16053;Jena; 22.000 ; 19,6 ; 15,5 - 28,9 
+TH;Thüringen;16054;Suhl; 15.000 ; 42,8 ; 35,4 - 48,7 
+TH;Thüringen;16055;Weimar; 20.000 ; 31,4 ; 26,8 - 37,3 
+TH;Thüringen;16056;Eisenach; 14.000 ; 33,8 ; 29,0 - 38,9 
+TH;Thüringen;16061;Eichsfeld; 35.000 ; 34,3 ; 29,8 - 39,2 
+TH;Thüringen;16062;Nordhausen; 32.000 ; 38,4 ; 32,2 - 44,3 
+TH;Thüringen;16063;Wartburgkreis; 45.000 ; 36,4 ; 31,0 - 41,9 
+TH;Thüringen;16064;Unstrut-Hainich-Kreis; 39.000 ; 38,1 ; 32,4 - 43,5 
+TH;Thüringen;16065;Kyffhäuserkreis; 28.000 ; 37,1 ; 30,9 - 43,7 
+TH;Thüringen;16066;Schmalkalden-Meiningen; 45.000 ; 36,9 ; 30,7 - 43,7 
+TH;Thüringen;16067;Gotha; 47.000 ; 34,4 ; 29,8 - 38,7 
+TH;Thüringen;16068;Sömmerda; 24.000 ; 33,7 ; 29,8 - 39,3 
+TH;Thüringen;16069;Hildburghausen; 25.000 ; 38,7 ; 33,1 - 44,1 
+TH;Thüringen;16070;Ilm-Kreis; 39.000 ; 36,1 ; 31,8 - 42,2 
+TH;Thüringen;16071;Weimarer Land; 29.000 ; 35,0 ; 30,1 - 40,3 
+TH;Thüringen;16072;Sonneberg; 24.000 ; 42,1 ; 35,6 - 47,5 
+TH;Thüringen;16073;Saalfeld-Rudolstadt; 43.000 ; 40,3 ; 35,6 - 45,0 
+TH;Thüringen;16074;Saale-Holzland-Kreis; 27.000 ; 32,1 ; 27,2 - 35,9 
+TH;Thüringen;16075;Saale-Orla-Kreis; 29.000 ; 35,5 ; 30,9 - 40,7 
+TH;Thüringen;16076;Greiz; 36.000 ; 36,5 ; 31,4 - 41,6 
+TH;Thüringen;16077;Altenburger Land; 34.000 ; 38,0 ; 33,5 - 43,6 

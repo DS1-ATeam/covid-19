@@ -1,0 +1,402 @@
+﻿BL;BL_NAME;KREIS;KREIS_NAME;Bluthochdruck;KHK;Herzinfarkt;Herzinsuffizienz;Schlaganfall;Diabetes;Asthma;COPD;Krebs;Lebererkrankungen;Immunschwäche
+SH;Schleswig-Holstein;01001;Flensburg; 21,4 ; 6,3 ; 0,2 ; 3,1 ; 0,3 ; 6,7 ; 7,2 ; 5,5 ; 0,7 ; 5,3 ; 1,6 
+SH;Schleswig-Holstein;01002;Kiel; 19,5 ; 6,5 ; 0,2 ; 3,4 ; 0,3 ; 6,7 ; 5,2 ; 4,8 ; 0,9 ; 5,7 ; 1,6 
+SH;Schleswig-Holstein;01003;Lübeck; 24,6 ; 7,7 ; 0,2 ; 3,6 ; 0,3 ; 8,2 ; 5,8 ; 5,4 ; 1,1 ; 5,7 ; 1,8 
+SH;Schleswig-Holstein;01004;Neumünster; 23,9 ; 6,8 ; 0,2 ; 3,8 ; 0,4 ; 7,5 ; 4,6 ; 5,3 ; 1,0 ; 4,2 ; 1,6 
+SH;Schleswig-Holstein;01051;Dithmarschen; 25,4 ; 7,3 ; 0,2 ; 4,3 ; 0,4 ; 7,1 ; 6,3 ; 5,1 ; 1,0 ; 4,3 ; 1,8 
+SH;Schleswig-Holstein;01053;Herzogtum Lauenburg; 23,9 ; 7,4 ; 0,3 ; 3,6 ; 0,3 ; 7,0 ; 4,9 ; 4,3 ; 1,1 ; 4,7 ; 1,6 
+SH;Schleswig-Holstein;01054;Nordfriesland; 24,1 ; 7,5 ; 0,3 ; 3,9 ; 0,3 ; 6,4 ; 6,2 ; 4,7 ; 0,9 ; 4,6 ; 2,0 
+SH;Schleswig-Holstein;01055;Ostholstein; 27,8 ; 8,3 ; 0,3 ; 5,0 ; 0,4 ; 8,2 ; 5,2 ; 5,7 ; 1,4 ; 5,2 ; 2,0 
+SH;Schleswig-Holstein;01056;Pinneberg; 23,0 ; 5,9 ; 0,2 ; 2,7 ; 0,4 ; 7,0 ; 4,8 ; 3,8 ; 1,0 ; 5,2 ; 1,6 
+SH;Schleswig-Holstein;01057;Plön; 27,8 ; 9,7 ; 0,3 ; 4,8 ; 0,3 ; 7,8 ; 5,0 ; 5,5 ; 1,1 ; 4,9 ; 2,1 
+SH;Schleswig-Holstein;01058;Rendsburg-Eckernförde; 25,0 ; 7,2 ; 0,3 ; 4,1 ; 0,3 ; 7,3 ; 5,2 ; 4,6 ; 1,0 ; 5,5 ; 1,9 
+SH;Schleswig-Holstein;01059;Schleswig-Flensburg; 25,2 ; 8,1 ; 0,3 ; 3,9 ; 0,3 ; 6,9 ; 7,7 ; 5,0 ; 0,9 ; 5,0 ; 2,0 
+SH;Schleswig-Holstein;01060;Segeberg; 23,6 ; 7,5 ; 0,2 ; 3,3 ; 0,3 ; 6,9 ; 5,0 ; 4,1 ; 1,0 ; 4,4 ; 1,6 
+SH;Schleswig-Holstein;01061;Steinburg; 25,0 ; 7,1 ; 0,2 ; 3,8 ; 0,3 ; 6,9 ; 5,3 ; 4,9 ; 1,1 ; 4,6 ; 1,6 
+SH;Schleswig-Holstein;01062;Stormarn; 23,0 ; 7,0 ; 0,3 ; 3,2 ; 0,3 ; 6,5 ; 4,8 ; 4,2 ; 1,0 ; 5,0 ; 1,7 
+HH;Hamburg;02000;Hamburg; 18,6 ; 5,5 ; 0,2 ; 2,8 ; 0,3 ; 6,5 ; 5,8 ; 4,5 ; 0,9 ; 4,8 ; 1,5 
+NI;Niedersachsen;03101;Braunschweig; 21,9 ; 7,0 ; 0,2 ; 4,9 ; 0,3 ; 6,3 ; 5,3 ; 4,7 ; 0,9 ; 6,1 ; 1,4 
+NI;Niedersachsen;03102;Salzgitter; 24,1 ; 8,1 ; 0,3 ; 6,4 ; 0,3 ; 7,2 ; 5,8 ; 5,5 ; 1,0 ; 6,7 ; 1,9 
+NI;Niedersachsen;03103;Wolfsburg; 23,4 ; 7,2 ; 0,3 ; 3,9 ; 0,3 ; 6,4 ; 5,0 ; 5,0 ; 0,8 ; 5,9 ; 1,3 
+NI;Niedersachsen;03151;Gifhorn; 23,3 ; 7,2 ; 0,2 ; 4,5 ; 0,3 ; 6,2 ; 6,8 ; 5,9 ; 0,9 ; 6,9 ; 1,5 
+NI;Niedersachsen;03153;Goslar; 29,0 ; 8,7 ; 0,3 ; 5,2 ; 0,4 ; 8,1 ; 5,3 ; 5,1 ; 1,0 ; 5,3 ; 2,3 
+NI;Niedersachsen;03154;Helmstedt; 26,7 ; 7,3 ; 0,2 ; 5,1 ; 0,4 ; 7,7 ; 4,3 ; 4,8 ; 1,0 ; 6,7 ; 1,6 
+NI;Niedersachsen;03155;Northeim; 29,5 ; 8,0 ; 0,3 ; 5,8 ; 0,4 ; 7,9 ; 6,0 ; 6,2 ; 1,0 ; 7,0 ; 1,9 
+NI;Niedersachsen;03157;Peine; 25,2 ; 7,6 ; 0,2 ; 4,7 ; 0,3 ; 6,6 ; 5,0 ; 5,3 ; 0,9 ; 6,4 ; 1,6 
+NI;Niedersachsen;03158;Wolfenbüttel; 26,0 ; 7,6 ; 0,2 ; 5,9 ; 0,3 ; 7,2 ; 5,8 ; 4,8 ; 1,0 ; 6,6 ; 1,7 
+NI;Niedersachsen;03159;Göttingen; 26,2 ; 7,8 ; 0,3 ; 5,7 ; 0,3 ; 7,2 ; 5,9 ; 6,2 ; 1,0 ; 6,0 ; 1,8 
+NI;Niedersachsen;03241;Region Hannover; 22,6 ; 6,4 ; 0,2 ; 4,0 ; 0,3 ; 6,7 ; 5,4 ; 4,6 ; 0,9 ; 7,6 ; 1,3 
+NI;Niedersachsen;03251;Diepholz; 24,8 ; 6,0 ; 0,2 ; 4,0 ; 0,3 ; 5,9 ; 5,2 ; 4,1 ; 1,0 ; 5,2 ; 1,8 
+NI;Niedersachsen;03252;Hameln-Pyrmont; 26,7 ; 8,6 ; 0,3 ; 5,0 ; 0,4 ; 7,7 ; 5,2 ; 5,1 ; 1,1 ; 7,1 ; 1,7 
+NI;Niedersachsen;03254;Hildesheim; 26,1 ; 6,8 ; 0,2 ; 5,1 ; 0,3 ; 7,5 ; 4,8 ; 4,4 ; 1,0 ; 7,1 ; 1,6 
+NI;Niedersachsen;03255;Holzminden; 28,6 ; 9,5 ; 0,4 ; 5,0 ; 0,4 ; 7,8 ; 4,3 ; 4,9 ; 1,1 ; 5,7 ; 1,8 
+NI;Niedersachsen;03256;Nienburg (Weser); 25,6 ; 6,7 ; 0,2 ; 3,8 ; 0,4 ; 6,0 ; 6,1 ; 4,6 ; 1,0 ; 4,8 ; 1,6 
+NI;Niedersachsen;03257;Schaumburg; 26,5 ; 6,5 ; 0,2 ; 4,3 ; 0,3 ; 7,4 ; 4,8 ; 4,6 ; 0,9 ; 5,8 ; 1,6 
+NI;Niedersachsen;03351;Celle; 23,7 ; 6,4 ; 0,3 ; 3,4 ; 0,3 ; 7,2 ; 4,6 ; 5,2 ; 1,0 ; 4,5 ; 1,7 
+NI;Niedersachsen;03352;Cuxhaven; 25,4 ; 6,6 ; 0,3 ; 3,7 ; 0,3 ; 6,5 ; 5,4 ; 4,3 ; 1,1 ; 4,4 ; 1,8 
+NI;Niedersachsen;03353;Harburg; 22,2 ; 5,8 ; 0,2 ; 3,0 ; 0,3 ; 6,0 ; 4,7 ; 3,9 ; 1,0 ; 5,1 ; 1,7 
+NI;Niedersachsen;03354;Lüchow-Dannenberg; 29,3 ; 8,1 ; 0,2 ; 4,9 ; 0,3 ; 7,7 ; 5,0 ; 5,0 ; 1,1 ; 5,9 ; 1,8 
+NI;Niedersachsen;03355;Lüneburg; 21,6 ; 5,5 ; 0,2 ; 3,3 ; 0,3 ; 6,3 ; 4,6 ; 3,7 ; 1,0 ; 4,5 ; 1,6 
+NI;Niedersachsen;03356;Osterholz; 23,2 ; 5,9 ; 0,3 ; 3,6 ; 0,3 ; 6,3 ; 4,2 ; 3,4 ; 1,1 ; 3,9 ; 1,7 
+NI;Niedersachsen;03357;Rotenburg (Wümme); 22,9 ; 5,2 ; 0,2 ; 3,0 ; 0,4 ; 5,5 ; 4,3 ; 3,7 ; 1,0 ; 3,3 ; 1,6 
+NI;Niedersachsen;03358;Heidekreis; 25,0 ; 6,6 ; 0,2 ; 4,6 ; 0,3 ; 6,8 ; 5,2 ; 4,8 ; 1,0 ; 5,0 ; 1,8 
+NI;Niedersachsen;03359;Stade; 23,1 ; 5,8 ; 0,2 ; 2,9 ; 0,4 ; 6,0 ; 4,5 ; 4,1 ; 0,9 ; 4,4 ; 1,8 
+NI;Niedersachsen;03360;Uelzen; 27,1 ; 8,4 ; 0,3 ; 4,9 ; 0,4 ; 7,1 ; 6,2 ; 5,4 ; 1,1 ; 6,5 ; 1,8 
+NI;Niedersachsen;03361;Verden; 23,3 ; 5,6 ; 0,4 ; 5,8 ; 0,3 ; 6,2 ; 5,0 ; 4,0 ; 1,1 ; 4,4 ; 1,6 
+NI;Niedersachsen;03401;Delmenhorst; 22,8 ; 6,6 ; 0,2 ; 3,5 ; 0,3 ; 6,6 ; 5,0 ; 6,3 ; 1,1 ; 7,6 ; 1,3 
+NI;Niedersachsen;03402;Emden; 21,6 ; 5,5 ; 0,2 ; 2,6 ; 0,3 ; 6,0 ; 5,6 ; 6,0 ; 1,0 ; 3,6 ; 2,0 
+NI;Niedersachsen;03403;Oldenburg; 18,8 ; 5,0 ; 0,2 ; 2,5 ; 0,3 ; 5,8 ; 6,7 ; 3,7 ; 0,9 ; 5,2 ; 1,3 
+NI;Niedersachsen;03404;Osnabrück; 19,1 ; 5,9 ; 0,2 ; 3,9 ; 0,3 ; 6,0 ; 5,6 ; 4,3 ; 0,8 ; 5,6 ; 1,5 
+NI;Niedersachsen;03405;Wilhelmshaven; 26,3 ; 8,2 ; 0,3 ; 7,0 ; 0,4 ; 8,2 ; 6,7 ; 6,3 ; 1,1 ; 10,4 ; 1,7 
+NI;Niedersachsen;03451;Ammerland; 23,0 ; 6,6 ; 0,2 ; 3,7 ; 0,3 ; 6,4 ; 6,1 ; 4,3 ; 0,8 ; 5,4 ; 1,8 
+NI;Niedersachsen;03452;Aurich; 24,0 ; 6,5 ; 0,3 ; 4,3 ; 0,4 ; 6,8 ; 6,3 ; 6,5 ; 1,0 ; 4,2 ; 2,0 
+NI;Niedersachsen;03453;Cloppenburg; 19,9 ; 6,6 ; 0,2 ; 4,9 ; 0,3 ; 5,5 ; 5,7 ; 4,6 ; 0,7 ; 4,4 ; 1,6 
+NI;Niedersachsen;03454;Emsland; 22,0 ; 6,3 ; 0,2 ; 3,7 ; 0,2 ; 6,2 ; 5,8 ; 4,2 ; 0,8 ; 4,5 ; 1,7 
+NI;Niedersachsen;03455;Friesland; 26,7 ; 7,2 ; 0,3 ; 4,2 ; 0,3 ; 7,1 ; 5,7 ; 5,0 ; 1,1 ; 5,2 ; 2,0 
+NI;Niedersachsen;03456;Grafschaft Bentheim; 22,9 ; 6,4 ; 0,2 ; 4,8 ; 0,3 ; 6,4 ; 5,9 ; 3,7 ; 0,9 ; 3,7 ; 1,6 
+NI;Niedersachsen;03457;Leer; 23,3 ; 6,4 ; 0,3 ; 4,5 ; 0,3 ; 7,0 ; 6,3 ; 4,6 ; 0,9 ; 4,8 ; 1,8 
+NI;Niedersachsen;03458;Oldenburg, Landkreis; 22,4 ; 5,6 ; 0,2 ; 4,0 ; 0,3 ; 6,2 ; 4,7 ; 4,0 ; 0,9 ; 6,0 ; 1,4 
+NI;Niedersachsen;03459;Osnabrück, Landkreis; 23,0 ; 6,3 ; 0,2 ; 4,5 ; 0,3 ; 6,4 ; 5,3 ; 4,1 ; 0,9 ; 6,0 ; 1,5 
+NI;Niedersachsen;03460;Vechta; 18,9 ; 5,3 ; 0,2 ; 3,1 ; 0,2 ; 4,9 ; 5,3 ; 3,5 ; 0,6 ; 4,4 ; 1,5 
+NI;Niedersachsen;03461;Wesermarsch; 24,2 ; 6,9 ; 0,3 ; 5,0 ; 0,3 ; 7,4 ; 5,6 ; 4,4 ; 1,0 ; 5,3 ; 1,6 
+NI;Niedersachsen;03462;Wittmund; 26,6 ; 6,7 ; 0,3 ; 4,0 ; 0,3 ; 6,9 ; 5,0 ; 4,8 ; 1,0 ; 5,0 ; 2,1 
+HB;Bremen;04011;Bremen; 20,4 ; 5,8 ; 0,2 ; 3,4 ; 0,3 ; 6,6 ; 4,7 ; 4,3 ; 1,1 ; 5,8 ; 1,2 
+HB;Bremen;04012;Bremerhaven; 22,6 ; 7,2 ; 0,2 ; 4,0 ; 0,3 ; 7,3 ; 5,4 ; 5,6 ; 1,0 ; 5,2 ; 1,4 
+NW;Nordrhein-Westfalen;05111;Düsseldorf; 20,2 ; 6,3 ; 0,2 ; 3,4 ; 0,2 ; 6,5 ; 5,4 ; 5,5 ; 0,9 ; 6,1 ; 1,3 
+NW;Nordrhein-Westfalen;05112;Duisburg; 23,5 ; 6,9 ; 0,3 ; 4,3 ; 0,3 ; 7,8 ; 5,1 ; 6,0 ; 1,0 ; 7,6 ; 1,3 
+NW;Nordrhein-Westfalen;05113;Essen; 23,5 ; 8,2 ; 0,3 ; 4,3 ; 0,3 ; 7,6 ; 5,6 ; 6,2 ; 1,0 ; 7,8 ; 1,5 
+NW;Nordrhein-Westfalen;05114;Krefeld; 22,8 ; 7,3 ; 0,2 ; 4,1 ; 0,3 ; 7,9 ; 5,1 ; 6,4 ; 1,0 ; 8,1 ; 1,5 
+NW;Nordrhein-Westfalen;05116;Mönchengladbach; 22,7 ; 7,1 ; 0,2 ; 3,5 ; 0,3 ; 7,7 ; 6,8 ; 7,0 ; 1,0 ; 6,2 ; 1,6 
+NW;Nordrhein-Westfalen;05117;Mülheim an der Ruhr; 25,2 ; 7,5 ; 0,2 ; 3,8 ; 0,3 ; 8,0 ; 5,1 ; 5,8 ; 1,2 ; 7,6 ; 1,5 
+NW;Nordrhein-Westfalen;05119;Oberhausen; 25,7 ; 8,7 ; 0,3 ; 5,4 ; 0,4 ; 8,0 ; 4,9 ; 6,6 ; 1,2 ; 7,8 ; 1,8 
+NW;Nordrhein-Westfalen;05120;Remscheid; 24,6 ; 8,3 ; 0,4 ; 5,2 ; 0,3 ; 8,1 ; 6,2 ; 6,7 ; 0,9 ; 6,2 ; 1,4 
+NW;Nordrhein-Westfalen;05122;Solingen; 23,5 ; 6,7 ; 0,3 ; 3,2 ; 0,3 ; 7,0 ; 7,0 ; 6,3 ; 1,1 ; 5,8 ; 1,3 
+NW;Nordrhein-Westfalen;05124;Wuppertal; 23,3 ; 6,7 ; 0,2 ; 3,8 ; 0,3 ; 7,3 ; 6,6 ; 5,8 ; 0,9 ; 5,6 ; 1,2 
+NW;Nordrhein-Westfalen;05154;Kleve; 24,1 ; 6,4 ; 0,2 ; 4,9 ; 0,3 ; 6,3 ; 4,4 ; 4,7 ; 1,0 ; 5,1 ; 1,6 
+NW;Nordrhein-Westfalen;05158;Mettmann; 25,4 ; 7,4 ; 0,3 ; 4,8 ; 0,3 ; 7,6 ; 6,0 ; 5,3 ; 1,0 ; 7,9 ; 1,4 
+NW;Nordrhein-Westfalen;05162;Rhein-Kreis Neuss; 24,2 ; 7,1 ; 0,2 ; 3,5 ; 0,3 ; 7,4 ; 6,8 ; 5,9 ; 1,1 ; 6,6 ; 1,5 
+NW;Nordrhein-Westfalen;05166;Viersen; 24,5 ; 7,1 ; 0,3 ; 4,2 ; 0,3 ; 7,5 ; 5,8 ; 6,1 ; 1,1 ; 5,3 ; 1,7 
+NW;Nordrhein-Westfalen;05170;Wesel; 26,1 ; 7,8 ; 0,3 ; 4,9 ; 0,3 ; 7,4 ; 4,8 ; 5,4 ; 1,1 ; 6,5 ; 1,7 
+NW;Nordrhein-Westfalen;05314;Bonn; 18,7 ; 6,0 ; 0,2 ; 3,6 ; 0,2 ; 6,6 ; 5,9 ; 4,5 ; 0,9 ; 5,8 ; 1,3 
+NW;Nordrhein-Westfalen;05315;Köln; 18,7 ; 5,9 ; 0,2 ; 3,0 ; 0,2 ; 6,4 ; 5,8 ; 5,7 ; 0,8 ; 5,7 ; 1,3 
+NW;Nordrhein-Westfalen;05316;Leverkusen; 23,1 ; 7,0 ; 0,3 ; 4,6 ; 0,4 ; 7,2 ; 5,6 ; 5,1 ; 1,0 ; 6,0 ; 1,2 
+NW;Nordrhein-Westfalen;05334;Städteregion Aachen; 22,3 ; 7,6 ; 0,3 ; 4,3 ; 0,3 ; 7,0 ; 5,8 ; 5,7 ; 1,0 ; 6,5 ; 1,5 
+NW;Nordrhein-Westfalen;05358;Düren; 25,1 ; 8,2 ; 0,3 ; 4,4 ; 0,3 ; 7,5 ; 5,9 ; 5,1 ; 1,0 ; 4,8 ; 1,7 
+NW;Nordrhein-Westfalen;05362;Rhein-Erft-Kreis; 23,9 ; 7,5 ; 0,3 ; 3,7 ; 0,3 ; 7,5 ; 6,1 ; 5,5 ; 1,0 ; 6,3 ; 1,6 
+NW;Nordrhein-Westfalen;05366;Euskirchen; 25,3 ; 7,5 ; 0,2 ; 5,2 ; 0,4 ; 7,1 ; 5,1 ; 4,8 ; 1,0 ; 6,0 ; 1,8 
+NW;Nordrhein-Westfalen;05370;Heinsberg; 25,0 ; 8,1 ; 0,3 ; 5,5 ; 0,3 ; 7,2 ; 5,4 ; 4,9 ; 1,0 ; 7,0 ; 1,7 
+NW;Nordrhein-Westfalen;05374;Oberbergischer Kreis; 23,5 ; 7,0 ; 0,3 ; 4,9 ; 0,4 ; 6,9 ; 4,6 ; 4,4 ; 0,9 ; 5,4 ; 1,4 
+NW;Nordrhein-Westfalen;05378;Rheinisch-Bergischer Kreis; 24,0 ; 6,9 ; 0,2 ; 4,3 ; 0,3 ; 7,0 ; 5,8 ; 4,9 ; 1,0 ; 7,1 ; 1,5 
+NW;Nordrhein-Westfalen;05382;Rhein-Sieg-Kreis; 22,6 ; 6,8 ; 0,2 ; 3,7 ; 0,3 ; 7,0 ; 5,4 ; 4,9 ; 1,0 ; 6,2 ; 1,5 
+NW;Nordrhein-Westfalen;05512;Bottrop; 25,1 ; 9,3 ; 0,2 ; 5,7 ; 0,3 ; 7,1 ; 6,0 ; 7,0 ; 1,1 ; 7,8 ; 1,6 
+NW;Nordrhein-Westfalen;05513;Gelsenkirchen; 23,3 ; 8,5 ; 0,2 ; 4,5 ; 0,4 ; 7,9 ; 6,8 ; 7,3 ; 1,0 ; 6,9 ; 1,5 
+NW;Nordrhein-Westfalen;05515;Münster; 18,1 ; 5,1 ; 0,2 ; 3,1 ; 0,2 ; 5,8 ; 5,7 ; 3,8 ; 0,8 ; 5,2 ; 1,3 
+NW;Nordrhein-Westfalen;05554;Borken; 21,4 ; 6,5 ; 0,2 ; 3,8 ; 0,3 ; 5,8 ; 5,4 ; 4,6 ; 0,9 ; 4,8 ; 1,5 
+NW;Nordrhein-Westfalen;05558;Coesfeld; 23,5 ; 5,7 ; 0,2 ; 3,7 ; 0,3 ; 6,5 ; 4,7 ; 5,2 ; 1,1 ; 6,0 ; 1,7 
+NW;Nordrhein-Westfalen;05562;Recklinghausen; 25,3 ; 8,6 ; 0,3 ; 4,8 ; 0,3 ; 7,8 ; 5,3 ; 6,7 ; 1,2 ; 7,3 ; 1,7 
+NW;Nordrhein-Westfalen;05566;Steinfurt; 22,6 ; 5,9 ; 0,3 ; 4,3 ; 0,3 ; 6,8 ; 6,2 ; 5,0 ; 1,0 ; 5,4 ; 1,5 
+NW;Nordrhein-Westfalen;05570;Warendorf; 24,3 ; 6,5 ; 0,2 ; 3,7 ; 0,3 ; 6,7 ; 7,0 ; 4,1 ; 1,0 ; 6,4 ; 1,4 
+NW;Nordrhein-Westfalen;05711;Bielefeld; 20,8 ; 5,8 ; 0,2 ; 2,9 ; 0,3 ; 7,0 ; 5,1 ; 3,6 ; 0,9 ; 5,4 ; 1,3 
+NW;Nordrhein-Westfalen;05754;Gütersloh; 21,8 ; 5,4 ; 0,2 ; 3,5 ; 0,3 ; 6,2 ; 5,7 ; 4,1 ; 0,9 ; 4,5 ; 1,4 
+NW;Nordrhein-Westfalen;05758;Herford; 24,6 ; 6,5 ; 0,2 ; 3,3 ; 0,3 ; 7,2 ; 5,7 ; 4,6 ; 1,0 ; 5,8 ; 1,4 
+NW;Nordrhein-Westfalen;05762;Höxter; 26,5 ; 7,5 ; 0,2 ; 4,7 ; 0,3 ; 7,2 ; 5,0 ; 5,5 ; 0,9 ; 5,5 ; 1,5 
+NW;Nordrhein-Westfalen;05766;Lippe; 23,9 ; 6,1 ; 0,2 ; 3,4 ; 0,3 ; 6,9 ; 5,0 ; 4,2 ; 0,9 ; 5,9 ; 1,5 
+NW;Nordrhein-Westfalen;05770;Minden-Lübbecke; 24,1 ; 6,1 ; 0,2 ; 3,5 ; 0,3 ; 6,8 ; 4,3 ; 3,9 ; 1,0 ; 4,9 ; 1,5 
+NW;Nordrhein-Westfalen;05774;Paderborn; 21,2 ; 6,8 ; 0,2 ; 3,5 ; 0,3 ; 6,0 ; 5,1 ; 3,8 ; 0,8 ; 4,8 ; 1,2 
+NW;Nordrhein-Westfalen;05911;Bochum; 25,1 ; 7,7 ; 0,2 ; 4,8 ; 0,3 ; 7,8 ; 6,7 ; 6,5 ; 1,1 ; 6,2 ; 1,4 
+NW;Nordrhein-Westfalen;05913;Dortmund; 21,4 ; 7,4 ; 0,3 ; 3,9 ; 0,3 ; 7,5 ; 5,9 ; 5,9 ; 0,9 ; 6,3 ; 1,3 
+NW;Nordrhein-Westfalen;05914;Hagen; 24,0 ; 8,4 ; 0,3 ; 4,0 ; 0,3 ; 8,3 ; 6,7 ; 5,6 ; 1,0 ; 6,7 ; 1,4 
+NW;Nordrhein-Westfalen;05915;Hamm; 24,4 ; 7,2 ; 0,3 ; 4,5 ; 0,3 ; 7,4 ; 5,6 ; 5,4 ; 1,1 ; 7,6 ; 1,3 
+NW;Nordrhein-Westfalen;05916;Herne; 25,2 ; 7,8 ; 0,3 ; 3,9 ; 0,4 ; 8,1 ; 5,5 ; 7,2 ; 1,1 ; 5,8 ; 1,7 
+NW;Nordrhein-Westfalen;05954;Ennepe-Ruhr-Kreis; 25,9 ; 8,4 ; 0,2 ; 4,5 ; 0,4 ; 7,7 ; 6,5 ; 6,0 ; 1,1 ; 6,3 ; 1,4 
+NW;Nordrhein-Westfalen;05958;Hochsauerlandkreis; 25,1 ; 6,7 ; 0,2 ; 3,8 ; 0,3 ; 7,3 ; 4,6 ; 4,3 ; 1,0 ; 4,7 ; 1,6 
+NW;Nordrhein-Westfalen;05962;Märkischer Kreis; 24,9 ; 6,7 ; 0,3 ; 3,9 ; 0,3 ; 7,8 ; 5,1 ; 5,3 ; 1,0 ; 6,9 ; 1,5 
+NW;Nordrhein-Westfalen;05966;Olpe; 23,6 ; 5,8 ; 0,2 ; 3,2 ; 0,2 ; 6,3 ; 5,4 ; 3,9 ; 0,9 ; 4,9 ; 1,7 
+NW;Nordrhein-Westfalen;05970;Siegen-Wittgenstein; 24,7 ; 7,1 ; 0,2 ; 3,2 ; 0,2 ; 7,3 ; 6,2 ; 4,6 ; 0,9 ; 5,3 ; 1,6 
+NW;Nordrhein-Westfalen;05974;Soest; 24,6 ; 7,0 ; 0,2 ; 4,6 ; 0,3 ; 6,8 ; 5,2 ; 4,2 ; 1,0 ; 6,2 ; 1,5 
+NW;Nordrhein-Westfalen;05978;Unna; 25,7 ; 8,0 ; 0,3 ; 4,2 ; 0,3 ; 8,1 ; 6,0 ; 6,0 ; 1,1 ; 6,8 ; 1,6 
+HE;Hessen;06411;Darmstadt; 18,0 ; 4,9 ; 0,2 ; 2,1 ; 0,2 ; 6,5 ; 4,3 ; 3,5 ; 0,8 ; 4,7 ; 1,1 
+HE;Hessen;06412;Frankfurt am Main; 17,1 ; 4,8 ; 0,2 ; 2,0 ; 0,2 ; 6,6 ; 5,1 ; 3,5 ; 0,8 ; 5,2 ; 1,0 
+HE;Hessen;06413;Offenbach am Main; 18,7 ; 4,7 ; 0,2 ; 2,1 ; 0,2 ; 7,3 ; 6,6 ; 3,8 ; 0,8 ; 5,6 ; 1,2 
+HE;Hessen;06414;Wiesbaden; 20,6 ; 6,1 ; 0,2 ; 2,6 ; 0,3 ; 7,1 ; 5,5 ; 4,5 ; 0,9 ; 5,7 ; 1,3 
+HE;Hessen;06431;Bergstraße; 23,6 ; 6,2 ; 0,2 ; 3,7 ; 0,3 ; 7,8 ; 5,0 ; 4,2 ; 1,0 ; 6,1 ; 1,5 
+HE;Hessen;06432;Darmstadt-Dieburg; 22,4 ; 6,0 ; 0,2 ; 2,6 ; 0,3 ; 7,5 ; 4,3 ; 3,6 ; 0,9 ; 4,7 ; 1,4 
+HE;Hessen;06433;Groß-Gerau; 20,4 ; 5,4 ; 0,2 ; 2,1 ; 0,2 ; 7,7 ; 4,9 ; 3,8 ; 0,9 ; 4,9 ; 1,3 
+HE;Hessen;06434;Hochtaunuskreis; 22,0 ; 6,6 ; 0,2 ; 3,4 ; 0,3 ; 7,4 ; 4,6 ; 3,7 ; 1,0 ; 5,7 ; 1,5 
+HE;Hessen;06435;Main-Kinzig-Kreis; 24,5 ; 6,7 ; 0,2 ; 3,6 ; 0,3 ; 8,3 ; 5,0 ; 4,3 ; 0,9 ; 5,9 ; 1,4 
+HE;Hessen;06436;Main-Taunus-Kreis; 20,9 ; 5,7 ; 0,3 ; 2,5 ; 0,3 ; 7,3 ; 4,7 ; 3,6 ; 1,1 ; 5,3 ; 1,3 
+HE;Hessen;06437;Odenwaldkreis; 26,7 ; 6,8 ; 0,3 ; 4,1 ; 0,2 ; 8,0 ; 4,1 ; 3,7 ; 1,0 ; 7,0 ; 1,8 
+HE;Hessen;06438;Offenbach, Landkreis; 21,7 ; 5,8 ; 0,2 ; 3,1 ; 0,3 ; 7,7 ; 5,3 ; 3,4 ; 0,9 ; 5,9 ; 1,3 
+HE;Hessen;06439;Rheingau-Taunus-Kreis; 23,5 ; 6,1 ; 0,2 ; 3,3 ; 0,3 ; 7,4 ; 5,8 ; 4,5 ; 1,1 ; 5,7 ; 1,6 
+HE;Hessen;06440;Wetteraukreis; 24,1 ; 6,3 ; 0,2 ; 3,2 ; 0,3 ; 7,6 ; 4,8 ; 3,8 ; 0,9 ; 5,9 ; 1,7 
+HE;Hessen;06531;Gießen; 22,3 ; 7,2 ; 0,3 ; 3,7 ; 0,3 ; 6,8 ; 5,2 ; 4,1 ; 0,8 ; 5,6 ; 1,7 
+HE;Hessen;06532;Lahn-Dill-Kreis; 24,9 ; 7,8 ; 0,3 ; 4,2 ; 0,4 ; 8,5 ; 5,1 ; 4,6 ; 1,0 ; 6,0 ; 1,7 
+HE;Hessen;06533;Limburg-Weilburg; 23,7 ; 7,7 ; 0,2 ; 3,6 ; 0,4 ; 7,8 ; 4,9 ; 5,3 ; 1,0 ; 4,3 ; 1,7 
+HE;Hessen;06534;Marburg-Biedenkopf; 21,9 ; 6,1 ; 0,2 ; 3,1 ; 0,3 ; 7,5 ; 5,3 ; 3,8 ; 0,8 ; 4,4 ; 1,6 
+HE;Hessen;06535;Vogelsbergkreis; 28,7 ; 7,2 ; 0,3 ; 4,9 ; 0,3 ; 8,1 ; 5,3 ; 5,6 ; 1,0 ; 5,3 ; 1,9 
+HE;Hessen;06611;Kassel; 20,1 ; 5,7 ; 0,2 ; 3,6 ; 0,3 ; 7,0 ; 5,0 ; 4,6 ; 0,8 ; 5,7 ; 1,3 
+HE;Hessen;06631;Fulda; 24,9 ; 6,1 ; 0,2 ; 4,4 ; 0,3 ; 7,0 ; 4,8 ; 3,3 ; 0,9 ; 6,1 ; 1,4 
+HE;Hessen;06632;Hersfeld-Rotenburg; 27,7 ; 7,2 ; 0,2 ; 5,0 ; 0,3 ; 8,4 ; 4,6 ; 4,2 ; 0,9 ; 4,7 ; 1,7 
+HE;Hessen;06633;Kassel, Landkreis; 27,3 ; 6,9 ; 0,2 ; 5,2 ; 0,3 ; 8,0 ; 5,1 ; 5,2 ; 1,0 ; 5,7 ; 1,7 
+HE;Hessen;06634;Schwalm-Eder-Kreis; 27,3 ; 6,9 ; 0,3 ; 5,4 ; 0,3 ; 7,6 ; 5,2 ; 4,7 ; 0,9 ; 4,8 ; 1,6 
+HE;Hessen;06635;Waldeck-Frankenberg; 25,8 ; 6,9 ; 0,2 ; 5,1 ; 0,3 ; 7,4 ; 4,6 ; 4,5 ; 1,0 ; 6,2 ; 1,6 
+HE;Hessen;06636;Werra-Meißner-Kreis; 28,6 ; 8,0 ; 0,3 ; 5,5 ; 0,4 ; 9,0 ; 5,9 ; 5,6 ; 0,9 ; 6,6 ; 1,9 
+RP;Rheinland-Pfalz;07111;Koblenz; 21,5 ; 6,8 ; 0,3 ; 2,7 ; 0,3 ; 7,3 ; 5,0 ; 5,9 ; 1,0 ; 5,3 ; 1,4 
+RP;Rheinland-Pfalz;07131;Ahrweiler; 26,1 ; 8,4 ; 0,2 ; 5,2 ; 0,3 ; 7,8 ; 5,2 ; 5,6 ; 1,2 ; 5,8 ; 1,5 
+RP;Rheinland-Pfalz;07132;Altenkirchen (Westerwald); 25,1 ; 7,2 ; 0,3 ; 3,9 ; 0,3 ; 7,4 ; 5,1 ; 5,8 ; 1,0 ; 5,0 ; 1,8 
+RP;Rheinland-Pfalz;07133;Bad Kreuznach; 26,5 ; 6,7 ; 0,3 ; 4,5 ; 0,3 ; 8,5 ; 4,6 ; 4,3 ; 1,0 ; 6,3 ; 1,7 
+RP;Rheinland-Pfalz;07134;Birkenfeld; 26,6 ; 8,4 ; 0,2 ; 6,2 ; 0,4 ; 8,3 ; 4,2 ; 5,6 ; 1,0 ; 6,8 ; 1,6 
+RP;Rheinland-Pfalz;07135;Cochem-Zell; 27,6 ; 8,4 ; 0,3 ; 4,5 ; 0,3 ; 7,6 ; 4,2 ; 4,6 ; 1,1 ; 4,6 ; 1,8 
+RP;Rheinland-Pfalz;07137;Mayen-Koblenz; 24,3 ; 7,3 ; 0,2 ; 3,2 ; 0,3 ; 7,4 ; 4,9 ; 5,4 ; 1,1 ; 5,6 ; 1,7 
+RP;Rheinland-Pfalz;07138;Neuwied; 24,3 ; 7,3 ; 0,2 ; 3,8 ; 0,3 ; 7,6 ; 5,0 ; 5,4 ; 1,0 ; 5,8 ; 1,5 
+RP;Rheinland-Pfalz;07140;Rhein-Hunsrück-Kreis; 25,7 ; 7,1 ; 0,3 ; 4,5 ; 0,3 ; 7,3 ; 3,6 ; 4,6 ; 1,1 ; 5,3 ; 1,7 
+RP;Rheinland-Pfalz;07141;Rhein-Lahn-Kreis; 25,4 ; 7,0 ; 0,2 ; 4,3 ; 0,3 ; 7,6 ; 4,5 ; 4,9 ; 1,1 ; 5,1 ; 1,7 
+RP;Rheinland-Pfalz;07143;Westerwaldkreis; 24,9 ; 7,1 ; 0,3 ; 3,7 ; 0,3 ; 7,4 ; 5,1 ; 5,3 ; 1,0 ; 4,9 ; 1,6 
+RP;Rheinland-Pfalz;07211;Trier; 19,9 ; 5,2 ; 0,2 ; 4,0 ; 0,2 ; 6,6 ; 4,6 ; 5,2 ; 0,9 ; 5,4 ; 1,1 
+RP;Rheinland-Pfalz;07231;Bernkastel-Wittlich; 26,1 ; 7,3 ; 0,2 ; 5,2 ; 0,4 ; 7,2 ; 4,2 ; 4,6 ; 1,0 ; 6,1 ; 1,7 
+RP;Rheinland-Pfalz;07232;Eifelkreis Bitburg-Prüm; 25,5 ; 7,6 ; 0,3 ; 6,5 ; 0,3 ; 6,6 ; 5,8 ; 4,4 ; 1,1 ; 6,5 ; 1,9 
+RP;Rheinland-Pfalz;07233;Vulkaneifel; 25,3 ; 7,8 ; 0,3 ; 5,3 ; 0,3 ; 6,6 ; 5,7 ; 4,5 ; 1,0 ; 5,3 ; 2,2 
+RP;Rheinland-Pfalz;07235;Trier-Saarburg; 24,9 ; 6,1 ; 0,2 ; 4,8 ; 0,3 ; 7,2 ; 4,7 ; 4,6 ; 1,1 ; 6,5 ; 1,5 
+RP;Rheinland-Pfalz;07311;Frankenthal (Pfalz); 24,5 ; 6,7 ; 0,2 ; 4,4 ; 0,3 ; 8,3 ; 4,2 ; 6,4 ; 1,1 ; 7,1 ; 1,1 
+RP;Rheinland-Pfalz;07312;Kaiserslautern; 22,3 ; 6,5 ; 0,3 ; 3,4 ; 0,3 ; 7,3 ; 4,8 ; 4,9 ; 1,0 ; 6,7 ; 1,1 
+RP;Rheinland-Pfalz;07313;Landau in der Pfalz; 22,1 ; 6,3 ; 0,2 ; 4,1 ; 0,3 ; 7,8 ; 4,2 ; 3,8 ; 1,0 ; 7,3 ; 1,4 
+RP;Rheinland-Pfalz;07314;Ludwigshafen am Rhein; 21,2 ; 5,9 ; 0,2 ; 3,9 ; 0,3 ; 7,5 ; 5,1 ; 5,6 ; 0,9 ; 7,2 ; 1,2 
+RP;Rheinland-Pfalz;07315;Mainz; 18,4 ; 4,8 ; 0,2 ; 2,1 ; 0,2 ; 6,8 ; 5,6 ; 4,0 ; 0,9 ; 4,3 ; 1,4 
+RP;Rheinland-Pfalz;07316;Neustadt an der Weinstraße; 25,0 ; 6,6 ; 0,3 ; 3,7 ; 0,3 ; 7,8 ; 5,0 ; 5,4 ; 0,9 ; 7,4 ; 1,4 
+RP;Rheinland-Pfalz;07317;Pirmasens; 27,9 ; 7,7 ; 0,3 ; 5,9 ; 0,4 ; 9,4 ; 4,6 ; 6,9 ; 1,0 ; 7,5 ; 1,5 
+RP;Rheinland-Pfalz;07318;Speyer; 23,3 ; 5,2 ; 0,2 ; 5,3 ; 0,2 ; 8,1 ; 4,9 ; 5,9 ; 0,9 ; 6,5 ; 1,3 
+RP;Rheinland-Pfalz;07319;Worms; 23,8 ; 5,7 ; 0,2 ; 4,3 ; 0,2 ; 8,0 ; 4,1 ; 4,7 ; 1,0 ; 6,4 ; 1,4 
+RP;Rheinland-Pfalz;07320;Zweibrücken; 26,6 ; 8,5 ; 0,3 ; 5,8 ; 0,3 ; 8,2 ; 3,9 ; 5,3 ; 1,1 ; 10,3 ; 1,5 
+RP;Rheinland-Pfalz;07331;Alzey-Worms; 24,7 ; 5,8 ; 0,3 ; 4,7 ; 0,3 ; 8,1 ; 4,6 ; 4,6 ; 1,0 ; 6,0 ; 1,6 
+RP;Rheinland-Pfalz;07332;Bad Dürkheim; 26,9 ; 7,5 ; 0,3 ; 4,6 ; 0,4 ; 8,6 ; 4,9 ; 5,3 ; 1,1 ; 6,3 ; 1,4 
+RP;Rheinland-Pfalz;07333;Donnersbergkreis; 26,7 ; 6,6 ; 0,3 ; 4,0 ; 0,4 ; 8,5 ; 4,9 ; 5,1 ; 1,0 ; 7,6 ; 1,5 
+RP;Rheinland-Pfalz;07334;Germersheim; 23,8 ; 5,8 ; 0,2 ; 3,6 ; 0,3 ; 7,4 ; 3,9 ; 3,5 ; 0,9 ; 6,5 ; 1,4 
+RP;Rheinland-Pfalz;07335;Kaiserslautern, Landkreis; 26,0 ; 7,1 ; 0,2 ; 5,1 ; 0,3 ; 7,8 ; 5,1 ; 4,8 ; 0,9 ; 6,6 ; 1,5 
+RP;Rheinland-Pfalz;07336;Kusel; 29,3 ; 8,0 ; 0,3 ; 6,8 ; 0,4 ; 8,9 ; 5,4 ; 5,4 ; 1,0 ; 6,8 ; 1,8 
+RP;Rheinland-Pfalz;07337;Südliche Weinstraße; 26,3 ; 6,6 ; 0,2 ; 4,2 ; 0,3 ; 8,2 ; 4,6 ; 3,6 ; 0,9 ; 6,3 ; 1,4 
+RP;Rheinland-Pfalz;07338;Rhein-Pfalz-Kreis; 24,5 ; 5,8 ; 0,2 ; 4,8 ; 0,3 ; 8,0 ; 4,9 ; 4,9 ; 1,0 ; 7,7 ; 1,7 
+RP;Rheinland-Pfalz;07339;Mainz-Bingen; 23,8 ; 5,6 ; 0,2 ; 3,2 ; 0,2 ; 7,6 ; 5,0 ; 4,6 ; 1,0 ; 5,4 ; 1,6 
+RP;Rheinland-Pfalz;07340;Südwestpfalz; 30,8 ; 9,6 ; 0,3 ; 7,1 ; 0,3 ; 9,1 ; 5,0 ; 5,8 ; 1,1 ; 8,2 ; 1,7 
+BW;Baden-Württemberg;08111;Stuttgart; 16,8 ; 4,9 ; 0,2 ; 3,0 ; 0,2 ; 5,7 ; 4,3 ; 3,3 ; 0,8 ; 5,3 ; 1,2 
+BW;Baden-Württemberg;08115;Böblingen; 19,5 ; 4,9 ; 0,2 ; 3,6 ; 0,2 ; 6,0 ; 4,5 ; 3,0 ; 0,9 ; 4,8 ; 1,4 
+BW;Baden-Württemberg;08116;Esslingen; 19,9 ; 5,3 ; 0,2 ; 4,1 ; 0,3 ; 5,9 ; 4,1 ; 2,8 ; 1,0 ; 5,4 ; 1,4 
+BW;Baden-Württemberg;08117;Göppingen; 21,9 ; 7,0 ; 0,2 ; 7,0 ; 0,3 ; 6,7 ; 4,3 ; 3,5 ; 1,0 ; 6,0 ; 1,9 
+BW;Baden-Württemberg;08118;Ludwigsburg; 19,6 ; 5,5 ; 0,2 ; 3,8 ; 0,2 ; 6,1 ; 4,7 ; 3,1 ; 0,9 ; 4,7 ; 1,3 
+BW;Baden-Württemberg;08119;Rems-Murr-Kreis; 20,6 ; 5,4 ; 0,2 ; 3,8 ; 0,2 ; 6,1 ; 4,2 ; 3,4 ; 1,0 ; 5,2 ; 1,4 
+BW;Baden-Württemberg;08121;Heilbronn; 19,2 ; 5,3 ; 0,2 ; 3,1 ; 0,3 ; 6,3 ; 4,9 ; 3,8 ; 0,9 ; 4,9 ; 1,2 
+BW;Baden-Württemberg;08125;Heilbronn, Landkreis; 21,1 ; 5,3 ; 0,2 ; 4,0 ; 0,2 ; 6,2 ; 4,9 ; 3,5 ; 0,9 ; 5,6 ; 1,2 
+BW;Baden-Württemberg;08126;Hohenlohekreis; 22,4 ; 6,2 ; 0,2 ; 6,1 ; 0,3 ; 5,7 ; 4,6 ; 3,3 ; 0,9 ; 5,7 ; 1,4 
+BW;Baden-Württemberg;08127;Schwäbisch Hall; 21,6 ; 4,6 ; 0,2 ; 3,9 ; 0,3 ; 5,7 ; 3,1 ; 2,5 ; 0,9 ; 3,8 ; 1,3 
+BW;Baden-Württemberg;08128;Main-Tauber-Kreis; 25,2 ; 6,4 ; 0,2 ; 6,5 ; 0,3 ; 6,2 ; 6,3 ; 4,3 ; 0,9 ; 6,8 ; 1,5 
+BW;Baden-Württemberg;08135;Heidenheim; 22,2 ; 6,7 ; 0,2 ; 4,3 ; 0,3 ; 6,6 ; 3,8 ; 3,0 ; 0,9 ; 5,0 ; 1,7 
+BW;Baden-Württemberg;08136;Ostalbkreis; 20,9 ; 5,5 ; 0,2 ; 4,0 ; 0,3 ; 6,2 ; 3,9 ; 3,3 ; 0,9 ; 4,6 ; 1,6 
+BW;Baden-Württemberg;08211;Baden-Baden; 22,3 ; 6,0 ; 0,2 ; 4,0 ; 0,4 ; 6,5 ; 4,0 ; 3,0 ; 1,1 ; 6,9 ; 1,5 
+BW;Baden-Württemberg;08212;Karlsruhe; 18,5 ; 5,6 ; 0,2 ; 2,9 ; 0,3 ; 6,1 ; 4,7 ; 3,9 ; 0,8 ; 5,3 ; 1,3 
+BW;Baden-Württemberg;08215;Karlsruhe, Landkreis; 22,7 ; 6,8 ; 0,2 ; 3,8 ; 0,3 ; 7,0 ; 5,0 ; 3,9 ; 0,9 ; 6,4 ; 1,5 
+BW;Baden-Württemberg;08216;Rastatt; 22,2 ; 5,6 ; 0,2 ; 4,4 ; 0,3 ; 6,7 ; 4,5 ; 3,0 ; 1,0 ; 5,6 ; 1,4 
+BW;Baden-Württemberg;08221;Heidelberg; 17,3 ; 5,8 ; 0,2 ; 3,1 ; 0,2 ; 5,2 ; 4,6 ; 4,0 ; 0,8 ; 5,3 ; 1,4 
+BW;Baden-Württemberg;08222;Mannheim; 20,0 ; 6,4 ; 0,2 ; 3,6 ; 0,2 ; 7,5 ; 4,9 ; 5,3 ; 0,9 ; 6,7 ; 1,3 
+BW;Baden-Württemberg;08225;Neckar-Odenwald-Kreis; 25,0 ; 7,2 ; 0,2 ; 6,0 ; 0,3 ; 7,0 ; 5,8 ; 4,5 ; 1,1 ; 7,5 ; 1,4 
+BW;Baden-Württemberg;08226;Rhein-Neckar-Kreis; 23,9 ; 7,8 ; 0,3 ; 4,3 ; 0,3 ; 7,6 ; 5,5 ; 4,5 ; 1,0 ; 6,2 ; 1,5 
+BW;Baden-Württemberg;08231;Pforzheim; 19,9 ; 6,1 ; 0,2 ; 3,7 ; 0,2 ; 6,3 ; 5,2 ; 3,2 ; 0,9 ; 6,0 ; 1,2 
+BW;Baden-Württemberg;08235;Calw; 22,0 ; 5,2 ; 0,2 ; 4,4 ; 0,3 ; 6,3 ; 4,4 ; 3,6 ; 0,9 ; 4,5 ; 1,4 
+BW;Baden-Württemberg;08236;Enzkreis; 22,1 ; 6,0 ; 0,3 ; 3,8 ; 0,3 ; 6,6 ; 5,4 ; 3,0 ; 1,0 ; 5,7 ; 1,4 
+BW;Baden-Württemberg;08237;Freudenstadt; 21,5 ; 5,7 ; 0,2 ; 5,6 ; 0,2 ; 6,4 ; 3,5 ; 3,5 ; 0,9 ; 4,5 ; 1,4 
+BW;Baden-Württemberg;08311;Freiburg im Breisgau; 15,8 ; 5,0 ; 0,2 ; 2,1 ; 0,2 ; 5,0 ; 4,0 ; 2,9 ; 0,8 ; 4,5 ; 1,1 
+BW;Baden-Württemberg;08315;Breisgau-Hochschwarzwald; 20,3 ; 5,8 ; 0,2 ; 3,1 ; 0,3 ; 5,5 ; 3,9 ; 3,2 ; 1,0 ; 4,8 ; 1,4 
+BW;Baden-Württemberg;08316;Emmendingen; 21,8 ; 5,6 ; 0,2 ; 3,0 ; 0,3 ; 6,0 ; 3,7 ; 2,7 ; 1,0 ; 5,4 ; 1,3 
+BW;Baden-Württemberg;08317;Ortenaukreis; 21,3 ; 4,8 ; 0,2 ; 4,1 ; 0,3 ; 5,9 ; 3,7 ; 3,0 ; 0,9 ; 5,1 ; 1,4 
+BW;Baden-Württemberg;08325;Rottweil; 20,8 ; 5,4 ; 0,2 ; 4,7 ; 0,3 ; 5,8 ; 4,0 ; 2,9 ; 0,9 ; 4,9 ; 1,5 
+BW;Baden-Württemberg;08326;Schwarzwald-Baar-Kreis; 20,6 ; 5,4 ; 0,2 ; 4,0 ; 0,3 ; 6,1 ; 4,1 ; 3,2 ; 1,0 ; 5,2 ; 1,4 
+BW;Baden-Württemberg;08327;Tuttlingen; 20,8 ; 5,4 ; 0,2 ; 3,4 ; 0,2 ; 5,7 ; 3,4 ; 2,9 ; 0,8 ; 4,6 ; 1,3 
+BW;Baden-Württemberg;08335;Konstanz; 18,8 ; 5,5 ; 0,3 ; 3,6 ; 0,3 ; 5,8 ; 4,5 ; 3,7 ; 1,0 ; 4,8 ; 1,3 
+BW;Baden-Württemberg;08336;Lörrach; 19,9 ; 5,2 ; 0,2 ; 3,1 ; 0,3 ; 6,2 ; 3,8 ; 3,1 ; 1,0 ; 4,5 ; 1,4 
+BW;Baden-Württemberg;08337;Waldshut; 19,2 ; 4,9 ; 0,2 ; 3,5 ; 0,3 ; 6,0 ; 4,4 ; 3,1 ; 1,0 ; 4,2 ; 1,3 
+BW;Baden-Württemberg;08415;Reutlingen; 20,1 ; 5,1 ; 0,2 ; 4,1 ; 0,3 ; 5,6 ; 4,8 ; 2,9 ; 0,9 ; 4,6 ; 1,5 
+BW;Baden-Württemberg;08416;Tübingen; 18,5 ; 4,8 ; 0,2 ; 3,3 ; 0,3 ; 5,2 ; 3,8 ; 2,2 ; 0,8 ; 4,5 ; 1,5 
+BW;Baden-Württemberg;08417;Zollernalbkreis; 22,3 ; 5,9 ; 0,2 ; 4,6 ; 0,3 ; 6,3 ; 3,8 ; 3,2 ; 0,9 ; 6,6 ; 1,6 
+BW;Baden-Württemberg;08421;Ulm; 17,7 ; 5,1 ; 0,2 ; 3,5 ; 0,2 ; 5,4 ; 4,4 ; 3,9 ; 0,9 ; 5,1 ; 1,5 
+BW;Baden-Württemberg;08425;Alb-Donau-Kreis; 20,3 ; 5,6 ; 0,2 ; 4,4 ; 0,3 ; 5,6 ; 4,2 ; 3,6 ; 0,8 ; 5,2 ; 1,5 
+BW;Baden-Württemberg;08426;Biberach; 19,8 ; 4,5 ; 0,1 ; 3,5 ; 0,2 ; 5,3 ; 3,6 ; 2,6 ; 0,8 ; 4,5 ; 1,3 
+BW;Baden-Württemberg;08435;Bodenseekreis; 20,1 ; 5,3 ; 0,2 ; 3,2 ; 0,3 ; 6,0 ; 3,9 ; 3,2 ; 1,0 ; 5,4 ; 1,5 
+BW;Baden-Württemberg;08436;Ravensburg; 18,9 ; 5,2 ; 0,2 ; 4,1 ; 0,3 ; 5,5 ; 4,1 ; 3,3 ; 0,8 ; 4,5 ; 1,4 
+BW;Baden-Württemberg;08437;Sigmaringen; 20,4 ; 5,3 ; 0,2 ; 3,9 ; 0,3 ; 5,9 ; 3,9 ; 3,5 ; 0,9 ; 4,8 ; 1,4 
+BY;Bayern;09161;Ingolstadt; 18,2 ; 4,6 ; 0,2 ; 3,0 ; 0,2 ; 5,9 ; 3,7 ; 3,6 ; 0,8 ; 5,7 ; 1,0 
+BY;Bayern;09162;München; 16,7 ; 4,5 ; 0,2 ; 2,6 ; 0,2 ; 5,7 ; 5,7 ; 3,2 ; 0,9 ; 5,7 ; 1,0 
+BY;Bayern;09163;Rosenheim; 18,3 ; 5,7 ; 0,2 ; 4,0 ; 0,3 ; 6,3 ; 4,3 ; 3,9 ; 0,9 ; 7,8 ; 1,1 
+BY;Bayern;09171;Altötting; 21,6 ; 5,1 ; 0,2 ; 3,9 ; 0,3 ; 6,4 ; 4,3 ; 2,6 ; 0,9 ; 9,1 ; 1,3 
+BY;Bayern;09172;Berchtesgadener Land; 21,1 ; 5,8 ; 0,1 ; 3,9 ; 0,3 ; 5,4 ; 5,2 ; 3,5 ; 0,9 ; 6,7 ; 1,4 
+BY;Bayern;09173;Bad Tölz-Wolfratshausen; 20,8 ; 5,5 ; 0,2 ; 4,7 ; 0,3 ; 5,8 ; 3,7 ; 2,6 ; 0,9 ; 6,2 ; 1,3 
+BY;Bayern;09174;Dachau; 18,3 ; 4,8 ; 0,2 ; 4,2 ; 0,3 ; 5,6 ; 4,1 ; 3,1 ; 1,0 ; 7,8 ; 1,3 
+BY;Bayern;09175;Ebersberg; 19,5 ; 5,0 ; 0,1 ; 3,5 ; 0,3 ; 5,7 ; 4,5 ; 2,9 ; 0,9 ; 5,8 ; 1,1 
+BY;Bayern;09176;Eichstätt; 19,4 ; 5,4 ; 0,2 ; 4,2 ; 0,2 ; 5,3 ; 3,4 ; 2,6 ; 0,8 ; 4,8 ; 1,1 
+BY;Bayern;09177;Erding; 19,2 ; 4,2 ; 0,2 ; 2,8 ; 0,2 ; 5,3 ; 4,7 ; 2,6 ; 0,8 ; 5,5 ; 1,0 
+BY;Bayern;09178;Freising; 17,4 ; 4,2 ; 0,1 ; 2,7 ; 0,2 ; 5,1 ; 3,7 ; 2,8 ; 0,8 ; 4,8 ; 1,1 
+BY;Bayern;09179;Fürstenfeldbruck; 20,2 ; 5,0 ; 0,2 ; 3,0 ; 0,3 ; 6,0 ; 5,4 ; 3,6 ; 1,0 ; 5,8 ; 1,3 
+BY;Bayern;09180;Garmisch-Partenkirchen; 20,2 ; 6,0 ; 0,2 ; 4,8 ; 0,3 ; 5,6 ; 3,9 ; 3,6 ; 1,0 ; 6,4 ; 1,4 
+BY;Bayern;09181;Landsberg am Lech; 19,3 ; 5,0 ; 0,2 ; 3,1 ; 0,3 ; 5,2 ; 3,8 ; 2,7 ; 0,9 ; 5,8 ; 1,2 
+BY;Bayern;09182;Miesbach; 19,7 ; 5,8 ; 0,2 ; 3,3 ; 0,3 ; 5,5 ; 3,3 ; 2,7 ; 0,9 ; 7,2 ; 1,3 
+BY;Bayern;09183;Mühldorf am Inn; 20,3 ; 5,1 ; 0,2 ; 4,2 ; 0,3 ; 5,9 ; 4,7 ; 2,9 ; 0,8 ; 7,5 ; 1,2 
+BY;Bayern;09184;München, Landkreis; 18,8 ; 5,2 ; 0,2 ; 3,1 ; 0,3 ; 5,9 ; 4,6 ; 3,2 ; 1,0 ; 6,1 ; 1,1 
+BY;Bayern;09185;Neuburg-Schrobenhausen; 20,8 ; 5,3 ; 0,2 ; 5,2 ; 0,3 ; 6,1 ; 4,4 ; 3,2 ; 0,8 ; 7,5 ; 1,2 
+BY;Bayern;09186;Pfaffenhofen an der Ilm; 19,8 ; 4,9 ; 0,2 ; 3,4 ; 0,3 ; 5,8 ; 4,0 ; 3,1 ; 0,9 ; 5,9 ; 1,2 
+BY;Bayern;09187;Rosenheim, Landkreis; 20,2 ; 5,2 ; 0,2 ; 4,5 ; 0,3 ; 5,7 ; 4,1 ; 3,2 ; 0,9 ; 6,7 ; 1,2 
+BY;Bayern;09188;Starnberg; 19,5 ; 6,1 ; 0,2 ; 3,5 ; 0,3 ; 5,6 ; 3,9 ; 2,8 ; 1,0 ; 5,1 ; 1,2 
+BY;Bayern;09189;Traunstein; 21,1 ; 5,7 ; 0,2 ; 3,3 ; 0,3 ; 5,8 ; 3,9 ; 3,4 ; 0,9 ; 6,9 ; 1,2 
+BY;Bayern;09190;Weilheim-Schongau; 20,1 ; 5,5 ; 0,3 ; 4,6 ; 0,3 ; 5,6 ; 3,7 ; 2,8 ; 0,9 ; 8,4 ; 1,3 
+BY;Bayern;09261;Landshut; 20,7 ; 5,2 ; 0,2 ; 3,7 ; 0,3 ; 6,2 ; 5,3 ; 4,0 ; 0,8 ; 7,4 ; 1,3 
+BY;Bayern;09262;Passau; 21,6 ; 7,4 ; 0,2 ; 5,4 ; 0,3 ; 6,3 ; 3,7 ; 3,5 ; 0,9 ; 7,4 ; 1,3 
+BY;Bayern;09263;Straubing; 22,4 ; 6,6 ; 0,2 ; 4,9 ; 0,4 ; 7,2 ; 5,5 ; 4,3 ; 0,9 ; 8,8 ; 1,6 
+BY;Bayern;09271;Deggendorf; 22,7 ; 6,1 ; 0,2 ; 4,3 ; 0,3 ; 6,5 ; 4,4 ; 3,6 ; 0,9 ; 7,3 ; 1,5 
+BY;Bayern;09272;Freyung-Grafenau; 25,1 ; 8,0 ; 0,3 ; 7,7 ; 0,3 ; 6,6 ; 3,2 ; 3,2 ; 1,0 ; 6,8 ; 1,6 
+BY;Bayern;09273;Kelheim; 20,2 ; 5,6 ; 0,2 ; 4,0 ; 0,3 ; 5,9 ; 4,1 ; 2,9 ; 0,9 ; 6,3 ; 1,4 
+BY;Bayern;09274;Landshut, Landkreis; 20,8 ; 5,3 ; 0,2 ; 4,5 ; 0,3 ; 5,9 ; 4,5 ; 3,3 ; 0,9 ; 6,3 ; 1,3 
+BY;Bayern;09275;Passau, Landkreis; 24,3 ; 7,2 ; 0,3 ; 6,0 ; 0,3 ; 6,8 ; 3,4 ; 3,2 ; 0,9 ; 7,0 ; 1,6 
+BY;Bayern;09276;Regen; 24,2 ; 5,5 ; 0,2 ; 4,6 ; 0,4 ; 6,7 ; 4,4 ; 3,5 ; 0,9 ; 9,2 ; 1,6 
+BY;Bayern;09277;Rottal-Inn; 23,3 ; 6,7 ; 0,2 ; 6,3 ; 0,4 ; 6,6 ; 4,7 ; 3,3 ; 0,8 ; 6,3 ; 1,3 
+BY;Bayern;09278;Straubing-Bogen; 23,1 ; 6,0 ; 0,2 ; 5,4 ; 0,2 ; 6,3 ; 5,3 ; 2,8 ; 0,8 ; 6,3 ; 1,5 
+BY;Bayern;09279;Dingolfing-Landau; 21,9 ; 5,7 ; 0,2 ; 5,4 ; 0,4 ; 6,5 ; 4,4 ; 3,4 ; 0,9 ; 7,0 ; 1,4 
+BY;Bayern;09361;Amberg; 23,6 ; 6,2 ; 0,3 ; 5,8 ; 0,3 ; 7,3 ; 4,8 ; 4,1 ; 1,1 ; 7,0 ; 1,2 
+BY;Bayern;09362;Regensburg; 17,2 ; 5,3 ; 0,2 ; 2,6 ; 0,2 ; 6,0 ; 4,1 ; 3,2 ; 0,9 ; 6,9 ; 1,2 
+BY;Bayern;09363;Weiden in der Oberpfalz; 24,0 ; 7,8 ; 0,3 ; 4,6 ; 0,4 ; 7,9 ; 3,3 ; 4,7 ; 1,0 ; 8,7 ; 1,3 
+BY;Bayern;09371;Amberg-Sulzbach; 24,6 ; 6,0 ; 0,3 ; 5,6 ; 0,3 ; 6,5 ; 4,7 ; 3,8 ; 0,9 ; 6,7 ; 1,4 
+BY;Bayern;09372;Cham; 24,1 ; 5,5 ; 0,2 ; 4,2 ; 0,3 ; 6,2 ; 4,0 ; 3,3 ; 0,9 ; 8,4 ; 1,6 
+BY;Bayern;09373;Neumarkt in der Oberpfalz; 20,5 ; 5,4 ; 0,2 ; 4,5 ; 0,4 ; 5,7 ; 3,6 ; 3,9 ; 0,8 ; 5,6 ; 1,4 
+BY;Bayern;09374;Neustadt an der Waldnaab; 24,3 ; 7,0 ; 0,3 ; 5,5 ; 0,3 ; 7,0 ; 3,1 ; 4,3 ; 1,0 ; 7,4 ; 1,4 
+BY;Bayern;09375;Regensburg, Landkreis; 21,9 ; 5,9 ; 0,2 ; 3,9 ; 0,3 ; 6,7 ; 4,3 ; 3,1 ; 0,9 ; 7,2 ; 1,5 
+BY;Bayern;09376;Schwandorf; 23,9 ; 6,7 ; 0,3 ; 5,2 ; 0,3 ; 7,1 ; 3,8 ; 3,5 ; 0,9 ; 7,5 ; 1,3 
+BY;Bayern;09377;Tirschenreuth; 26,3 ; 7,2 ; 0,4 ; 5,7 ; 0,3 ; 7,1 ; 3,9 ; 4,6 ; 1,1 ; 6,6 ; 1,6 
+BY;Bayern;09461;Bamberg; 21,7 ; 5,7 ; 0,2 ; 5,8 ; 0,3 ; 6,4 ; 5,7 ; 3,9 ; 0,9 ; 7,1 ; 1,2 
+BY;Bayern;09462;Bayreuth; 21,5 ; 6,3 ; 0,2 ; 4,5 ; 0,3 ; 6,4 ; 4,6 ; 4,0 ; 1,0 ; 7,2 ; 1,2 
+BY;Bayern;09463;Coburg; 25,4 ; 8,3 ; 0,3 ; 6,3 ; 0,3 ; 7,0 ; 4,5 ; 4,3 ; 1,0 ; 8,6 ; 1,6 
+BY;Bayern;09464;Hof; 25,8 ; 7,5 ; 0,2 ; 8,0 ; 0,4 ; 7,9 ; 4,7 ; 5,0 ; 1,0 ; 13,2 ; 1,3 
+BY;Bayern;09471;Bamberg, Landkreis; 25,2 ; 6,6 ; 0,2 ; 6,8 ; 0,3 ; 6,6 ; 4,9 ; 3,6 ; 0,8 ; 8,9 ; 1,4 
+BY;Bayern;09472;Bayreuth, Landkreis; 26,9 ; 7,2 ; 0,2 ; 6,5 ; 0,3 ; 6,9 ; 4,0 ; 4,1 ; 1,0 ; 9,5 ; 1,3 
+BY;Bayern;09473;Coburg, Landkreis; 28,5 ; 8,1 ; 0,3 ; 6,9 ; 0,3 ; 7,8 ; 5,0 ; 4,2 ; 1,1 ; 8,4 ; 1,6 
+BY;Bayern;09474;Forchheim; 24,4 ; 6,7 ; 0,2 ; 5,5 ; 0,3 ; 7,1 ; 3,9 ; 3,5 ; 1,0 ; 8,7 ; 1,4 
+BY;Bayern;09475;Hof, Landkreis; 28,1 ; 8,9 ; 0,2 ; 8,3 ; 0,4 ; 7,7 ; 4,5 ; 4,9 ; 1,1 ; 11,7 ; 1,3 
+BY;Bayern;09476;Kronach; 30,0 ; 11,2 ; 0,2 ; 9,1 ; 0,3 ; 7,9 ; 4,9 ; 5,2 ; 1,0 ; 7,8 ; 1,6 
+BY;Bayern;09477;Kulmbach; 28,3 ; 8,1 ; 0,3 ; 6,7 ; 0,3 ; 7,6 ; 4,0 ; 4,3 ; 1,0 ; 8,0 ; 1,4 
+BY;Bayern;09478;Lichtenfels; 28,3 ; 8,2 ; 0,2 ; 6,7 ; 0,3 ; 7,3 ; 5,1 ; 4,1 ; 0,9 ; 8,3 ; 1,3 
+BY;Bayern;09479;Wunsiedel im Fichtelgebirge; 27,9 ; 8,3 ; 0,3 ; 6,5 ; 0,4 ; 8,1 ; 4,8 ; 5,0 ; 1,1 ; 6,7 ; 1,5 
+BY;Bayern;09561;Ansbach; 22,1 ; 7,3 ; 0,2 ; 5,5 ; 0,4 ; 7,0 ; 3,6 ; 4,8 ; 0,9 ; 7,5 ; 1,5 
+BY;Bayern;09562;Erlangen; 18,4 ; 5,5 ; 0,1 ; 2,9 ; 0,2 ; 6,0 ; 4,4 ; 4,1 ; 0,8 ; 7,1 ; 1,3 
+BY;Bayern;09563;Fürth; 20,4 ; 6,0 ; 0,2 ; 3,5 ; 0,3 ; 7,0 ; 5,4 ; 5,9 ; 0,9 ; 9,2 ; 1,1 
+BY;Bayern;09564;Nürnberg; 20,4 ; 5,9 ; 0,2 ; 3,1 ; 0,2 ; 7,1 ; 5,0 ; 5,0 ; 0,9 ; 9,0 ; 1,2 
+BY;Bayern;09565;Schwabach; 21,6 ; 5,6 ; 0,3 ; 4,8 ; 0,3 ; 6,1 ; 5,6 ; 4,5 ; 0,9 ; 7,0 ; 1,3 
+BY;Bayern;09571;Ansbach, Landkreis; 22,5 ; 6,2 ; 0,2 ; 4,8 ; 0,3 ; 6,4 ; 3,4 ; 4,1 ; 0,9 ; 5,9 ; 1,6 
+BY;Bayern;09572;Erlangen-Höchstadt; 23,7 ; 6,5 ; 0,1 ; 4,5 ; 0,2 ; 6,7 ; 4,5 ; 3,9 ; 0,9 ; 7,9 ; 1,3 
+BY;Bayern;09573;Fürth, Landkreis; 24,1 ; 7,2 ; 0,2 ; 4,7 ; 0,3 ; 7,3 ; 6,0 ; 5,6 ; 1,0 ; 8,4 ; 1,4 
+BY;Bayern;09574;Nürnberger Land; 23,7 ; 5,7 ; 0,2 ; 5,4 ; 0,3 ; 6,8 ; 3,9 ; 4,1 ; 1,0 ; 7,6 ; 1,4 
+BY;Bayern;09575;Neustadt an der Aisch - Bad Windsheim; 23,9 ; 6,6 ; 0,2 ; 6,8 ; 0,3 ; 7,2 ; 5,5 ; 5,4 ; 0,9 ; 6,3 ; 1,5 
+BY;Bayern;09576;Roth; 22,2 ; 5,4 ; 0,2 ; 4,4 ; 0,3 ; 6,4 ; 4,9 ; 4,1 ; 0,8 ; 6,2 ; 1,3 
+BY;Bayern;09577;Weißenburg-Gunzenhausen; 24,2 ; 5,9 ; 0,2 ; 7,6 ; 0,3 ; 6,4 ; 4,3 ; 4,1 ; 0,9 ; 8,2 ; 1,4 
+BY;Bayern;09661;Aschaffenburg; 22,0 ; 5,4 ; 0,2 ; 2,7 ; 0,3 ; 7,0 ; 4,0 ; 4,4 ; 0,9 ; 7,5 ; 1,2 
+BY;Bayern;09662;Schweinfurt; 24,8 ; 8,9 ; 0,3 ; 4,5 ; 0,3 ; 7,8 ; 4,4 ; 4,0 ; 0,9 ; 11,4 ; 1,1 
+BY;Bayern;09663;Würzburg; 20,1 ; 4,4 ; 0,2 ; 4,0 ; 0,3 ; 5,9 ; 4,9 ; 4,3 ; 0,8 ; 6,4 ; 1,1 
+BY;Bayern;09671;Aschaffenburg, Landkreis; 23,6 ; 5,7 ; 0,2 ; 3,5 ; 0,3 ; 6,6 ; 4,4 ; 3,3 ; 0,9 ; 6,2 ; 1,4 
+BY;Bayern;09672;Bad Kissingen; 27,0 ; 8,4 ; 0,2 ; 6,1 ; 0,3 ; 6,8 ; 5,6 ; 4,7 ; 1,0 ; 7,9 ; 1,4 
+BY;Bayern;09673;Rhön-Grabfeld; 25,5 ; 6,9 ; 0,2 ; 6,3 ; 0,4 ; 6,9 ; 4,3 ; 3,5 ; 0,9 ; 6,6 ; 1,3 
+BY;Bayern;09674;Haßberge; 25,7 ; 7,7 ; 0,2 ; 6,6 ; 0,3 ; 6,8 ; 4,4 ; 3,7 ; 1,0 ; 8,3 ; 1,5 
+BY;Bayern;09675;Kitzingen; 23,6 ; 4,8 ; 0,2 ; 5,6 ; 0,3 ; 6,8 ; 6,6 ; 6,5 ; 0,9 ; 6,7 ; 1,6 
+BY;Bayern;09676;Miltenberg; 24,6 ; 5,8 ; 0,2 ; 4,5 ; 0,3 ; 6,9 ; 4,0 ; 3,8 ; 1,0 ; 7,7 ; 1,4 
+BY;Bayern;09677;Main-Spessart; 26,2 ; 6,0 ; 0,2 ; 5,5 ; 0,3 ; 7,0 ; 5,3 ; 4,9 ; 1,0 ; 6,7 ; 1,3 
+BY;Bayern;09678;Schweinfurt, Landkreis; 24,8 ; 7,9 ; 0,2 ; 5,0 ; 0,3 ; 6,4 ; 4,8 ; 3,6 ; 0,9 ; 8,1 ; 1,3 
+BY;Bayern;09679;Würzburg, Landkreis; 23,1 ; 5,1 ; 0,2 ; 4,9 ; 0,3 ; 6,4 ; 5,2 ; 4,7 ; 1,0 ; 6,1 ; 1,4 
+BY;Bayern;09761;Augsburg; 19,2 ; 5,3 ; 0,2 ; 3,6 ; 0,3 ; 6,5 ; 5,5 ; 3,6 ; 0,9 ; 6,4 ; 1,2 
+BY;Bayern;09762;Kaufbeuren; 23,1 ; 6,8 ; 0,1 ; 4,6 ; 0,3 ; 6,4 ; 4,9 ; 3,4 ; 1,0 ; 8,4 ; 1,3 
+BY;Bayern;09763;Kempten (Allgäu); 19,7 ; 5,5 ; 0,3 ; 3,8 ; 0,2 ; 6,3 ; 4,6 ; 3,8 ; 0,8 ; 7,0 ; 1,3 
+BY;Bayern;09764;Memmingen; 20,3 ; 6,4 ; 0,3 ; 2,8 ; 0,2 ; 6,5 ; 3,1 ; 3,5 ; 0,9 ; 7,8 ; 1,3 
+BY;Bayern;09771;Aichach-Friedberg; 20,6 ; 4,7 ; 0,2 ; 2,7 ; 0,2 ; 5,6 ; 5,1 ; 2,7 ; 0,9 ; 6,3 ; 1,3 
+BY;Bayern;09772;Augsburg, Landkreis; 21,4 ; 5,2 ; 0,2 ; 3,8 ; 0,3 ; 6,5 ; 5,3 ; 3,4 ; 0,9 ; 6,4 ; 1,5 
+BY;Bayern;09773;Dillingen an der Donau; 22,5 ; 5,1 ; 0,2 ; 4,4 ; 0,3 ; 5,9 ; 5,0 ; 2,8 ; 0,9 ; 5,9 ; 1,6 
+BY;Bayern;09774;Günzburg; 21,4 ; 4,6 ; 0,2 ; 3,5 ; 0,3 ; 6,2 ; 5,1 ; 2,7 ; 0,9 ; 5,6 ; 1,4 
+BY;Bayern;09775;Neu-Ulm; 20,1 ; 5,6 ; 0,3 ; 3,2 ; 0,2 ; 5,6 ; 3,9 ; 3,3 ; 0,8 ; 6,2 ; 1,5 
+BY;Bayern;09776;Lindau (Bodensee); 18,7 ; 4,9 ; 0,2 ; 4,0 ; 0,3 ; 5,1 ; 4,0 ; 3,6 ; 1,0 ; 6,4 ; 1,7 
+BY;Bayern;09777;Ostallgäu; 19,4 ; 5,6 ; 0,2 ; 3,7 ; 0,3 ; 5,1 ; 3,9 ; 2,7 ; 0,9 ; 6,4 ; 1,3 
+BY;Bayern;09778;Unterallgäu; 20,1 ; 5,8 ; 0,2 ; 3,6 ; 0,3 ; 5,4 ; 3,1 ; 2,9 ; 0,9 ; 5,9 ; 1,3 
+BY;Bayern;09779;Donau-Ries; 22,1 ; 5,5 ; 0,3 ; 4,9 ; 0,3 ; 5,8 ; 4,7 ; 3,1 ; 0,9 ; 7,5 ; 1,4 
+BY;Bayern;09780;Oberallgäu; 18,8 ; 5,3 ; 0,2 ; 3,4 ; 0,2 ; 5,0 ; 4,9 ; 3,8 ; 0,8 ; 6,6 ; 1,2 
+SL;Saarland;10041;Regionalverband Saarbrücken; 24,7 ; 8,5 ; 0,3 ; 4,5 ; 0,4 ; 8,9 ; 6,0 ; 5,6 ; 1,0 ; 7,2 ; 1,4 
+SL;Saarland;10042;Merzig-Wadern; 26,2 ; 9,4 ; 0,3 ; 5,8 ; 0,3 ; 8,5 ; 5,8 ; 5,3 ; 1,1 ; 8,3 ; 1,7 
+SL;Saarland;10043;Neunkirchen; 26,9 ; 7,4 ; 0,3 ; 4,3 ; 0,4 ; 9,2 ; 5,3 ; 6,4 ; 1,1 ; 6,3 ; 1,5 
+SL;Saarland;10044;Saarlouis; 26,3 ; 9,2 ; 0,3 ; 4,6 ; 0,4 ; 9,2 ; 5,9 ; 4,5 ; 1,0 ; 7,2 ; 1,6 
+SL;Saarland;10045;Saarpfalz-Kreis; 26,9 ; 7,7 ; 0,3 ; 4,5 ; 0,4 ; 9,8 ; 5,1 ; 4,6 ; 1,1 ; 7,2 ; 1,5 
+SL;Saarland;10046;St. Wendel; 27,5 ; 8,8 ; 0,2 ; 5,3 ; 0,3 ; 8,6 ; 4,9 ; 4,8 ; 1,0 ; 10,2 ; 1,5 
+BE;Berlin;11000;Berlin; 20,4 ; 6,2 ; 0,2 ; 3,5 ; 0,3 ; 7,3 ; 4,9 ; 5,3 ; 0,9 ; 6,0 ; 1,2 
+BB;Brandenburg;12051;Brandenburg an der Havel; 31,9 ; 8,2 ; 0,3 ; 3,9 ; 0,5 ; 10,6 ; 4,8 ; 5,9 ; 1,2 ; 6,8 ; 1,6 
+BB;Brandenburg;12052;Cottbus; 28,1 ; 7,8 ; 0,2 ; 3,8 ; 0,3 ; 8,8 ; 3,6 ; 3,6 ; 1,1 ; 6,1 ; 1,4 
+BB;Brandenburg;12053;Frankfurt (Oder); 30,2 ; 10,5 ; 0,4 ; 4,7 ; 0,4 ; 10,1 ; 3,3 ; 5,4 ; 1,2 ; 7,3 ; 1,3 
+BB;Brandenburg;12054;Potsdam; 22,6 ; 6,9 ; 0,2 ; 3,4 ; 0,3 ; 7,6 ; 4,8 ; 4,1 ; 1,0 ; 4,8 ; 1,3 
+BB;Brandenburg;12060;Barnim; 30,1 ; 8,7 ; 0,3 ; 4,7 ; 0,4 ; 9,9 ; 6,0 ; 5,5 ; 1,2 ; 7,1 ; 1,6 
+BB;Brandenburg;12061;Dahme-Spreewald; 30,3 ; 9,4 ; 0,3 ; 5,5 ; 0,3 ; 9,3 ; 4,0 ; 4,5 ; 1,1 ; 6,4 ; 1,4 
+BB;Brandenburg;12062;Elbe-Elster; 35,5 ; 11,2 ; 0,3 ; 6,6 ; 0,3 ; 10,1 ; 3,7 ; 4,3 ; 1,0 ; 6,0 ; 1,4 
+BB;Brandenburg;12063;Havelland; 29,5 ; 7,7 ; 0,2 ; 5,0 ; 0,3 ; 9,6 ; 4,5 ; 4,6 ; 1,1 ; 5,6 ; 1,4 
+BB;Brandenburg;12064;Märkisch-Oderland; 32,3 ; 9,5 ; 0,3 ; 4,8 ; 0,3 ; 10,2 ; 4,5 ; 5,5 ; 1,2 ; 5,6 ; 1,7 
+BB;Brandenburg;12065;Oberhavel; 29,5 ; 9,2 ; 0,2 ; 5,3 ; 0,4 ; 9,9 ; 4,8 ; 5,4 ; 1,2 ; 7,5 ; 1,6 
+BB;Brandenburg;12066;Oberspreewald-Lausitz; 33,8 ; 10,8 ; 0,4 ; 6,1 ; 0,4 ; 10,1 ; 3,7 ; 3,8 ; 1,2 ; 7,0 ; 1,4 
+BB;Brandenburg;12067;Oder-Spree; 33,1 ; 10,2 ; 0,4 ; 6,2 ; 0,4 ; 10,3 ; 4,4 ; 5,0 ; 1,2 ; 6,3 ; 1,3 
+BB;Brandenburg;12068;Ostprignitz-Ruppin; 34,3 ; 9,5 ; 0,3 ; 4,7 ; 0,4 ; 11,1 ; 5,1 ; 6,1 ; 1,0 ; 6,3 ; 1,5 
+BB;Brandenburg;12069;Potsdam-Mittelmark; 28,9 ; 7,4 ; 0,2 ; 3,6 ; 0,3 ; 9,1 ; 4,6 ; 4,6 ; 1,0 ; 5,4 ; 1,4 
+BB;Brandenburg;12070;Prignitz; 36,1 ; 11,9 ; 0,3 ; 6,0 ; 0,4 ; 12,3 ; 3,6 ; 6,4 ; 1,1 ; 6,5 ; 1,4 
+BB;Brandenburg;12071;Spree-Neiße; 34,6 ; 11,2 ; 0,2 ; 6,3 ; 0,4 ; 10,4 ; 3,6 ; 4,2 ; 1,2 ; 5,9 ; 1,5 
+BB;Brandenburg;12072;Teltow-Fläming; 29,5 ; 8,4 ; 0,3 ; 4,9 ; 0,4 ; 9,3 ; 5,0 ; 4,7 ; 1,1 ; 6,5 ; 1,5 
+BB;Brandenburg;12073;Uckermark; 35,8 ; 10,0 ; 0,3 ; 5,8 ; 0,4 ; 11,7 ; 3,9 ; 4,6 ; 1,4 ; 5,8 ; 1,6 
+MV;Mecklenburg-Vorpommern;13003;Rostock; 26,8 ; 8,2 ; 0,2 ; 3,9 ; 0,3 ; 8,7 ; 4,7 ; 4,0 ; 1,1 ; 5,4 ; 1,4 
+MV;Mecklenburg-Vorpommern;13004;Schwerin; 28,6 ; 8,5 ; 0,3 ; 5,2 ; 0,3 ; 9,3 ; 5,1 ; 4,0 ; 1,1 ; 5,4 ; 1,4 
+MV;Mecklenburg-Vorpommern;13071;Mecklenburgische Seenplatte; 34,3 ; 8,9 ; 0,3 ; 6,8 ; 0,4 ; 11,6 ; 3,4 ; 4,6 ; 1,1 ; 7,1 ; 1,7 
+MV;Mecklenburg-Vorpommern;13072;Rostock, Landkreis; 31,9 ; 10,0 ; 0,3 ; 5,9 ; 0,4 ; 10,6 ; 4,0 ; 4,4 ; 1,1 ; 6,9 ; 1,7 
+MV;Mecklenburg-Vorpommern;13073;Vorpommern-Rügen; 33,2 ; 8,9 ; 0,2 ; 4,6 ; 0,4 ; 11,1 ; 3,7 ; 4,4 ; 1,2 ; 5,9 ; 1,7 
+MV;Mecklenburg-Vorpommern;13074;Nordwestmecklenburg; 31,9 ; 8,6 ; 0,3 ; 5,1 ; 0,3 ; 10,0 ; 4,3 ; 4,9 ; 1,2 ; 6,1 ; 1,5 
+MV;Mecklenburg-Vorpommern;13075;Vorpommern-Greifswald; 33,9 ; 10,0 ; 0,3 ; 5,4 ; 0,4 ; 10,9 ; 3,8 ; 4,5 ; 1,2 ; 7,3 ; 1,7 
+MV;Mecklenburg-Vorpommern;13076;Ludwigslust-Parchim; 33,2 ; 9,1 ; 0,3 ; 5,5 ; 0,3 ; 10,6 ; 3,8 ; 3,9 ; 1,0 ; 6,9 ; 1,7 
+SN;Sachsen;14511;Chemnitz; 26,0 ; 6,9 ; 0,2 ; 5,0 ; 0,3 ; 7,8 ; 5,1 ; 2,9 ; 1,1 ; 6,2 ; 1,3 
+SN;Sachsen;14521;Erzgebirgskreis; 30,5 ; 9,2 ; 0,2 ; 8,9 ; 0,3 ; 8,7 ; 3,8 ; 3,1 ; 1,2 ; 5,3 ; 1,3 
+SN;Sachsen;14522;Mittelsachsen; 31,5 ; 8,2 ; 0,2 ; 5,8 ; 0,3 ; 8,6 ; 3,9 ; 2,9 ; 1,2 ; 5,6 ; 1,3 
+SN;Sachsen;14523;Vogtlandkreis; 30,8 ; 8,6 ; 0,2 ; 7,3 ; 0,3 ; 8,4 ; 4,2 ; 2,6 ; 1,1 ; 5,5 ; 1,3 
+SN;Sachsen;14524;Zwickau; 30,6 ; 8,1 ; 0,2 ; 5,0 ; 0,4 ; 8,8 ; 3,7 ; 2,7 ; 1,2 ; 6,1 ; 1,3 
+SN;Sachsen;14612;Dresden; 23,0 ; 5,8 ; 0,1 ; 4,0 ; 0,2 ; 6,4 ; 5,0 ; 2,7 ; 0,9 ; 5,3 ; 1,1 
+SN;Sachsen;14625;Bautzen; 32,5 ; 7,8 ; 0,2 ; 5,9 ; 0,3 ; 8,7 ; 3,9 ; 3,1 ; 1,1 ; 5,4 ; 1,4 
+SN;Sachsen;14626;Görlitz; 32,5 ; 8,6 ; 0,2 ; 6,1 ; 0,3 ; 9,1 ; 3,7 ; 2,9 ; 1,2 ; 5,7 ; 1,2 
+SN;Sachsen;14627;Meißen; 32,1 ; 8,4 ; 0,2 ; 6,1 ; 0,3 ; 8,7 ; 4,5 ; 2,9 ; 1,1 ; 5,9 ; 1,2 
+SN;Sachsen;14628;Sächsische Schweiz-Osterzgebirge; 30,9 ; 6,7 ; 0,2 ; 5,2 ; 0,3 ; 8,2 ; 4,5 ; 2,9 ; 1,1 ; 5,6 ; 1,1 
+SN;Sachsen;14713;Leipzig; 22,9 ; 5,4 ; 0,1 ; 3,3 ; 0,2 ; 7,1 ; 5,5 ; 3,2 ; 0,9 ; 5,0 ; 1,1 
+SN;Sachsen;14729;Leipzig, Landkreis; 32,5 ; 7,8 ; 0,2 ; 6,1 ; 0,3 ; 9,0 ; 4,4 ; 3,5 ; 1,1 ; 6,6 ; 1,4 
+SN;Sachsen;14730;Nordsachsen; 32,8 ; 8,1 ; 0,2 ; 5,4 ; 0,3 ; 9,6 ; 4,7 ; 3,6 ; 1,1 ; 5,6 ; 1,4 
+ST;Sachsen-Anhalt;15001;Dessau-Roßlau; 34,0 ; 11,3 ; 0,3 ; 5,4 ; 0,4 ; 11,0 ; 4,4 ; 4,1 ; 1,3 ; 5,6 ; 1,4 
+ST;Sachsen-Anhalt;15002;Halle (Saale); 28,1 ; 10,0 ; 0,2 ; 5,8 ; 0,3 ; 8,9 ; 4,5 ; 4,2 ; 1,0 ; 7,9 ; 1,3 
+ST;Sachsen-Anhalt;15003;Magdeburg; 28,5 ; 9,9 ; 0,2 ; 6,0 ; 0,3 ; 8,6 ; 4,2 ; 4,0 ; 1,1 ; 6,9 ; 1,4 
+ST;Sachsen-Anhalt;15081;Altmarkkreis Salzwedel; 31,9 ; 8,7 ; 0,3 ; 5,3 ; 0,4 ; 9,1 ; 3,7 ; 4,6 ; 1,1 ; 7,1 ; 1,5 
+ST;Sachsen-Anhalt;15082;Anhalt-Bitterfeld; 35,9 ; 13,4 ; 0,3 ; 8,5 ; 0,4 ; 10,5 ; 4,5 ; 4,8 ; 1,2 ; 8,9 ; 1,5 
+ST;Sachsen-Anhalt;15083;Börde; 32,9 ; 10,8 ; 0,2 ; 9,1 ; 0,3 ; 9,7 ; 3,8 ; 4,1 ; 1,1 ; 7,6 ; 1,4 
+ST;Sachsen-Anhalt;15084;Burgenlandkreis; 35,5 ; 10,1 ; 0,3 ; 7,2 ; 0,3 ; 10,7 ; 4,3 ; 4,0 ; 1,1 ; 8,0 ; 1,9 
+ST;Sachsen-Anhalt;15085;Harz; 33,8 ; 10,6 ; 0,2 ; 10,1 ; 0,3 ; 10,3 ; 3,8 ; 4,9 ; 1,1 ; 7,1 ; 1,6 
+ST;Sachsen-Anhalt;15086;Jerichower Land; 34,2 ; 9,7 ; 0,3 ; 7,0 ; 0,3 ; 10,6 ; 3,4 ; 3,9 ; 1,1 ; 6,9 ; 1,6 
+ST;Sachsen-Anhalt;15087;Mansfeld-Südharz; 35,7 ; 12,1 ; 0,2 ; 11,4 ; 0,5 ; 11,0 ; 4,2 ; 5,1 ; 1,1 ; 7,1 ; 1,6 
+ST;Sachsen-Anhalt;15088;Saalekreis; 33,6 ; 10,9 ; 0,2 ; 7,0 ; 0,4 ; 10,1 ; 4,4 ; 4,1 ; 1,1 ; 8,6 ; 1,4 
+ST;Sachsen-Anhalt;15089;Salzlandkreis; 34,7 ; 12,8 ; 0,4 ; 7,7 ; 0,4 ; 10,6 ; 3,8 ; 4,4 ; 1,2 ; 7,1 ; 1,5 
+ST;Sachsen-Anhalt;15090;Stendal; 32,3 ; 9,9 ; 0,2 ; 7,0 ; 0,4 ; 9,8 ; 4,1 ; 3,9 ; 1,1 ; 6,8 ; 1,4 
+ST;Sachsen-Anhalt;15091;Wittenberg; 33,2 ; 10,8 ; 0,3 ; 6,9 ; 0,4 ; 10,2 ; 4,4 ; 3,8 ; 1,0 ; 5,5 ; 2,0 
+TH;Thüringen;16051;Erfurt; 25,5 ; 8,3 ; 0,2 ; 6,1 ; 0,3 ; 7,9 ; 5,3 ; 4,6 ; 0,9 ; 5,7 ; 1,2 
+TH;Thüringen;16052;Gera; 31,0 ; 7,3 ; 0,2 ; 5,1 ; 0,4 ; 9,0 ; 4,7 ; 4,7 ; 1,2 ; 5,6 ; 1,3 
+TH;Thüringen;16053;Jena; 22,6 ; 5,7 ; 0,2 ; 5,3 ; 0,2 ; 6,2 ; 4,8 ; 3,7 ; 0,9 ; 5,0 ; 1,1 
+TH;Thüringen;16054;Suhl; 34,1 ; 9,7 ; 0,2 ; 5,9 ; 0,5 ; 9,5 ; 5,9 ; 5,5 ; 1,4 ; 5,6 ; 1,5 
+TH;Thüringen;16055;Weimar; 26,3 ; 7,6 ; 0,2 ; 5,2 ; 0,3 ; 7,3 ; 3,9 ; 5,1 ; 1,1 ; 5,7 ; 1,0 
+TH;Thüringen;16056;Eisenach; 30,9 ; 7,8 ; 0,2 ; 4,6 ; 0,4 ; 9,5 ; 7,3 ; 4,8 ; 1,2 ; 5,4 ; 1,4 
+TH;Thüringen;16061;Eichsfeld; 32,2 ; 8,7 ; 0,2 ; 7,3 ; 0,3 ; 8,5 ; 3,4 ; 3,7 ; 0,9 ; 6,1 ; 1,6 
+TH;Thüringen;16062;Nordhausen; 34,1 ; 8,4 ; 0,2 ; 8,2 ; 0,4 ; 9,7 ; 6,2 ; 5,0 ; 1,0 ; 5,7 ; 1,4 
+TH;Thüringen;16063;Wartburgkreis; 32,5 ; 10,1 ; 0,3 ; 6,0 ; 0,3 ; 9,4 ; 5,8 ; 4,2 ; 1,1 ; 5,0 ; 1,3 
+TH;Thüringen;16064;Unstrut-Hainich-Kreis; 33,3 ; 10,2 ; 0,2 ; 8,0 ; 0,4 ; 10,1 ; 3,8 ; 5,1 ; 1,0 ; 6,0 ; 1,3 
+TH;Thüringen;16065;Kyffhäuserkreis; 33,9 ; 8,7 ; 0,3 ; 7,9 ; 0,4 ; 10,3 ; 4,2 ; 5,0 ; 1,0 ; 5,1 ; 1,4 
+TH;Thüringen;16066;Schmalkalden-Meiningen; 31,9 ; 9,9 ; 0,3 ; 7,7 ; 0,4 ; 9,5 ; 5,2 ; 4,4 ; 1,1 ; 6,9 ; 1,4 
+TH;Thüringen;16067;Gotha; 31,0 ; 8,9 ; 0,3 ; 6,4 ; 0,3 ; 9,5 ; 4,7 ; 4,0 ; 1,0 ; 6,3 ; 1,3 
+TH;Thüringen;16068;Sömmerda; 33,8 ; 8,1 ; 0,2 ; 7,0 ; 0,3 ; 9,6 ; 4,2 ; 4,7 ; 1,0 ; 4,2 ; 1,2 
+TH;Thüringen;16069;Hildburghausen; 34,1 ; 8,5 ; 0,5 ; 7,2 ; 0,5 ; 9,5 ; 6,3 ; 3,8 ; 1,1 ; 6,2 ; 1,4 
+TH;Thüringen;16070;Ilm-Kreis; 32,0 ; 9,5 ; 0,2 ; 6,1 ; 0,3 ; 9,3 ; 5,4 ; 3,9 ; 1,0 ; 8,1 ; 1,4 
+TH;Thüringen;16071;Weimarer Land; 30,2 ; 8,4 ; 0,2 ; 6,4 ; 0,3 ; 8,6 ; 4,0 ; 5,4 ; 1,0 ; 6,6 ; 1,3 
+TH;Thüringen;16072;Sonneberg; 35,2 ; 10,7 ; 0,3 ; 7,1 ; 0,4 ; 9,9 ; 8,0 ; 4,3 ; 1,3 ; 6,6 ; 1,6 
+TH;Thüringen;16073;Saalfeld-Rudolstadt; 33,9 ; 7,5 ; 0,2 ; 8,7 ; 0,3 ; 9,1 ; 6,6 ; 6,4 ; 1,1 ; 8,0 ; 1,6 
+TH;Thüringen;16074;Saale-Holzland-Kreis; 31,2 ; 7,4 ; 0,2 ; 5,9 ; 0,2 ; 8,8 ; 4,9 ; 4,2 ; 1,0 ; 5,5 ; 1,4 
+TH;Thüringen;16075;Saale-Orla-Kreis; 31,4 ; 7,2 ; 0,2 ; 6,7 ; 0,3 ; 8,3 ; 4,6 ; 4,1 ; 1,0 ; 6,4 ; 1,4 
+TH;Thüringen;16076;Greiz; 32,6 ; 9,7 ; 0,2 ; 7,2 ; 0,4 ; 9,0 ; 4,8 ; 3,8 ; 1,2 ; 9,1 ; 1,3 
+TH;Thüringen;16077;Altenburger Land; 34,1 ; 7,8 ; 0,2 ; 5,4 ; 0,4 ; 10,2 ; 5,1 ; 4,8 ; 1,2 ; 7,1 ; 1,2
