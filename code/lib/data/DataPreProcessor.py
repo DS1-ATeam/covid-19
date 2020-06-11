@@ -10,11 +10,17 @@ class DataPreProcessor():
 
     def log_transform(self, df, skewed):
         df[skewed] = df[skewed].apply(lambda x: np.log(x + 1))
+        return df
 
     def min_max_scaling(self, df, columns):
         scaler = MinMaxScaler()  # default=(0, 1)
         scaled_df = pd.DataFrame(df)
         scaled_df[columns] = scaler.fit_transform(scaled_df[columns])
+        return scaled_df
+
+    def divide_by_hundred(self, df, columns):
+        scaled_df = pd.DataFrame(df)
+        scaled_df[columns] = df[columns] / 100
         return scaled_df
 
     def one_hot_encode(self, df, prefix='feature'):
