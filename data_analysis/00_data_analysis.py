@@ -59,7 +59,6 @@ plt.xticks(x_covid, rotation='vertical')
 plt.tight_layout()
 plt.savefig('Altersverteilung_Covid' + '.png')
 plt.show()
-    
 
 #################
 # gender        #
@@ -87,9 +86,9 @@ plt.show()
 # Prävalenz     #
 #################    
     
-prävalenz = ["Prävalenz (Anteil mit mindestens einer Vorerkrankung in %)",
-             "Prävalenz-Schätzwerte plausibles Intervall Untergrenze",
-             "Prävalenz-Schätzwerte plausibles Intervall Obergrenze"]
+prävalenz = ["Prävalenz",
+             "Prävalenz_plausibles_Intervall_untere_Grenze",
+             "Prävalenz_plausibles_Intervall_obere_Grenze"]
 
 x_prävalenz  = []
 y1_prävalenz = []
@@ -121,9 +120,20 @@ metrisch = ["age_0_34_%",
             "gender_covid_m_%",
             "gender_covid_unknown_%",
             #"Sterberate_%",
-            "Prävalenz (Anteil mit mindestens einer Vorerkrankung in %)",
-            "Prävalenz-Schätzwerte plausibles Intervall Untergrenze",
-            "Prävalenz-Schätzwerte plausibles Intervall Obergrenze"]
+            "Prävalenz",
+            "Prävalenz_plausibles_Intervall_untere_Grenze",
+            "Prävalenz_plausibles_Intervall_obere_Grenze",
+            "Bluthochdruck",
+            "KHK",
+            "Herzinfarkt",
+            "Herzinsuffizienz",
+            "Schlaganfall",
+            "Diabetes",
+            "Asthma",
+            "COPD",
+            "Krebs",
+            "Lebererkrankungen",
+            "Immunschwäche"]
 
 for el in metrisch:
     # Einteilung in 5 Bins
@@ -147,7 +157,6 @@ for el in metrisch:
     plt.tight_layout()
     plt.savefig('Sterberate_' + el + '.png')
     plt.show()
-
 
 #########################
 # kategoriale Variablen #
@@ -175,7 +184,6 @@ for el in kategorial:
     plt.savefig('Sterberate_' + el + '.png')
     plt.show()
     
-    
 ######################
 # Korrelationsmatrix #
 ######################
@@ -191,16 +199,27 @@ korrelation = ["age_0_34_%",
                "gender_covid_f_%",
                "gender_covid_m_%",
                "gender_covid_unknown_%",
+               "Prävalenz",
+               #"Prävalenz_plausibles_Intervall_untere_Grenze",
+               #"Prävalenz_plausibles_Intervall_obere_Grenze",
+               "Bluthochdruck",
+               "KHK",
+               "Herzinfarkt",
+               "Herzinsuffizienz",
+               "Schlaganfall",
+               "Diabetes",
+               "Asthma",
+               "COPD",
+               "Krebs",
+               "Lebererkrankungen",
+               "Immunschwäche",
                "Sterberate_%"]
-               #"Prävalenz (Anteil mit mindestens einer Vorerkrankung in %)",
-               #"Prävalenz-Schätzwerte plausibles Intervall Untergrenze",
-               #"Prävalenz-Schätzwerte plausibles Intervall Obergrenze"]
               
 total_metrisch = df[korrelation]
 
 import seaborn as sns
 
-plt.rcParams["figure.figsize"] = [12,12] #12
+plt.rcParams["figure.figsize"] = [20,20] #12
 plt.rc('xtick',labelsize=15)#15
 plt.rc('ytick',labelsize=15)#15
 
@@ -220,7 +239,5 @@ sns.heatmap(total_metrisch.corr(method='pearson'), annot=True, fmt='.3f',
 ax.set_xticklabels(ax.get_xticklabels(), rotation=53)  #"horizontal")
 ax.set_yticklabels(ax.get_yticklabels(), rotation="horizontal")
 plt.tight_layout()
-plt.savefig('Korrelation' + el + '.png')
+plt.savefig('Korrelation.png')
 plt.show()
-
-
