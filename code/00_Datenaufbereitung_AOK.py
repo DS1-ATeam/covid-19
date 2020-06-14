@@ -6,25 +6,38 @@ Created on Thu May 28 09:45:21 2020
 """
 
 import pandas as pd
-import numpy as np
 import sqlalchemy as db
 
 ################################################################################
 # AOK Daten: 00_Anteil_Einwohner_Deutschland_mit_ausgewaehlten_Vorerkrankungen # 
 ################################################################################
 
-# Daten einlesen
+##################
+# Daten einlesen #
+##################
+
 df = pd.read_csv(filepath_or_buffer="../data/00_Anteil_Einwohner_Deutschland_mit_ausgewaehlten_Vorerkrankungen.csv", sep=';') 
 
-# Objekt zu flaot formatieren
+###############################
+# Objekt zu flaot formatieren #
+###############################
+
 df["Prävalenz"] = df["Prävalenz"].str.replace(',','.').astype(float)
 
-# Intervall aufteilen in obere und untere Grenze
-split = df["plausibles Intervall"].str.split(" - ", n = -1, expand = True)
+##################################################
+# Intervall in obere und untere Grenze aufteilen #
+##################################################
+
+# Intervall bei '-' aufteilen
+split = df["plausibles Intervall"].str.split(" - ", n=-1, expand = True)
 
 # obere und untere Grenze des Intervalls in Datensatz einfügen
 df["Prävalenz_plausibles_Intervall_untere_Grenze"] = split[0].str.replace(',','.').astype(float)
 df["Prävalenz_plausibles_Intervall_obere_Grenze"]  = split[1].str.replace(',','.').astype(float)
+
+########################
+# Datensatz bearbeiten #
+########################
 
 # Spalten löschen
 df.drop(columns=['plausibles Intervall', 'Patientenanzahl (gerundet)', 'BL', 'BL_NAME', 'KREIS_NAME'], inplace=True)
@@ -32,10 +45,16 @@ df.drop(columns=['plausibles Intervall', 'Patientenanzahl (gerundet)', 'BL', 'BL
 # Spalte umbenennen
 df.rename(columns={"KREIS": "ID_LK_SK"}, inplace=True)
 
-# Daten exportieren
+#####################
+# Daten exportieren #
+#####################
+
 df.to_csv("../data/01_AOK_ausgewaehlten_Vorerkrankungen.csv")
 
-# Datenbank beladen
+#####################
+# Datenbank beladen # 
+#####################
+
 engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con    = engine.connect()
 
@@ -49,10 +68,16 @@ df.to_sql(name='AOK_ausgewaehlten_Vorerkrankungen', con=engine, if_exists='repla
 # AOK Daten: 00_Anteil_Einwohner_Deutschland_mit_mindestens_einer_Vorerkrankung _mit_erhöhtem_Risiko_für_schwere_Verläufe_von_COVID-19 # 
 ########################################################################################################################################
 
-# Daten einlesen
+##################
+# Daten einlesen #
+##################
+
 df2 = pd.read_csv(filepath_or_buffer="../data/00_Anteil_Einwohner_Deutschland_mit_mindestens_einer_Vorerkrankung _mit_erhöhtem_Risiko_für_schwere_Verläufe_von_COVID-19.csv", sep=';') 
 
-# Objekt zu flaot formatieren
+################################
+# Objekte zu flaot formatieren #
+################################
+
 df2["Bluthochdruck"]     = df2["Bluthochdruck"].str.replace(',','.').astype(float)
 df2["KHK"]               = df2["KHK"].str.replace(',','.').astype(float)
 df2["Herzinfarkt"]       = df2["Herzinfarkt"].str.replace(',','.').astype(float)
@@ -65,16 +90,26 @@ df2["Krebs"]             = df2["Krebs"].str.replace(',','.').astype(float)
 df2["Lebererkrankungen"] = df2["Lebererkrankungen"].str.replace(',','.').astype(float)
 df2["Immunschwäche"]     = df2["Immunschwäche"].str.replace(',','.').astype(float)
 
+########################
+# Datensatz bearbeiten #
+########################
+
 # Spalten löschen
 df2.drop(columns=['BL', 'BL_NAME', 'KREIS_NAME'], inplace=True)
 
 # Spalte umbenennen
 df2.rename(columns={"KREIS": "ID_LK_SK"}, inplace=True)
 
-# Daten exportieren
+#####################
+# Daten exportieren #
+#####################
+
 df2.to_csv("../data/01_AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe.csv")
 
-# Datenbank beladen
+#####################
+# Datenbank beladen # 
+#####################
+
 engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con    = engine.connect()
 

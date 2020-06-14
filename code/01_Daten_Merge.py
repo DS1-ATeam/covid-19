@@ -22,24 +22,23 @@ kreise_mindestens_eine_Vorerkrankungen = pd.read_csv("../data/01_AOK_mindestens_
 
 #kreise_AOK = pd.read_csv("../data/01_AOK_aufbereitet.csv") --> gleiche Daten, wie kreise_Vorerkrankungen
 
-# unwichtige Spalten löschen
+##############################
+# unwichtige Spalten löschen #
+##############################
+
 kreise_altersverteilung.drop(['Unnamed: 0'], axis=1, inplace=True)
 kreise_Vorerkrankungen.drop(['Unnamed: 0'], axis=1, inplace=True)
 kreise_mindestens_eine_Vorerkrankungen.drop(['Unnamed: 0'], axis=1, inplace=True)
 #kreise_AOK.drop(['Unnamed: 0', 'Kreisname'], axis=1, inplace=True)
 
-
 ################
 # Daten mergen #
 ################
 
-# Daten mergen
 df_merge = pd.merge(kreise_altersverteilung, kreise_sterberate, on='ID_LK_SK')
 
-# Daten mergen
 df_merge = pd.merge(df_merge, kreise_Vorerkrankungen, on='ID_LK_SK')
 
-# Daten mergen
 df_merge = pd.merge(df_merge, kreise_mindestens_eine_Vorerkrankungen, on='ID_LK_SK')
 
 # Daten mergen --> kreise_Vorerkrankungen

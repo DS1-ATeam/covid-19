@@ -19,12 +19,9 @@ data = pd.read_csv("../data/00_Kreise_Alter_Geschlecht.csv", sep=';')
 # Datensatz Kreise Gebietsfläche
 data_flaeche = pd.read_csv("../data/00_Kreise_Gebietsfläche.csv", sep=';', decimal=",")
 
-
 #####################
 # Daten aggregieren #
 #####################
-
-# https://www-genesis.destatis.de/genesis/online#astructure
 
 # Altersgruppen zusammenfassen
 data["age_0_5"]     = data["unter_3_m"] + data["3_6_m"]   + data["unter_3_w"] + data["3_6_w"]
@@ -34,19 +31,20 @@ data["age_35_59"]   = data["35_ 40_m"]  + data["40_45_m"] + data["45_ 50_m"]  + 
 data["age_60_75"]   = data["60_65_m"]   + data["65_75_m"] + data["60_65_w"]   + data["65_75_w"]
 data["age_75+"]     = data["75_m"]      + data["75_w"]
 
- 
+# aggregierte Altersgruppen in neuen Data Frame kopieren
 data_new = data[["ID_LK_SK","age_0_5", "age_6_14" , "age_15_34", "age_35_59", "age_60_75", "age_75+" ]]
 
+# Altersgruppen zusammenfassen
 data_new['age_0_34'] = data_new['age_0_5'] + data_new['age_6_14']  + data_new['age_15_34']   
 data_new['age_60+']  = data_new['age_60_75'] + data_new['age_75+']
 
-# Summe aller Einwohner pro Landkreis
+# Summe aller Einwohner pro Kreis
 data_new['sum']      = data_new['age_0_34'] + data_new['age_35_59'] + data_new['age_60+']
 
-# Prozentanteil berechnen
-data_new['age_0_34_%']  = (data_new['age_0_34'] / data_new['sum']) * 100
+# relativen Anteil berechnen
+data_new['age_0_34_%']  = (data_new['age_0_34']  / data_new['sum']) * 100
 data_new['age_35_59_%'] = (data_new['age_35_59'] / data_new['sum']) * 100
-data_new['age_60+_%']   = (data_new['age_60+'] / data_new['sum']) * 100
+data_new['age_60+_%']   = (data_new['age_60+']   / data_new['sum']) * 100
 
 ##############################
 # Gebietsfläche mit einfügen #
@@ -62,6 +60,7 @@ data_new['Einw_pro_qm'] = data_new['sum'] / data_new['Flaeche_in_qm']
 # fertigstellen #
 #################
 
+# nur notwendige Spalten auswählen
 data_new_final = data_new[['ID_LK_SK' ,'age_0_34_%', 'age_35_59_%' , 'age_60+_%', 'Einw_pro_qm']]
 
 # Missing Values mit 0 befüllen

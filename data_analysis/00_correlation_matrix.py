@@ -12,7 +12,7 @@ Created on Tue Jun  9 09:30:55 2020
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/02_Daten_merged.csv")
+df = pd.read_csv("../data/02_Daten_merged.csv")
 
    
 ######################

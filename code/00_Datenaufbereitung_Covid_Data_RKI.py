@@ -17,7 +17,7 @@ import sqlalchemy as db
 # Quelle: # https://www-genesis.destatis.de/genesis/online#astructure
 
 # RKI Datensatz
-data = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/00_RKI_COVID19_06_06_20.csv")
+data = pd.read_csv("../data/00_RKI_COVID19_14_06_20.csv")
 
 # Berlin zu SK Berlin zusammenfassen
 data["Landkreis"] = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)
@@ -37,8 +37,10 @@ columns = ['Landkreis',
 
 df = data[columns]
 
+# Gruppieren nach Landkreis und Altersgruppe 
 temp = df.groupby(['Landkreis', 'Altersgruppe']).sum()
 
+# transponieren
 data_frame = temp.unstack(level=-1).droplevel(level=0, axis=1)
 
 # Missings mit 0 befüllen
@@ -73,6 +75,7 @@ columns = ['Landkreis',
 
 df = data[columns]
 
+# Gruppieren nach Landkreis
 temp = df.groupby('Landkreis').sum()
 
 # Sterberate pro Landkreis
@@ -95,8 +98,10 @@ columns = ['Landkreis',
 
 df = data[columns]
 
+# Duplikate löschen: nur einmal Landkreis und dazugehöriges Bundesland
 temp = df.drop_duplicates(keep='first',inplace=False)
 
+# setze Landkreis als Index
 temp.set_index(keys='Landkreis', drop=True, append=False, inplace=True, verify_integrity=False)
 
 # Daten mergen
@@ -111,10 +116,13 @@ columns = ['Landkreis',
 
 df = data[columns]
 
+# Gruppieren nach Landkreis: Anzahl der Fälle nach Geschlecht pro Landkreis
 temp = df.groupby('Landkreis')['Geschlecht'].value_counts()
 
+# transponiere Zeilen zu Spalten
 temp = temp.unstack(level=-1)
 
+# Umbenennen der Spalten
 temp.rename(columns={"M": "gender_m", "W": "gender_f", "unbekannt": "gender_unknown"}, inplace=True)
 
 # Daten mergen
@@ -142,14 +150,13 @@ data_frame.drop(columns=["sum_gender", "gender_m", "gender_f", "gender_unknown"]
 
 # Region Hannover zu LK Hannover ändern -> war früher ein Landkreis
 # https://de.wikipedia.org/wiki/Region_Hannover
-
 data_frame.rename(index={'Region Hannover':'LK Hannover'}, inplace=True)
 
 # StadtRegion Aachen zu LK Aachen ändern -> war früher ein Landkreis bzw. wurde mir der Stadt Aachen zusammengelegt
 # https://de.wikipedia.org/wiki/Kreis_Aachen
-
 data_frame.rename(index={'StadtRegion Aachen':'LK Aachen'}, inplace=True)
 
+# Hinzufügen, ob Kreis Landkreis (LK) oder eine kreisfreie Stadt (SK) ist
 data_frame['LK_SK'] = data_frame.index.str[:2]
 
 ##############
@@ -168,15 +175,17 @@ cols = ['IdLandkreis',
         'gender_covid_unknown_%',
         'Sterberate_%']
 
+# Spalten neu ordnen
 data_frame = data_frame[cols]
 
+# Umbenennen der Spalte IdLandkreis
 data_frame.rename(columns={'IdLandkreis': 'ID_LK_SK'}, inplace=True)
 
 #####################
 # Daten exportieren #
 #####################
 
-data_frame.to_csv("C:/Users/Stefan Klug/data-science-project/data/01_RKI_Kreise_Sterberate.csv")
+data_frame.to_csv("../data/01_RKI_Kreise_Sterberate.csv")
 
 #####################
 # Datenbank beladen # 
