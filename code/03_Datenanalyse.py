@@ -12,7 +12,7 @@ Created on Tue Jun  9 09:30:55 2020
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("C:/Users/Stefan Klug/data-science-project/data/02_Daten_merged.csv")
+df = pd.read_csv("../data/02_Daten_merged.csv")
 
 #################
 # age           #
@@ -34,7 +34,7 @@ plt.bar(x_age, y1_age, color='darkorange')
 plt.title("durchschnittliche Altersverteilung der LKs/ SKs", fontsize=12, fontweight="semibold") #15
 plt.xticks(x_age, rotation='vertical')
 plt.tight_layout()
-plt.savefig('Altersverteilung' + '.png')
+plt.savefig('../Datenanalysen/Altersverteilung' + '.png')
 plt.show()    
     
 #################
@@ -57,7 +57,7 @@ plt.bar(x_covid, y1_covid, color='darkorange')
 plt.title("durchschnittliche Altersverteilung der Covid Patienten", fontsize=12, fontweight="semibold") #15
 plt.xticks(x_covid, rotation='vertical')
 plt.tight_layout()
-plt.savefig('Altersverteilung_Covid' + '.png')
+plt.savefig('../Datenanalysen/Altersverteilung_Covid' + '.png')
 plt.show()
 
 #################
@@ -79,7 +79,7 @@ plt.bar(x_gender, y1_gender, color='darkorange')
 plt.title("durschnittliche Geschlechterverteilung der Covid Patienten", fontsize=12, fontweight="semibold") #15
 plt.xticks(x_gender, rotation='vertical')
 plt.tight_layout()
-plt.savefig('Geschlechterverteilung_Covid' + '.png')
+plt.savefig('../Datenanalysen/Geschlechterverteilung_Covid' + '.png')
 plt.show()    
 
 #################
@@ -101,7 +101,7 @@ plt.bar(x_prävalenz, y1_prävalenz, color='darkorange')
 plt.title("Prävalenz", fontsize=12, fontweight="semibold") #15
 plt.xticks(x_prävalenz, rotation='vertical')
 plt.tight_layout()
-plt.savefig('Prävalenz' + '.png')
+plt.savefig('../Datenanalysen/Prävalenz' + '.png')
 plt.show()
        
 #######################
@@ -155,7 +155,7 @@ for el in metrisch:
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.5])
     plt2.set_ylabel('Sterberate in %')#,  fontsize=15)
     plt.tight_layout()
-    plt.savefig('Sterberate_' + el + '.png')
+    plt.savefig('../Datenanalysen/Sterberate_' + el + '.png')
     plt.show()
 
 #########################
@@ -181,6 +181,6 @@ for el in kategorial:
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.5])
     plt2.set_ylabel('Sterberate in %')#,  fontsize=15)
     plt.tight_layout()
-    plt.savefig('Sterberate_' + el + '.png')
+    plt.savefig('../Datenanalysen/Sterberate_' + el + '.png')
     plt.show()
     
