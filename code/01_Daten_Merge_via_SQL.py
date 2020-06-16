@@ -23,7 +23,15 @@ b = "`b.age_0_34_%`, `b.age_35_59_%`, `b.age_60+_%`, `b.Einw_pro_qm`, "
 c = "`c.Prävalenz`, `c.Prävalenz_plausibles_Intervall_untere_Grenze`, `c.Prävalenz_plausibles_Intervall_obere_Grenze`, `c.Bluthochdruck`, `c.KHK`, `c.Herzinfarkt`, `c.Herzinsuffizienz`, `c.Schlaganfall`, `c.Diabetes`, `c.Asthma`, `c.COPD`, `c.Krebs`, `c.Lebererkrankungen`, `c.Immunschwäche`" 
 
 # Join der 3 Datensätze
-statement = "CREATE VIEW `Gesamt123` AS (Select " + a + b+ c + " FROM `kreise_sterberate` a, `kreise_altersverteilung` b, `kreise_AOK` c WHERE `a.ID_LK_SK` = `b.ID_LK_SK` AND `a.ID_LK_SK` = `c.ID_LK_SK`)"   
+statement = "CREATE VIEW `Gesamt123` AS (Select " + a + b + c + " FROM `kreise_sterberate` a, `kreise_altersverteilung` b, `kreise_AOK` c WHERE `a.ID_LK_SK` = `b.ID_LK_SK` AND `a.ID_LK_SK` = `c.ID_LK_SK`)"   
+
+#statement = "SELECT *, a.ID_LK_SK AS ID_LK_Temp FROM kreise_sterberate a, kreise_altersverteilung b, kreise_AOK c WHERE a.ID_LK_SK = b.ID_LK_SK AND a.ID_LK_SK = c.ID_LK_SK"
+
+#statement = "SELECT * FROM kreise_sterberate a, kreise_altersverteilung b, kreise_AOK c WHERE a.ID_LK_SK = b.ID_LK_SK AND a.ID_LK_SK = c.ID_LK_SK"
+
+#con.execute("SELECT *, a.ID_LK_SK, b.ID_LK_SK, c.ID_LK_SK FROM kreise_sterberate a, kreise_altersverteilung b, kreise_AOK c WHERE a.ID_LK_SK = b.ID_LK_SK AND a.ID_LK_SK = c.ID_LK_SK").fetchall()
+
+#statement = "SELECT *, a.ID_LK_SK AS ID_LK_Temp FROM kreise_sterberate a, kreise_altersverteilung b, kreise_AOK c WHERE a.ID_LK_SK = b.ID_LK_SK AND a.ID_LK_SK = c.ID_LK_SK"
 
 
 con.execute(statement)
@@ -33,4 +41,15 @@ j = students.join(addresses, students.c.id == addresses.`c.st_id`)
 stmt = select([students]).select_from(j)
 result = conn.execute(stmt)
 result.fetchall()
+
+import pandas as pd
+
+metadata    = db.MetaData()
+table       = db.Table('Gesamt123', metadata, autoload=True, autoload_with=engine)
+query       = db.select([table])
+
+results     = con.execute("SELECT * FROM Gesamt123").fetchall()
+df          = pd.DataFrame(results)
+df.columns  = results[0].keys()
+df.info()
 '''

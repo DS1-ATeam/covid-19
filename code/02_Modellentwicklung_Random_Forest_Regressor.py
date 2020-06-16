@@ -83,12 +83,6 @@ features_raw = features_raw.join(pd.get_dummies(features_raw["Bundesland"]))
 # unnötige Spalten löschen --> wurden als Dummy codiert
 features_raw.drop(["LK_SK", "Bundesland"], axis=1, inplace=True)
 
-# in Prozent umrechenen
-#for el in features_raw.columns:
-#    if features_raw[el].dtypes == 'float64':
-#        features_raw[el] = features_raw[el] / 100
-
-
 ####################
 # Train_Test Split #
 ####################
@@ -129,9 +123,9 @@ print(fea_impor_ran_for_alle)
 # finde nun das beste Modell, das aus 6 dieser 21 Features besteht 
 
 X_21 =  ["age_0_34_%",
-         "age_35_59_%",
+         #"age_35_59_%",
          "age_60+_%",
-         "age_covid_0_34_%",
+         #"age_covid_0_34_%",
          "age_covid_35_59_%",
          "age_covid_60+_%",
          "Asthma",
@@ -146,9 +140,9 @@ X_21 =  ["age_0_34_%",
          "KHK",
          "Krebs",
          "Lebererkrankungen",
-         "Prävalenz",
-         "Prävalenz_plausibles_Intervall_untere_Grenze",
-         "Prävalenz_plausibles_Intervall_obere_Grenze"]
+         "Prävalenz"]
+         #"Prävalenz_plausibles_Intervall_untere_Grenze",
+         #"Prävalenz_plausibles_Intervall_obere_Grenze"]
 
 # alle Kombinationen mit 6 aus 21 Features: 6 aus 21 = 54264 Kombinationen
 kombinationen = list(combinations(X_21, 6))
@@ -222,5 +216,16 @@ print('--------------------------------------------------')
 print(ergebnisse[position])
 
 
-
+'''
+--------------------------------------------------
+Bestes Modell mit 6 Features ohne age_covid_60+_%
+--------------------------------------------------
+[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Bluthochdruck', 'Krebs'], [0.9343867074868604, 0.5561753587952729], [                   Feature_Importance
+age_covid_35_59_%            0.402595
+age_covid_0_34_%             0.368780
+age_35_59_%                  0.075342
+Bluthochdruck                0.065017
+age_60+_%                    0.063476
+Krebs                        0.024790]]
+'''
 
