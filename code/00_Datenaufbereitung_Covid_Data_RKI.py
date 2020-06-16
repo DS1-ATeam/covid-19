@@ -17,7 +17,7 @@ import sqlalchemy as db
 # Quelle: # https://www-genesis.destatis.de/genesis/online#astructure
 
 # RKI Datensatz
-data = pd.read_csv("../data/00_RKI_COVID19_14_06_20.csv")
+data = pd.read_csv("../data/00_RKI_COVID19_16_06_20.csv")
 
 # Berlin zu SK Berlin zusammenfassen
 data["Landkreis"] = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)

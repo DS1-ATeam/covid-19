@@ -5,7 +5,7 @@ Created on Wed Jun  3 19:16:04 2020
 @author: Stefan Klug
 """
 
-
+from sqlalchemy.schema import CreateTable
 import sqlalchemy as db
 import pandas as pd
 
@@ -31,6 +31,31 @@ gesamt.drop(columns='Unnamed: 0', inplace=True)
 
 engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con     = engine.connect()
+
+
+rs = con.execute('SELECT * FROM book')
+
+
+a = con.execute('CREATE TABLE test AS (SELECT * FROM kreise_sterberate a JOIN kreise_altersverteilung b ON a.ID_LK_SK = b.ID_LK_SK JOIN kreise_AOK c ON a.ID_LK_SK = c.ID_LK_SK)')
+
+a = con.execute('CREATE TABLE test AS SELECT * FROM kreise_sterberate a, kreise_altersverteilung b, kreise_AOK c WHERE a.ID_LK_SK = b.ID_LK_SK AND a.ID_LK_SK = c.ID_LK_SK')
+
+
+con.execute(CreateTable('SELECT * FROM kreise_sterberate a JOIN kreise_altersverteilung b ON a.ID_LK_SK = b.ID_LK_SK JOIN kreise_AOK c ON a.ID_LK_SK = c.ID_LK_SK'))
+
+
+join = con.execute('SELECT * FROM kreise_sterberate a JOIN kreise_altersverteilung b ON a.ID_LK_SK = b.ID_LK_SK JOIN kreise_AOK c ON a.ID_LK_SK = c.ID_LK_SK)')
+
+con.execute(CreateTable(join))
+
+
+from sqlalchemy import join
+from sqlalchemy.sql import select
+j = students.join(addresses, students.c.id == addresses.c.st_id)
+stmt = select([students]).select_from(j)
+result = conn.execute(stmt)
+result.fetchall()
+
 
 #########################
 # beladen der Datenbank #
