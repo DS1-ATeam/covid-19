@@ -9,16 +9,22 @@ Created on Thu Jun  4 23:48:24 2020
 ############################
 
 from sklearn.model_selection import train_test_split
-
 from sklearn.ensemble import RandomForestRegressor
+
+from sklearn.linear_model import Lasso, LassoCV
+
+from sklearn.preprocessing import StandardScaler
+
+from sklearn.preprocessing import PolynomialFeatures
 
 import pandas as pd
 from itertools import combinations
 
+import numpy as np
+
 import matplotlib.pyplot as plt
 
 from datetime import datetime
-
 
 ##################
 # Daten einlesen #
@@ -70,6 +76,21 @@ features_raw = df[columns]
 
 targets_raw  = df["Sterberate_%"]
 
+######################################
+# metrische Features standardisieren #
+######################################
+
+metrisch = []
+
+for col in features_raw.columns:
+    if features_raw[col].dtypes == 'float64':
+        print("Col:", col)
+        features_raw[col] = features_raw[col]/100
+        metrisch.append(col)
+
+StaSca = StandardScaler()        
+features_raw[metrisch] = StaSca.fit_transform(features_raw[metrisch])
+        
 ###################
 # Dummy Codierung #
 ###################
@@ -99,31 +120,25 @@ X_train, X_test, y_train, y_test = train_test_split(features_raw,
 
 # entferne Spalten, die das Ergebnis zu stark beinflussen
 X_train_selectio = X_train.drop(["age_covid_60+_%", "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
-X_test_selection = X_test.drop(["age_covid_60+_%", "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
-
+X_test_selection = X_test.drop(["age_covid_60+_%",  "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
 
 # Wähle 13 Features aus, die eine Feature Importance > 0 haben
 # wird erreicht, indem min_samples_leaf (Mindestanzahl der Beobachtungen pro Blatt auf 27 gesetzt wird)
 # das Feature age_covid_60+_% wird hier nicht verwendet, da es das Ergebnis zu stark beeinfluss
 # --> erreich Feature Importance von etwa 0,9
+# regr = RandomForestRegressor(max_depth=None, min_samples_leaf=20, n_estimators=100, n_jobs=-1, random_state=0)
 
-regr = RandomForestRegressor(max_depth=None,
-                             min_samples_leaf=40,
-                             n_estimators=100,
-                             n_jobs=-1,
-                             random_state=0)
+regr = Lasso(alpha=0.033)
 regr.fit(X_train_selectio, y_train)
 print("\nScore Trainingsdaten", regr.score(X_train_selectio, y_train))
 print("Score Testdaten", regr.score(X_test_selection, y_test))
 
-# Feature Importance
-fea_impor_ran_for_alle = pd.DataFrame(regr.feature_importances_.transpose(), X_train_selectio.columns, columns=['Feature_Importance'])
-fea_impor_ran_for_alle.sort_values(by='Feature_Importance', ascending=False, inplace=True)
+# Regressionskoeffizienten
+linReg_L1_coef_alle = pd.DataFrame(regr.coef_.transpose(), X_train_selectio.columns, columns=['Koeffizienten'])
+linReg_L1_coef_alle["absolut"] = abs(linReg_L1_coef_alle["Koeffizienten"])
+linReg_L1_coef_alle.sort_values(by='absolut', ascending=False, inplace=True)
+print(linReg_L1_coef_alle)
 
-print("\nFeature Importance:")
-print(fea_impor_ran_for_alle)
-
-'''
 ####################################################
 # Bestes Modell mit sechs Einflussvariablen finden #
 ####################################################
@@ -137,20 +152,25 @@ print(fea_impor_ran_for_alle)
 # finde das beste Modell, das aus 6 dieser 14 Features besteht 
 
 X_14 =  ["age_0_34_%",
-         "age_35_59_%",
+         #"age_35_59_%",
          "age_60+_%",
          "age_covid_0_34_%",
          "age_covid_35_59_%",
-         #"age_covid_60+_%",
-         "Asthma",
-         "Bluthochdruck",
+         "age_covid_60+_%",
+         #"Asthma",
+         #"Bluthochdruck",
          "COPD",
          "Diabetes",
          "Einw_pro_qm",
-         #"gender_covid_f_%",
+         "gender_covid_f_%",
          #"gender_covid_m_%",
-         "Herzinsuffizienz",
-         "Krebs",
+         "gender_covid_unknown_%",
+         #"Herzinsuffizienz",
+         #"Herz",
+         "Hessen",
+         "KHK",
+         #"Krebs",
+         #"Lunge",
          "Lebererkrankungen",
          "Prävalenz"]
 
@@ -158,8 +178,8 @@ X_21 =  ["age_0_34_%",
          "age_35_59_%",
          "age_60+_%",
          "Einw_pro_qm",
-         #"LK",
-         #"SK",
+         "LK",
+         "SK",
          #"Bundesland",
          "age_covid_0_34_%",
          "age_covid_35_59_%",
@@ -173,7 +193,7 @@ X_21 =  ["age_0_34_%",
          #"Prävalenz_plausibles_Intervall_obere_Grenze",
          "Bluthochdruck",
          "KHK",
-         #"Herzinfarkt",
+         "Herzinfarkt",
          "Herzinsuffizienz",
          "Schlaganfall",
          "Diabetes",
@@ -183,9 +203,11 @@ X_21 =  ["age_0_34_%",
          "Lebererkrankungen",
          "Immunschwäche"]
 
+poly = PolynomialFeatures(degree=2)
+
 
 # alle Kombinationen mit 6 aus 14 Features: 6 aus 14 = 3003 Kombinationen
-kombinationen = list(combinations(X_14, 5))
+kombinationen = list(combinations(X_21, 6))
 
 # Liste für alle 3003 Kombinationen
 kombinationen_6 = []
@@ -202,9 +224,9 @@ counter = 0
 
 # Modell für jede der 3003 Kombinationen schätzen
 for komb in kombinationen_6:
-    
+        
     counter  = counter +1
-    if counter % 1000 == 0:
+    if counter % 10000 == 0:
         print(counter)
         now = datetime.now()
         current_time = now.strftime("%H:%M:%S")
@@ -212,15 +234,11 @@ for komb in kombinationen_6:
         print("\n")
     
     # Datensatz auf mögliche Variablen begrenzen
-    train_df_6_komb = X_train[komb]  
-    test_df_6_komb  = X_test[komb]
+    train_df_6_komb = poly.fit_transform(X_train[komb])
+    test_df_6_komb  = poly.fit_transform(X_test[komb]) 
     
     # Modelldefinition
-    regr = RandomForestRegressor(n_estimators       = 100,
-                                 max_depth          = None,
-                                 #min_samples_leaf   = 15, # leichte Regularisierung der Bäume -> Schutz vor Overfitting
-                                 n_jobs             = -1, 
-                                 random_state       = 0)
+    regr = Lasso(alpha=0.05)
 
     # Modelltraining
     regr.fit(train_df_6_komb, y_train)
@@ -229,12 +247,11 @@ for komb in kombinationen_6:
     ar_train_6_komb = regr.score(train_df_6_komb, y_train)
     ar_test_6_komb  = regr.score(test_df_6_komb,  y_test)
     
-    # Feature Importance
-    fea_import_ran_for_6_komb = pd.DataFrame(regr.feature_importances_.transpose(), train_df_6_komb.columns, columns=['Feature_Importance'])
-    fea_import_ran_for_6_komb.sort_values(by='Feature_Importance', ascending=False, inplace=True)
+    # Regressionskoeffizienten
+    linReg_L1_coef_alle = regr.coef_ #pd.DataFrame(regr.coef_.transpose(), train_df_6_komb.columns, columns=['Koeffizienten'])
     
     # Ergebnisse in Liste einfügen
-    ergebnisse.append([komb, [ar_train_6_komb, ar_test_6_komb], [fea_import_ran_for_6_komb]])
+    ergebnisse.append([komb, [ar_train_6_komb, ar_test_6_komb], [linReg_L1_coef_alle]])
 
 ########################
 # bestes Modell finden #
@@ -253,7 +270,6 @@ print('-----------------------------')
 print(ergebnisse[position])
 print("\n")
 
-
 hoechste_ar = 0
 # suche Modell mit höchstem Score auf Testdaten
 for x in range(0, len(ergebnisse)):
@@ -265,7 +281,79 @@ print('--------------------------------------------------')
 print('Bestes Modell mit 6 Features ohne age_covid_60+_%')        
 print('--------------------------------------------------')
 print(ergebnisse[position])
+
 '''
+#############################
+# finales Modell optimieren #
+#############################
+
+print("\n----------------------------")
+print("Finales Modell optimieren")
+print("----------------------------")
+
+# beste sechs Feature
+X_6 = ["age_covid_0_34_%",
+       "age_covid_35_59_%",
+       "Diabetes",
+       "Immunschwäche",
+       "Krebs",
+       "Lebererkrankungen"]
+
+X_train_6 = X_train[X_6]  
+X_test_6  = X_test[X_6]
+
+alphas = np.logspace(-10, 1, 400)
+
+regr_6 = LassoCV(cv=5, alphas=alphas, random_state=0, n_jobs=-1)
+regr_6.fit(X_train_6, y_train)
+
+print("\nBestes Alpha:")
+print(regr_6.alpha_)
+
+# Bestes Alpha:
+# 0.005239601353002634
+
+##################
+# finales Modell #
+##################
+
+print("\n----------------------------")
+print("Finales Modell")
+print("----------------------------")
+
+regr_6 = Lasso(alpha=0.005239601353002634)
+regr_6.fit(X_train_6, y_train)
+print("\nScore Trainingsdaten", regr_6.score(X_train_6, y_train))
+print("Score Testdaten",        regr_6.score(X_test_6, y_test))
+
+# Regressionskoeffizienten
+linReg_L1_coef_alle = pd.DataFrame(regr_6.coef_.transpose(), X_train_6.columns, columns=['Koeffizienten'])
+linReg_L1_coef_alle["absolut"] = abs(linReg_L1_coef_alle["Koeffizienten"])
+linReg_L1_coef_alle.sort_values(by='absolut', ascending=False, inplace=True)
+
+print("\n")
+print(linReg_L1_coef_alle)
+'''
+'''
+----------------------------
+Finales Modell
+----------------------------
+
+Score Trainingsdaten 0.6246224924196526
+Score Testdaten 0.5103636917231099
+
+
+                   Koeffizienten   absolut
+age_covid_0_34_%       -1.836109  1.836109
+age_covid_35_59_%      -1.712645  1.712645
+Diabetes               -0.266169  0.266169
+Krebs                  -0.224199  0.224199
+Lebererkrankungen       0.133093  0.133093
+Immunschwäche          -0.107972  0.107972
+'''
+
+
+
 
 '''
 to do:
@@ -273,6 +361,59 @@ to do:
 - Abweichungen abchecken -> wo liegt größte Differenz?
 - was ist durchschnittlicher Fehler?
 '''
+'''
+-----------------------------
+Bestes Modell mit 6 Features
+-----------------------------
+[['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche'], [0.6224500082108149, 0.5048907778824191], [                   Koeffizienten
+age_covid_0_34_%       -1.756199
+age_covid_35_59_%      -1.656975
+Diabetes               -0.235023
+Krebs                  -0.189913
+Lebererkrankungen       0.087428
+Immunschwäche          -0.068011]]
+
+
+--------------------------------------------------
+Bestes Modell mit 6 Features ohne age_covid_60+_%
+--------------------------------------------------
+[['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche'], [0.6224500082108149, 0.5048907778824191], [                   Koeffizienten
+age_covid_0_34_%       -1.756199
+age_covid_35_59_%      -1.656975
+Diabetes               -0.235023
+Krebs                  -0.189913
+Lebererkrankungen       0.087428
+Immunschwäche          -0.068011]]
+
+-----------------------------
+Bestes Modell mit 6 Features
+-----------------------------
+[['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche'], [0.6236898095211113, 0.5074407497179356], [                   Koeffizienten
+age_covid_0_34_%       -1.786546
+age_covid_35_59_%      -1.678112
+Diabetes               -0.246865
+Krebs                  -0.202931
+Lebererkrankungen       0.104775
+Immunschwäche          -0.083179]]
+
+
+--------------------------------------------------
+Bestes Modell mit 6 Features ohne age_covid_60+_%
+--------------------------------------------------
+[['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche'], [0.6236898095211113, 0.5074407497179356], [                   Koeffizienten
+age_covid_0_34_%       -1.786546
+age_covid_35_59_%      -1.678112
+Diabetes               -0.246865
+Krebs                  -0.202931
+Lebererkrankungen       0.104775
+Immunschwäche          -0.083179]]
+
+
+
+
+
+
+
 
 ##################
 # finales Modell #
@@ -367,7 +508,7 @@ fea_impor_ran_for_6.sort_values(by='Feature_Importance', ascending=False, inplac
 
 print("\nFeature Importance:")
 print(fea_impor_ran_for_6)
-
+'''
 
 
 '''

@@ -114,10 +114,7 @@ engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7S
 con    = engine.connect()
 
 df2.to_sql(name='AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe', con=engine, if_exists='replace',
-           dtype={#"BL":                db.types.String(100),
-                  #"BL_NAME":           db.types.String(100),
-                  "ID_LK_SK":             db.types.INTEGER(),
-                  #"KREIS_NAME":        db.types.String(100),
+           dtype={"ID_LK_SK":             db.types.INTEGER(),
                   "Bluthochdruck":     db.types.Float(precision=3, asdecimal=True),
                   "KHK":               db.types.Float(precision=3, asdecimal=True),
                   "Herzinfarkt":       db.types.Float(precision=3, asdecimal=True),

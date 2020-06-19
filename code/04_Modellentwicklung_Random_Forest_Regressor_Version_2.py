@@ -9,16 +9,16 @@ Created on Thu Jun  4 23:48:24 2020
 ############################
 
 from sklearn.model_selection import train_test_split
-
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import RandomizedSearchCV
+
+from sklearn import linear_model
 
 import pandas as pd
-pd.options.mode.chained_assignment = None  # default='warn'
-
 from itertools import combinations
 
 import matplotlib.pyplot as plt
+
+from datetime import datetime
 
 
 ##################
@@ -100,19 +100,19 @@ X_train, X_test, y_train, y_test = train_test_split(features_raw,
 
 # entferne Spalten, die das Ergebnis zu stark beinflussen
 X_train_selectio = X_train.drop(["age_covid_60+_%", "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
-X_test_selection = X_test.drop(["age_covid_60+_%", "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
+X_test_selection = X_test.drop(["age_covid_60+_%",  "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
 
 
 # Wähle 13 Features aus, die eine Feature Importance > 0 haben
 # wird erreicht, indem min_samples_leaf (Mindestanzahl der Beobachtungen pro Blatt auf 27 gesetzt wird)
 # das Feature age_covid_60+_% wird hier nicht verwendet, da es das Ergebnis zu stark beeinfluss
 # --> erreich Feature Importance von etwa 0,9
+# regr = RandomForestRegressor(max_depth=None, min_samples_leaf=20, n_estimators=100, n_jobs=-1, random_state=0)
 
-regr = RandomForestRegressor(max_depth=None,
-                             min_samples_leaf=27,
-                             n_estimators=100,
-                             n_jobs=-1,
-                             random_state=0)
+
+
+regr = linear_model.Lasso(alpha=0.1)
+
 regr.fit(X_train_selectio, y_train)
 print("\nScore Trainingsdaten", regr.score(X_train_selectio, y_train))
 print("Score Testdaten", regr.score(X_test_selection, y_test))
@@ -121,7 +121,7 @@ print("Score Testdaten", regr.score(X_test_selection, y_test))
 fea_impor_ran_for_alle = pd.DataFrame(regr.feature_importances_.transpose(), X_train_selectio.columns, columns=['Feature_Importance'])
 fea_impor_ran_for_alle.sort_values(by='Feature_Importance', ascending=False, inplace=True)
 
-print("\n")
+print("\nFeature Importance:")
 print(fea_impor_ran_for_alle)
 
 '''
@@ -142,15 +142,50 @@ X_14 =  ["age_0_34_%",
          "age_60+_%",
          "age_covid_0_34_%",
          "age_covid_35_59_%",
-         "age_covid_60+_%",
-         "Bluthochdruck",
+         #"age_covid_60+_%",
+         "Asthma",
+         #"Bluthochdruck",
          "COPD",
-         "Diabetes",
+         #"Diabetes",
          "Einw_pro_qm",
+         #"gender_covid_f_%",
+         #"gender_covid_m_%",
+         "Herzinsuffizienz",
+         "Herz",
+         "Krebs",
+         "Lunge",
+         #"Lebererkrankungen",
+         "Prävalenz"]
+
+X_21 =  ["age_0_34_%",
+         "age_35_59_%",
+         "age_60+_%",
+         "Einw_pro_qm",
+         #"LK",
+         #"SK",
+         #"Bundesland",
+         "age_covid_0_34_%",
+         "age_covid_35_59_%",
+         "age_covid_60+_%",
+         #"age_covid_unknown_%",
          "gender_covid_f_%",
          "gender_covid_m_%",
+         #"gender_covid_unknown_%",
+         "Prävalenz",
+         #"Prävalenz_plausibles_Intervall_untere_Grenze",
+         #"Prävalenz_plausibles_Intervall_obere_Grenze",
+         "Bluthochdruck",
+         "KHK",
+         #"Herzinfarkt",
          "Herzinsuffizienz",
-         "Prävalenz"]
+         "Schlaganfall",
+         "Diabetes",
+         "Asthma",
+         "COPD",
+         "Krebs",
+         "Lebererkrankungen",
+         "Immunschwäche"]
+
 
 # alle Kombinationen mit 6 aus 14 Features: 6 aus 14 = 3003 Kombinationen
 kombinationen = list(combinations(X_14, 6))
@@ -172,8 +207,12 @@ counter = 0
 for komb in kombinationen_6:
     
     counter  = counter +1
-    if counter % 500 == 0:
+    if counter % 1000 == 0:
         print(counter)
+        now = datetime.now()
+        current_time = now.strftime("%H:%M:%S")
+        print("Current Time =", current_time)
+        print("\n")
     
     # Datensatz auf mögliche Variablen begrenzen
     train_df_6_komb = X_train[komb]  
@@ -237,20 +276,15 @@ to do:
 - Abweichungen abchecken -> wo liegt größte Differenz?
 - was ist durchschnittlicher Fehler?
 '''
+'''
+##################
+# finales Modell #
+##################
 
-#############################
-# finales Modell optimieren #
-#############################
+X_6 = ["age_35_59_%", "age_60+_%", "age_covid_0_34_%", "age_covid_35_59_%", "Einw_pro_qm", "Prävalenz"]
 
-print("\n----------------------------")
-print("Finales Modell optimieren")
-print("----------------------------")
+X_6 = ['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Bluthochdruck', 'Krebs']
 
-#X_6 = ["age_35_59_%", "age_60+_%", "age_covid_0_34_%", "age_covid_35_59_%", "Einw_pro_qm", "Prävalenz"]
-
-#X_6 = ['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Bluthochdruck', 'Krebs']
-
-# beste sechs Features
 X_6 = ["age_35_59_%",
        "age_60+_%",
        "age_covid_0_34_%",
@@ -261,41 +295,68 @@ X_6 = ["age_35_59_%",
 X_train_6 = X_train[X_6]  
 X_test_6  = X_test[X_6]
 
-regr_6 = RandomForestRegressor(n_estimators=100,
-                               n_jobs=-1,
-                               random_state=0)
+regr_6 = RandomForestRegressor(max_depth=None,
+                             #min_samples_leaf=27,
+                             n_estimators=100,
+                             n_jobs=-1,
+                             random_state=0)
 
-# Anzahl der Bäume
-n_estimators     = [x for x in range(20,150,20)]
-# maximale Tiefe der Bäume
-max_depth        = [4,5,6,7,8,9,10,11,12,13,14,15,None]
-# minimale Anzahl der Beobachtungen pro Blatt
-min_samples_leaf = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,None]
+regr_6.fit(X_train_6, y_train)
+print("\nScore Trainingsdaten", regr_6.score(X_train_6, y_train))
+print("Score Testdaten",        regr_6.score(X_test_6, y_test))
 
+# Feature Importance
+fea_impor_ran_for_6 = pd.DataFrame(regr_6.feature_importances_.transpose(), X_train_6.columns, columns=['Feature_Importance'])
+fea_impor_ran_for_6.sort_values(by='Feature_Importance', ascending=False, inplace=True)
+
+print("\nFeature Importance:")
+print(fea_impor_ran_for_6)
+
+
+
+from sklearn.model_selection import RandomizedSearchCV# Number of trees in random forest
+
+import numpy as np
+
+n_estimators = [int(x) for x in np.linspace(start = 10, stop = 200, num = 20)]
+
+n_estimators = [x for x in range(20,230,20)]
+# Number of features to consider at every split
+max_features = ['auto', 'sqrt']
+# Maximum number of levels in tree
+#max_depth = [int(x) for x in np.linspace(1, 20, num = 11)]
+
+max_depth = [4,5,6,7,8,9,10, None]
+
+#max_depth.append(None)
+
+# Minimum number of samples required to split a node
+#min_samples_split = [2, 5, 10]
+
+# Minimum number of samples required at each leaf node
+min_samples_leaf = [1,2,3,4,5,6,7,8,9,10]
+
+# Method of selecting samples for training each tree
+bootstrap = [True, False]# Create the random grid
 random_grid = {'n_estimators':      n_estimators,
+               #'max_features':      max_features,
                'max_depth':         max_depth,
-               'min_samples_leaf':  min_samples_leaf}
+               #'min_samples_split': min_samples_split,
+               'min_samples_leaf':  min_samples_leaf,
+               'bootstrap':         bootstrap}
 
-rf_random = RandomizedSearchCV(estimator = regr_6, param_distributions = random_grid, n_iter = 100, cv = 5, verbose=2, random_state=0, n_jobs = -1)# Fit the random search model
+rf_random = RandomizedSearchCV(estimator = regr_6, param_distributions = random_grid, n_iter = 100, cv = 3, verbose=2, random_state=0, n_jobs = -1)# Fit the random search model
 rf_random.fit(X_train_6, y_train)
 
-print("\nBeste Parameter:")
 print(rf_random.best_params_)
 
-# Beste Parameter:
-# {'n_estimators': 80, 'min_samples_leaf': 6, 'max_depth': 15}
 
-##################
-# finales Modell #
-##################
 
-print("\n----------------------------")
-print("Finales Modell")
-print("----------------------------")
-
-regr_6 = RandomForestRegressor(max_depth=15,
-                               min_samples_leaf=6,
-                               n_estimators=80,
+regr_6 = RandomForestRegressor(bootstrap=True,
+                               max_depth=None,
+                               min_samples_leaf=4,
+                               max_features = 'auto',
+                               n_estimators=160,
                                n_jobs=-1,
                                random_state=0)
 
@@ -307,132 +368,74 @@ print("Score Testdaten",        regr_6.score(X_test_6, y_test))
 fea_impor_ran_for_6 = pd.DataFrame(regr_6.feature_importances_.transpose(), X_train_6.columns, columns=['Feature_Importance'])
 fea_impor_ran_for_6.sort_values(by='Feature_Importance', ascending=False, inplace=True)
 
-print("\n")
+print("\nFeature Importance:")
 print(fea_impor_ran_for_6)
-
-
-#####################
-# Modell Auswertung #
-#####################
-
-def print_fea_import(data, text, x):
-
-    data.sort_values('Feature_Importance',inplace=True)
-    
-    #plotte Missing Values
-    plt.rc('xtick',labelsize=12)
-    plt.rc('ytick',labelsize=12)
-    plt.rcParams["figure.figsize"] = [x,4]
-    plt.rcParams['font.family'] = 'sans-serif'
-    
-    plt.xlim([0, max(data['Feature_Importance'])+0.025])
-    
-    plt.barh(data.index.values.astype(str), data['Feature_Importance'], color='darkorange')
-    
-    for i,j in zip(data.index.values.astype(str), data['Feature_Importance']):
-        
-        if j > 0.1:
-            minus = 0.06
-        else:
-            minus = -0.01
-        
-        label = str(round(j*100, 2)) + ' %'
-        
-        plt.text(j-minus, i, label, fontsize=12, family = 'sans-serif', verticalalignment='center')
-    
-    plt.title('Feature Importance Random Forest Regressor', fontsize=12, fontweight="semibold")
-    plt.tight_layout()
-    plt.savefig('../data_analysis/'+text+'.png')
-    plt.show()
-
-print_fea_import(data=fea_impor_ran_for_6, text='Feature_Importance_Random_Forest_Regressor', x=9)
-
-######################################################################################################
-# durchschnittliche Abweichung zwischen tatsächlicher und modellierten durchschnittlicher Sterberate #
-######################################################################################################
-
-# Trainingsdaten
-X_train_6["Sterberate_modelliert"]  = regr_6.predict(X_train_6)
-X_train_6["Sterberate_%"] = y_train
-X_train_6["Differenz"] = abs(X_train_6["Sterberate_%"] - X_train_6["Sterberate_modelliert"])
-mean_train = X_train_6["Differenz"].mean()
-
-# Testdaten
-X_test_6["Sterberate_modelliert"]  = regr_6.predict(X_test_6)
-X_test_6["Sterberate_%"] = y_test
-X_test_6["Differenz"] = abs(X_test_6["Sterberate_%"] - X_test_6["Sterberate_modelliert"])
-mean_test = X_test_6["Differenz"].mean()
-
-# Trainings- und Testdaten
-features_raw_6 = features_raw[X_6]
-features_raw_6["Sterberate_modelliert"]  = regr_6.predict(features_raw_6)
-features_raw_6["Sterberate_%"] = targets_raw
-features_raw_6["Differenz"] = abs(features_raw_6["Sterberate_%"] - features_raw_6["Sterberate_modelliert"])
-features_raw_6["Kreis"] = df["Landkreis"]
-mean_all = features_raw_6["Differenz"].mean()
-
-print("\nDurchschnittliche Abweichung Trainingsdaten in Prozentpunkten:", round(mean_train, 2))
-print("Durchschnittliche Abweichung Testdaten in Prozentpunkten:", round(mean_test, 2))
-print("Durchschnittliche Abweichung aller Daten in Prozentpunkten:", round(mean_all, 2))
-
-# Durchschnitt Abweichung Trainingsdaten in Prozentpunkten: 1.0
-# Durchschnitt Abweichung Testdaten in Prozentpunkten: 1.58
-# Durchschnitt Abweichung aller Daten in Prozentpunkten: 1.12
-
-#########################################################################
-# größte Abweichung zwischen tatsächlicher und modellierter Ausfallrate #
-#########################################################################
-
-maximale_differenz_train = max(X_train_6["Differenz"])
-maximale_differenz_test  = max(X_test_6["Differenz"])
-maximale_differenz_all   = max(features_raw_6["Differenz"])
-
-print("\nGrößte Abweichung Trainingsdaten:", round(maximale_differenz_train, 2))
-print("Größte Abweichung Testdaten:", round(maximale_differenz_test, 2))
-print("Größte Abweichung aller Daten:", round(maximale_differenz_all, 2))
-
-# selektiere die 3 Kreise mit größter Abweichung zwischen tatsächlicher und modellierter Sterberate
-abweichung = features_raw_6[["Kreis", "Sterberate_%", "Sterberate_modelliert", "Differenz"]].sort_values(by='Differenz', ascending=False)[0:3]
-
-print("\n")
-print(abweichung)
-
-'''             Kreis  Sterberate_%  Sterberate_modelliert  Differenz
-18       SK Wolfsburg     14.825581               9.352153   5.473428
-'''
-# größte Differenz tritt bei SK Wolfsburg mit 5.47% auf
-# -> in Wolfsburg ist in einem Senioren-Einrichtungen der Coronavirus ausgebrochen
-# -> 44 Bewohner der Senioren-Einrichtungen sind an COVID-19 verstorben
-# -> große Abweichung plausibel
-# https://www.wolfsburger-nachrichten.de/wolfsburg/article228716311/corona-wolfsburg-infizierte-geschaefte-bus-bahn-infos-informationen-arzt.html
-
-
-'''             Kreis  Sterberate_%  Sterberate_modelliert  Differenz
-126  LK Odenwaldkreis     14.987715               9.599382   5.388333
-'''
-# zweitgrößte Differenz tritt bei SK Odenwaldkreis mit 5.39% auf
-# -> im Odenwaldkreis ist in einem Pflegeheim  der Coronavirus ausgebrochen
-# -> 39 Bewohner des Pflegeheimes sind an COVID-19 verstorben
-# -> große Abweichung plausibel
-# https://www.echo-online.de/lokales/odenwaldkreis/odenwaldkreis/keine-corona-neuinfizierten-oder-toten-im-odenwaldkreis_21703350
-
-'''             Kreis  Sterberate_%  Sterberate_modelliert  Differenz
-164      SK Pirmasens      0.000000               5.054743   5.054743
-'''
-# drittgrößte Differenz tritt bei SK Pirmasens mit 5.05% auf
-# -> in diesem Kreis gab es keine Verstorbenen (überprüft)
-# -> Sterberate liegt bei 0%, es wurde aber eine Sterberate von 5,26% prognostiziert
-# -> Abweichung plausibel
-
-'''
-to do:
-- Feature Importance plotten
-- Abweichungen abchecken -> wo liegt größte Differenz?
-- was ist durchschnittlicher Fehler?
 '''
 
 
 '''
+-----------------------------
+Bestes Modell mit 6 Features
+-----------------------------
+[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Herzinsuffizienz'], [0.933590242615078, 0.5472725185514378], [                   Feature_Importance
+age_covid_35_59_%            0.408485
+age_covid_0_34_%             0.374407
+age_60+_%                    0.092034
+age_35_59_%                  0.076501
+Herzinsuffizienz             0.048573]]
+
+
+--------------------------------------------------
+Bestes Modell mit 6 Features ohne age_covid_60+_%
+--------------------------------------------------
+[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Herzinsuffizienz'], [0.933590242615078, 0.5472725185514378], [                   Feature_Importance
+age_covid_35_59_%            0.408485
+age_covid_0_34_%             0.374407
+age_60+_%                    0.092034
+age_35_59_%                  0.076501
+Herzinsuffizienz             0.048573]]
+
+
+
+[['age_35_59_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Prävalenz', 'Schlaganfall', 'COPD'], [0.9318896832272067, 0.5608403508510347], [                   Feature_Importance
+age_covid_35_59_%            0.409102
+age_covid_0_34_%             0.369917
+age_35_59_%                  0.077068
+Prävalenz                    0.074334
+COPD                         0.049504
+Schlaganfall                 0.020074]]
+[['age_35_59_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'KHK', 'Schlaganfall', 'Krebs'], [0.9351387020508735, 0.5605672176920466], [                   Feature_Importance
+age_covid_35_59_%            0.418243
+age_covid_0_34_%             0.374009
+age_35_59_%                  0.082443
+KHK                          0.074127
+Krebs                        0.033475
+Schlaganfall                 0.017703]]
+
+
+-----------------------------
+Bestes Modell mit 6 Features
+-----------------------------
+[['age_35_59_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Prävalenz', 'Schlaganfall', 'COPD'], [0.9318896832272067, 0.5608403508510347], [                   Feature_Importance
+age_covid_35_59_%            0.409102
+age_covid_0_34_%             0.369917
+age_35_59_%                  0.077068
+Prävalenz                    0.074334
+COPD                         0.049504
+Schlaganfall                 0.020074]]
+
+
+--------------------------------------------------
+Bestes Modell mit 6 Features ohne age_covid_60+_%
+--------------------------------------------------
+[['age_35_59_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Prävalenz', 'Schlaganfall', 'COPD'], [0.9318896832272067, 0.5608403508510347], [                   Feature_Importance
+age_covid_35_59_%            0.409102
+age_covid_0_34_%             0.369917
+age_35_59_%                  0.077068
+Prävalenz                    0.074334
+COPD                         0.049504
+Schlaganfall                 0.020074]]
+
 -----------------------------
 Bestes Modell mit 6 Features
 -----------------------------
@@ -444,6 +447,16 @@ age_35_59_%                  0.069123
 COPD                         0.043376
 Herzinsuffizienz             0.041598]]
 
+-----------------------------
+Bestes Modell mit 6 Features
+-----------------------------
+[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Bluthochdruck', 'Krebs'], [0.9341076168598734, 0.5557575683550408], [                   Feature_Importance
+age_covid_35_59_%            0.402595
+age_covid_0_34_%             0.368780
+age_35_59_%                  0.075342
+Bluthochdruck                0.065017
+age_60+_%                    0.063476
+Krebs                        0.024790]]
 
 --------------------------------------------------
 Bestes Modell mit 6 Features ohne age_covid_60+_%
