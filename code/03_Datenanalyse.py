@@ -1,13 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun  9 09:30:55 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
 
 #################
 # Datenanalysen #
 #################
+
+############################
+# Bibliotheken importieren #
+############################
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -119,7 +121,6 @@ metrisch = ["age_0_34_%",
             "gender_covid_f_%",
             "gender_covid_m_%",
             "gender_covid_unknown_%",
-            #"Sterberate_%",
             "Prävalenz",
             "Prävalenz_plausibles_Intervall_untere_Grenze",
             "Prävalenz_plausibles_Intervall_obere_Grenze",
@@ -143,12 +144,9 @@ for el in metrisch:
     grafikdaten     = temp.groupby(["bins"])['Sterberate_%'].mean() 
     grafikdaten     = pd.concat([grafikdaten, temp["bins"].value_counts()], axis=1, join='inner')
                  
-    print(el)
     plt.bar(grafikdaten.index.values.astype(str), grafikdaten["bins"], color='darkorange')
     plt.title(el, fontsize=12, fontweight="semibold") #15
     plt.xticks(grafikdaten.index.values.astype(str), rotation='vertical')
-    #plt.text(0.625, 0.95, string, fontsize=15, transform=plt1.transAxes,
-    #          verticalalignment='top', bbox= dict(boxstyle='round', alpha=0.5))
 
     plt2 = plt.twinx()
     plt2.plot(grafikdaten.index.values.astype(str), grafikdaten['Sterberate_%'], color='dodgerblue', marker='o', label='Sterberate in %')
@@ -173,9 +171,6 @@ for el in kategorial:
     plt.bar(grafikdaten.index.values.astype(str), grafikdaten[el], color='darkorange')
     plt.title(el, fontsize=12, fontweight="semibold") #15
     plt.xticks(grafikdaten.index.values.astype(str), rotation='vertical')
-    #plt.text(0.625, 0.95, string, fontsize=15, transform=plt1.transAxes,
-    #          verticalalignment='top', bbox= dict(boxstyle='round', alpha=0.5))
-    print(el)
     plt2 = plt.twinx()
     plt2.plot(grafikdaten.index.values.astype(str), grafikdaten['Sterberate_%'], color='dodgerblue', marker='o', label='Sterberate in %')
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.5])

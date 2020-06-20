@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 26 21:27:31 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
+
+#########################
+# Datenaufbereitung RKI #
+#########################
+
+############################
+# Bibliotheken importieren #
+############################
 
 import pandas as pd
 import numpy as np

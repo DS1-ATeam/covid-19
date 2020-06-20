@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 28 09:45:21 2020
-
-@author: Luis Hohmann
+@author: ATeam
 """
+
+#########################
+# Datenaufbereitung AOK #
+#########################
+
+############################
+# Bibliotheken importieren #
+############################
 
 import pandas as pd
 import sqlalchemy as db

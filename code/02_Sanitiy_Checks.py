@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Jun  9 12:25:45 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
 
 ################
 # Datenqualiät #
 ################
 
+############################
+# Bibliotheken importieren #
+############################
+
 import pandas as pd
 import random
 
 df = pd.read_csv("../data/02_Daten_merged.csv")
-
 
 print("\n------------------------------------------------")
 print("Beginn: Datenüberprüfung")
@@ -222,46 +223,50 @@ for x in range(40):
 # kreisfreien Städte (SK): https://de.wikipedia.org/wiki/Liste_der_kreisfreien_St%C3%A4dte_in_Deutschland
 
 '''
-5334:   LK Aachen
-15083:  LK Börde
-5916:   SK Herne
-15085:  LK Harz
-5512:   SK Bottrop
-9376:   LK Schwandorf
-5962:   LK Märkischer Kreis
-12069:  LK Potsdam-Mittelmark
-7320:   SK Zweibrücken
-9478:   LK Lichtenfels
-15090:  LK Stendal
-9576:   LK Roth
-9362:   SK Regensburg
-5570:   LK Warendorf
-14626:  LK Görlitz
-5966:   LK Olpe
-7320:   SK Zweibrücken
-3404:   SK Osnabrück
-5954:   LK Ennepe-Ruhr-Kreis
-16063:  LK Wartburgkreis
-5382:   LK Rhein-Sieg-Kreis
-5915:   SK Hamm
-12062:  LK Elbe-Elster
-6438:   LK Offenbach                stimmt
-8121:   SK Heilbronn                stimmt
-16064:  LK Unstrut-Hainich-Kreis    stimmt
-5112:   SK Duisburg                 stimmt
-13074:  LK Nordwestmecklenburg      stimmt
-6635:   LK Waldeck-Frankenberg      stimmt
-3256:   LK Nienburg (Weser)         stimmt
-5334:   LK Aachen
-7143:   LK Westerwaldkreis
-9376:   LK Schwandorf
-3155:   LK Northeim
-9276:   LK Regen
-7312:   SK Kaiserslautern
-8417:   LK Zollernalbkreis
-6531:   LK Gießen
-9462:   SK Bayreuth                 stimmt
-15081:  LK Altmarkkreis Salzwedel   stimmt
+-------------------------------------------------------
+randomisiert 40 IDs und dazugehörigen Namen überprüfen
+-------------------------------------------------------
+
+9475:   LK Hof                          stimmt
+9276:   LK Regen                        stimmt
+6634:   LK Schwalm-Eder-Kreis           stimmt
+7235:   LK Trier-Saarburg               stimmt
+8225:   LK Neckar-Odenwald-Kreis        stimmt
+15081:  LK Altmarkkreis Salzwedel       stimmt
+3405:   SK Wilhelmshaven                stimmt
+3255:   LK Holzminden                   stimmt
+9763:   SK Kempten                      stimmt
+5916:   SK Herne                        stimmt
+3354:   LK Lüchow-Dannenberg            stimmt
+9175:   LK Ebersberg                    stimmt
+5562:   LK Recklinghausen               stimmt
+9182:   LK Miesbach                     stimmt
+6531:   LK Gießen                       stimmt
+5558:   LK Coesfeld                     stimmt
+5122:   SK Solingen                     stimmt
+3354:   LK Lüchow-Dannenberg            stimmt
+9678:   LK Schweinfurt                  stimmt
+3460:   LK Vechta                       stimmt
+9375:   LK Regensburg                   stimmt
+8231:   SK Pforzheim                    stimmt
+9677:   LK Main-Spessart                stimmt
+5570:   LK Warendorf                    stimmt
+8416:   LK Tübingen                     stimmt
+8225:   LK Neckar-Odenwald-Kreis        stimmt
+6413:   SK Offenbach                    stimmt
+14522:  LK Mittelsachsen                stimmt
+3356:   LK Osterholz                    stimmt
+7336:   LK Kusel                        stimmt
+7231:   LK Bernkastel-Wittlich          stimmt
+7338:   LK Rhein-Pfalz-Kreis            stimmt
+7233:   LK Vulkaneifel                  stimmt
+5112:   SK Duisburg                     stimmt
+9463:   SK Coburg                       stimmt
+3360:   LK Uelzen                       stimmt
+9763:   SK Kempten                      stimmt
+9761:   SK Augsburg                     stimmt
+9778:   LK Unterallgäu                  stimmt
+5513:   SK Gelsenkirchen                stimmt
 '''
 
 print("\n------------------------------------------------")

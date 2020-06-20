@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun  4 23:48:24 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
+
+###########################
+# Modell Lasso-Regression #
+###########################
+
 ############################
 # Bibliotheken importieren #
 ############################
@@ -24,7 +27,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from datetime import datetime
-
 
 ##################
 # Daten einlesen #
@@ -114,43 +116,17 @@ X_train, X_test, y_train, y_test = train_test_split(features_raw,
                                                     test_size = 0.2, 
                                                     random_state = 0)
 
-######################
-# Feature Selecetion #
-######################
-
-# entferne Spalten, die das Ergebnis zu stark beinflussen
-X_train_selectio = X_train.drop(["age_covid_60+_%", "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
-X_test_selection = X_test.drop(["age_covid_60+_%",  "Prävalenz_plausibles_Intervall_untere_Grenze", "Prävalenz_plausibles_Intervall_obere_Grenze"], axis=1, inplace=False)
-
-# Wähle 13 Features aus, die eine Feature Importance > 0 haben
-# wird erreicht, indem min_samples_leaf (Mindestanzahl der Beobachtungen pro Blatt auf 27 gesetzt wird)
-# das Feature age_covid_60+_% wird hier nicht verwendet, da es das Ergebnis zu stark beeinfluss
-# --> erreich Feature Importance von etwa 0,9
-# regr = RandomForestRegressor(max_depth=None, min_samples_leaf=20, n_estimators=100, n_jobs=-1, random_state=0)
-
-regr = Lasso(alpha=0.033)
-regr.fit(X_train_selectio, y_train)
-print("\nScore Trainingsdaten", regr.score(X_train_selectio, y_train))
-print("Score Testdaten", regr.score(X_test_selection, y_test))
-
-# Regressionskoeffizienten
-linReg_L1_coef_alle = pd.DataFrame(regr.coef_.transpose(), X_train_selectio.columns, columns=['Koeffizienten'])
-linReg_L1_coef_alle["absolut"] = abs(linReg_L1_coef_alle["Koeffizienten"])
-linReg_L1_coef_alle.sort_values(by='absolut', ascending=False, inplace=True)
-print(linReg_L1_coef_alle)
-
-
 ####################################################
 # Bestes Modell mit sechs Einflussvariablen finden #
 ####################################################
 
-# diese Features haben für min_samples_leaf=27 eine Feature Importance > 0
-# an dieser Stelle wird das Feature age_covid_60+_% wieder hinzugefügt
-# Wenn das beste Modell das Feature age_covid_60+_% enthält, aber eine zu hohe
-# Feature Importance aufweist, wird dieses Modell verworfen und  das beste Modell
-# ohne das Feature age_covid_60+_% ausgewählt 
+# die folgenden 21 Feature sind plausibel und eignen sich für Modelle
+# die 16 Bundesländer werden nicht berücksichtig, da z. B. die Fallzahlen in
+# Bayern sehr hoch sind und die Sterberate dort auch am höchsten ist
+# Bayern hat aber 96 Kreise, die sehr unterschiedliche Sterberaten aufweisen
+# Bundesländer sind nicht plausibel, aber beeinflussen die Modelle teilweise sehr stark
 
-# finde das beste Modell, das aus 6 dieser 21 Features besteht 
+# finde das beste Modell, das aus 6 dieser 21 Features besteht
 
 X_21 =  ["age_0_34_%",
          "age_35_59_%",
@@ -179,7 +155,7 @@ X_21 =  ["age_0_34_%",
 # alle Kombinationen mit 6 aus 21 Features: 6 aus 21 = 54264 Kombinationen
 kombinationen = list(combinations(X_21, 6))
 
-# Liste für alle 3003 Kombinationen
+# Liste für alle 54264 Kombinationen
 kombinationen_6 = []
 
 # Kombinationen liegen als Tupel in kombinationen vor 
@@ -187,12 +163,12 @@ kombinationen_6 = []
 for k in kombinationen:
     kombinationen_6.append(list(k))
 
-# Liste für alle 3003 Ergebnisse
+# Liste für alle 54264 Ergebnisse
 ergebnisse = []
 
 counter = 0
 
-# Modell für jede der 3003 Kombinationen schätzen
+# Modell für jede der 54264 Kombinationen schätzen
 for komb in [['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche']] :#kombinationen_6:
         
     counter  = counter +1
@@ -399,6 +375,3 @@ print(abweichung)
 # -> in diesem Kreis gab es keine Verstorbenen (überprüft)
 # -> Sterberate liegt bei 0%, es wurde aber eine Sterberate von 5,26% prognostiziert
 # -> Abweichung plausibel
-
-
-

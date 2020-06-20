@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun  4 23:48:24 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
+########################
+# Modell Random Forest #
+########################
+
+
 ############################
 # Bibliotheken importieren #
 ############################
@@ -19,7 +22,6 @@ pd.options.mode.chained_assignment = None
 from itertools import combinations
 
 import matplotlib.pyplot as plt
-
 
 ##################
 # Daten einlesen #
@@ -153,35 +155,6 @@ X_14 =  ["age_0_34_%",
          "Herzinsuffizienz",
          "Prävalenz"]
 
-X_21 =  ["age_0_34_%",
-         "age_35_59_%",
-         "age_60+_%",
-         "Einw_pro_qm",
-         #"LK",
-         #"SK",
-         #"Bundesland",
-         "age_covid_0_34_%",
-         "age_covid_35_59_%",
-         "age_covid_60+_%",
-         #"age_covid_unknown_%",
-         "gender_covid_f_%",
-         "gender_covid_m_%",
-         #"gender_covid_unknown_%",
-         "Prävalenz",
-         #"Prävalenz_plausibles_Intervall_untere_Grenze",
-         #"Prävalenz_plausibles_Intervall_obere_Grenze",
-         "Bluthochdruck",
-         "KHK",
-         #"Herzinfarkt",
-         "Herzinsuffizienz",
-         "Schlaganfall",
-         "Diabetes",
-         "Asthma",
-         "COPD",
-         "Krebs",
-         "Lebererkrankungen",
-         "Immunschwäche"]
-
 # alle Kombinationen mit 6 aus 14 Features: 6 aus 14 = 3003 Kombinationen
 kombinationen = list(combinations(X_14, 6))
 
@@ -295,7 +268,7 @@ random_grid = {'n_estimators':      n_estimators,
                'max_depth':         max_depth,
                'min_samples_leaf':  min_samples_leaf}
 
-rf_random = RandomizedSearchCV(estimator = regr_6,
+rf_random = RandomizedSearchCV(estimator            = regr_6,
                                param_distributions  = random_grid,
                                n_iter               = 100,
                                cv                   = 5,
@@ -319,11 +292,11 @@ print("\n----------------------------")
 print("Finales Modell")
 print("----------------------------")
 
-regr_6 = RandomForestRegressor(max_depth=15,
-                               min_samples_leaf=6,
-                               n_estimators=80,
-                               n_jobs=-1,
-                               random_state=0)
+regr_6 = RandomForestRegressor(max_depth        = 15,
+                               min_samples_leaf = 6,
+                               n_estimators     = 80,
+                               n_jobs           = -1,
+                               random_state     = 0)
 
 regr_6.fit(X_train_6, y_train)
 
@@ -456,105 +429,4 @@ print(abweichung)
 # -> in diesem Kreis gab es keine Verstorbenen (überprüft)
 # -> Sterberate liegt bei 0%, es wurde aber eine Sterberate von 5,26% prognostiziert
 # -> Abweichung plausibel
-
-'''
-to do:
-- Feature Importance plotten
-- Abweichungen abchecken -> wo liegt größte Differenz?
-- was ist durchschnittlicher Fehler?
-'''
-
-
-'''
------------------------------
-Bestes Modell mit 6 Features
------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'COPD', 'Herzinsuffizienz'], [0.9315315157842833, 0.5474463888564249], [                   Feature_Importance
-age_covid_35_59_%            0.399182
-age_covid_0_34_%             0.363235
-age_60+_%                    0.083485
-age_35_59_%                  0.069123
-COPD                         0.043376
-Herzinsuffizienz             0.041598]]
-
-
---------------------------------------------------
-Bestes Modell mit 6 Features ohne age_covid_60+_%
---------------------------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'COPD', 'Herzinsuffizienz'], [0.9315315157842833, 0.5474463888564249], [                   Feature_Importance
-age_covid_35_59_%            0.399182
-age_covid_0_34_%             0.363235
-age_60+_%                    0.083485
-age_35_59_%                  0.069123
-COPD                         0.043376
-Herzinsuffizienz             0.041598]]
-
------------------------------
-Bestes Modell mit 6 Features
------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Einw_pro_qm', 'Prävalenz'], [0.62642105889463, 0.4652831409795684], [                   Feature_Importance
-age_covid_35_59_%            0.505983
-age_covid_0_34_%             0.449954
-age_60+_%                    0.023371
-age_35_59_%                  0.009170
-Prävalenz                    0.008074
-Einw_pro_qm                  0.003448]]
-
-
---------------------------------------------------
-Bestes Modell mit 6 Features ohne age_covid_60+_%
---------------------------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Einw_pro_qm', 'Prävalenz'], [0.62642105889463, 0.4652831409795684], [                   Feature_Importance
-age_covid_35_59_%            0.505983
-age_covid_0_34_%             0.449954
-age_60+_%                    0.023371
-age_35_59_%                  0.009170
-Prävalenz                    0.008074
-Einw_pro_qm                  0.003448]]
-
------------------------------
-Bestes Modell mit 6 Features
------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Krebs', 'Prävalenz'], [0.6268999824335861, 0.4664563993982839], [                   Feature_Importance
-age_covid_35_59_%            0.506419
-age_covid_0_34_%             0.449521
-age_60+_%                    0.021537
-age_35_59_%                  0.009918
-Prävalenz                    0.006690
-Krebs                        0.005915]]
-
---------------------------------------------------
-Bestes Modell mit 6 Features ohne age_covid_60+_%
---------------------------------------------------
-[['age_35_59_%', 'age_60+_%', 'age_covid_0_34_%', 'age_covid_35_59_%', 'Bluthochdruck', 'Krebs'], [0.9343867074868604, 0.5561753587952729], [                   Feature_Importance
-age_covid_35_59_%            0.402595
-age_covid_0_34_%             0.368780
-age_35_59_%                  0.075342
-Bluthochdruck                0.065017
-age_60+_%                    0.063476
-Krebs                        0.024790]]
-
------------------------------
-Bestes Modell mit 6 Features
------------------------------
-[['age_covid_35_59_%', 'age_covid_60+_%', 'Bluthochdruck', 'COPD', 'Immunschwäche', 'Lebererkrankungen'], [0.9344236684218377, 0.51014412922808], [                   Feature_Importance
-age_covid_60+_%              0.654170
-age_covid_35_59_%            0.122881
-Bluthochdruck                0.098686
-Lebererkrankungen            0.048574
-COPD                         0.038512
-Immunschwäche                0.037177]]
-
-
---------------------------------------------------
-Bestes Modell mit 6 Features ohne age_covid_60+_%
---------------------------------------------------
-[['age_covid_35_59_%', 'Asthma', 'COPD', 'gender_covid_m_%', 'Lebererkrankungen', 'Prävalenz'], [0.8924961704628979, 0.28209564937369447], [                   Feature_Importance
-gender_covid_m_%             0.346295
-age_covid_35_59_%            0.344340
-Lebererkrankungen            0.089163
-Prävalenz                    0.087841
-COPD                         0.066519
-Asthma                       0.065842]]
-'''
 

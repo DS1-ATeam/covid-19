@@ -1,9 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu May 28 23:35:21 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
+################
+# Daten mergen #
+################
+
+############################
+# Bibliotheken importieren #
+############################
 
 import pandas as pd
 import sqlalchemy as db

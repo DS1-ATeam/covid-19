@@ -1,9 +1,15 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 26 21:36:49 2020
-
-@author: Stefan Klug
+@author: ATeam
 """
+
+#############################
+# Datenaufbereitung GENESIS #
+#############################
+
+############################
+# Bibliotheken importieren #
+############################
 
 import pandas as pd
 
