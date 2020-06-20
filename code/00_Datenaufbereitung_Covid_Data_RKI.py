@@ -26,7 +26,7 @@ import sqlalchemy as db
 data = pd.read_csv("../data/00_RKI_COVID19_16_06_20.csv")
 
 # Berlin zu SK Berlin zusammenfassen
-data["Landkreis"] = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)
+data["Landkreis"]   = np.where(data.Landkreis.str.contains("Berlin"), 'SK Berlin', data.Landkreis)
 data["IdLandkreis"] = np.where(data.Landkreis == "SK Berlin", 11000, data.IdLandkreis)
 
 ###########################################################
@@ -68,8 +68,8 @@ data_frame["age_covid_60+_%"]     = (data_frame["age_covid_60+"]        / data_f
 data_frame["age_covid_unknown_%"] = (data_frame["age_covid_unknown"]    / data_frame["sum"]) * 100
 
 # unwichtige Spalten löschen
-data_frame.drop(columns=["A00-A04", "A05-A14", "A15-A34", "A35-A59", "A60-A79", "A80+", "unbekannt",
-                         "age_covid_0_34", "age_covid_35_59", "age_covid_60+", "age_covid_unknown", "sum"], inplace=True)
+data_frame.drop(columns=["A00-A04", "A05-A14", "A15-A34", "A35-A59", "A60-A79",       "A80+",              "unbekannt",
+                         "age_covid_0_34",     "age_covid_35_59",    "age_covid_60+", "age_covid_unknown", "sum"], inplace=True)
 
 #############################
 # Sterberate  pro Landkreis #

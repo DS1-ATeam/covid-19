@@ -25,8 +25,6 @@ kreise_Vorerkrankungen = pd.read_csv("../data/01_AOK_ausgewaehlten_Vorerkrankung
 
 kreise_mindestens_eine_Vorerkrankungen = pd.read_csv("../data/01_AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe.csv")
 
-#kreise_AOK = pd.read_csv("../data/01_AOK_aufbereitet.csv") --> gleiche Daten, wie kreise_Vorerkrankungen
-
 ##############################
 # unwichtige Spalten löschen #
 ##############################
@@ -34,7 +32,6 @@ kreise_mindestens_eine_Vorerkrankungen = pd.read_csv("../data/01_AOK_mindestens_
 kreise_altersverteilung.drop(['Unnamed: 0'], axis=1, inplace=True)
 kreise_Vorerkrankungen.drop(['Unnamed: 0'], axis=1, inplace=True)
 kreise_mindestens_eine_Vorerkrankungen.drop(['Unnamed: 0'], axis=1, inplace=True)
-#kreise_AOK.drop(['Unnamed: 0', 'Kreisname'], axis=1, inplace=True)
 
 ################
 # Daten mergen #
@@ -45,9 +42,6 @@ df_merge = pd.merge(kreise_altersverteilung, kreise_sterberate, on='ID_LK_SK')
 df_merge = pd.merge(df_merge, kreise_Vorerkrankungen, on='ID_LK_SK')
 
 df_merge = pd.merge(df_merge, kreise_mindestens_eine_Vorerkrankungen, on='ID_LK_SK')
-
-# Daten mergen --> kreise_Vorerkrankungen
-#df_merge = pd.merge(df_merge, kreise_AOK, on='ID_LK_SK')
 
 #####################
 # Daten exportieren #
@@ -93,4 +87,3 @@ df_merge.to_sql(name='Gesamt', con=engine, if_exists='replace',
                        "Krebs":                                        db.types.Float(precision=3, asdecimal=True),
                        "Lebererkrankungen":                            db.types.Float(precision=3, asdecimal=True),
                        "Immunschwäche":                                db.types.Float(precision=3, asdecimal=True)})
-

@@ -24,9 +24,9 @@ from itertools import combinations
 
 import numpy as np
 
-import matplotlib.pyplot as plt
-
 from datetime import datetime
+
+import matplotlib.pyplot as plt
 
 ##################
 # Daten einlesen #
@@ -286,10 +286,61 @@ linReg_L1_coef_alle.sort_values(by='absolut', ascending=False, inplace=True)
 
 print("\n")
 print(linReg_L1_coef_alle)
+'''
+----------------------------
+Finales Modell
+----------------------------
+
+Score Trainingsdaten 0.6246224924196526
+Score Testdaten 0.5103636917231099
+
+                   Koeffizienten   absolut
+age_covid_0_34_%       -1.836109  1.836109
+age_covid_35_59_%      -1.712645  1.712645
+Diabetes               -0.266169  0.266169
+Krebs                  -0.224199  0.224199
+Lebererkrankungen       0.133093  0.133093
+Immunschwäche          -0.107972  0.107972
+'''
 
 ###############################################################################
 # Modell Auswertung                                                           #
 ###############################################################################
+
+# plotte Features zusammen mit deren Regressionskoeffizienten
+
+def print_fea_import(data, text, x):
+
+    data.sort_values('absolut',inplace=True)
+    
+    plt.rc('xtick',labelsize=12)
+    plt.rc('ytick',labelsize=12)
+    plt.rcParams["figure.figsize"] = [x,4]
+    plt.rcParams['font.family'] = 'sans-serif'
+    
+    plt.xlim([min(data['Koeffizienten'])-0.2, max(data['Koeffizienten'])+0.25])
+    
+    plt.barh(data.index.values.astype(str), data['Koeffizienten'], color='darkorange')
+    
+    for i,j in zip(data.index.values.astype(str), data['Koeffizienten']):
+        
+        if i == "Immunschwäche":
+            minus = +0.2
+        elif j < 0:
+            minus = -0.02
+        else:
+            minus = -0.01
+        
+        label = round(j, 3) # str(round(j*100, 2)) + ' %'
+        
+        plt.text(j-minus, i, label, fontsize=12, family = 'sans-serif', verticalalignment='center')
+    
+    plt.title('Regressionskoeffizienten Lasso-Regressor', fontsize=12, fontweight="semibold")
+    plt.tight_layout()
+    plt.savefig('../Datenanalysen/'+text+'.png')
+    plt.show()
+    
+print_fea_import(data=linReg_L1_coef_alle, text='Regressionskoeffizienten_Lasso_Regressor', x=9)
 
 ######################################################################################################
 # durchschnittliche Abweichung zwischen tatsächlicher und modellierten durchschnittlicher Sterberate #

@@ -12,6 +12,7 @@
 ############################
 
 import pandas as pd
+pd.options.mode.chained_assignment = None
 
 import sqlalchemy as db
 
@@ -19,7 +20,7 @@ import sqlalchemy as db
 # Daten einlesen #
 ##################
 
-# Datensatz Geschlecht, Alter
+# Datensatz Kreise Geschlecht, Alter
 data = pd.read_csv("../data/00_Kreise_Alter_Geschlecht.csv", sep=';')
 
 # Datensatz Kreise Gebietsfläche

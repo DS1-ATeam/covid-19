@@ -321,7 +321,6 @@ def print_fea_import(data, text, x):
 
     data.sort_values('Feature_Importance',inplace=True)
     
-    #plotte Missing Values
     plt.rc('xtick',labelsize=12)
     plt.rc('ytick',labelsize=12)
     plt.rcParams["figure.figsize"] = [x,4]
@@ -344,7 +343,7 @@ def print_fea_import(data, text, x):
     
     plt.title('Feature Importance Random Forest Regressor', fontsize=12, fontweight="semibold")
     plt.tight_layout()
-    plt.savefig('../data_analysis/'+text+'.png')
+    plt.savefig('../Datenanalyses/'+text+'.png')
     plt.show()
 
 print_fea_import(data=fea_impor_ran_for_6, text='Feature_Importance_Random_Forest_Regressor', x=9)
@@ -374,8 +373,8 @@ features_raw_6["Kreis"] = df["Landkreis"]
 mean_all = features_raw_6["Differenz"].mean()
 
 print("\nDurchschnittliche Abweichung Trainingsdaten in Prozentpunkten:", round(mean_train, 2))
-print("Durchschnittliche Abweichung Testdaten in Prozentpunkten:", round(mean_test, 2))
-print("Durchschnittliche Abweichung aller Daten in Prozentpunkten:", round(mean_all, 2))
+print("Durchschnittliche Abweichung Testdaten in Prozentpunkten:",        round(mean_test, 2))
+print("Durchschnittliche Abweichung aller Daten in Prozentpunkten:",      round(mean_all, 2))
 
 # Durchschnitt Abweichung Trainingsdaten in Prozentpunkten: 1.0
 # Durchschnitt Abweichung Testdaten in Prozentpunkten: 1.58
@@ -390,8 +389,8 @@ maximale_differenz_test  = max(X_test_6["Differenz"])
 maximale_differenz_all   = max(features_raw_6["Differenz"])
 
 print("\nGrößte Abweichung Trainingsdaten:", round(maximale_differenz_train, 2))
-print("Größte Abweichung Testdaten:", round(maximale_differenz_test, 2))
-print("Größte Abweichung aller Daten:", round(maximale_differenz_all, 2))
+print("Größte Abweichung Testdaten:",        round(maximale_differenz_test, 2))
+print("Größte Abweichung aller Daten:",      round(maximale_differenz_all, 2))
 
 # Größte Abweichung Trainingsdaten: 5.47
 # Größte Abweichung Testdaten: 5.05
