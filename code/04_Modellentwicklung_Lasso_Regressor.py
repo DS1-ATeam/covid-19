@@ -116,6 +116,9 @@ X_train, X_test, y_train, y_test = train_test_split(features_raw,
                                                     test_size = 0.2, 
                                                     random_state = 0)
 
+print("Training set has {} samples.".format(X_train.shape[0]))
+print("Testing set has {} samples.".format(X_test.shape[0]))
+
 ####################################################
 # Bestes Modell mit sechs Einflussvariablen finden #
 ####################################################

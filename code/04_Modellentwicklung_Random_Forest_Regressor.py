@@ -96,6 +96,9 @@ X_train, X_test, y_train, y_test = train_test_split(features_raw,
                                                     test_size = 0.2, 
                                                     random_state = 0)
 
+print("Training set has {} samples.".format(X_train.shape[0]))
+print("Testing set has {} samples.".format(X_test.shape[0]))
+
 ######################
 # Feature Selecetion #
 ######################
@@ -118,7 +121,7 @@ regr = RandomForestRegressor(max_depth=None,
 regr.fit(X_train_selectio, y_train)
 
 print("\nScore Trainingsdaten", regr.score(X_train_selectio, y_train))
-print("Score Testdaten", regr.score(X_test_selection, y_test))
+print("Score Testdaten",        regr.score(X_test_selection, y_test))
 
 # Feature Importance
 fea_impor_ran_for_alle = pd.DataFrame(regr.feature_importances_.transpose(), X_train_selectio.columns, columns=['Feature_Importance'])
@@ -257,6 +260,10 @@ regr_6 = RandomForestRegressor(n_estimators=100,
                                n_jobs=-1,
                                random_state=0)
 
+##################################################
+# finde beste Hyperparamter mit Kreuzvalidierung #
+##################################################
+
 # Anzahl der Bäume
 n_estimators     = [x for x in range(20,150,20)]
 # maximale Tiefe der Bäume
@@ -278,10 +285,10 @@ rf_random = RandomizedSearchCV(estimator            = regr_6,
 
 rf_random.fit(X_train_6, y_train)
 
-print("\nBeste Parameter:")
+print("\nBeste Hyperparamter:")
 print(rf_random.best_params_)
 
-# Beste Parameter:
+# Beste Hyperparamter:
 # {'n_estimators': 80, 'min_samples_leaf': 6, 'max_depth': 15}
 
 ##################
