@@ -57,9 +57,9 @@ df.rename(columns={"KREIS": "ID_LK_SK"}, inplace=True)
 
 df.to_csv("../data/01_AOK_ausgewaehlten_Vorerkrankungen.csv")
 
-#####################
-# Datenbank beladen # 
-#####################
+##################################
+# Daten in MySQL-Datenbank laden # 
+##################################
 
 engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con    = engine.connect()
@@ -112,9 +112,9 @@ df2.rename(columns={"KREIS": "ID_LK_SK"}, inplace=True)
 
 df2.to_csv("../data/01_AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe.csv")
 
-#####################
-# Datenbank beladen # 
-#####################
+##################################
+# Daten in MySQL-Datenbank laden # 
+##################################
 
 engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con    = engine.connect()

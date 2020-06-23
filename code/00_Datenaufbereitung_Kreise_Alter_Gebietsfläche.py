@@ -79,9 +79,9 @@ data_new_final.fillna(0, inplace=True)
 
 data_new_final.to_csv("../data/01_Kreise_Altersverteilung_Fläche.csv")
 
-#####################
-# Datenbank beladen # 
-#####################
+##################################
+# Daten in MySQL-Datenbank laden # 
+##################################
 
 engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con     = engine.connect()

@@ -1,4 +1,4 @@
-Landkreis,ID_LK_SK,LK_SK,Bundesland,age_covid_0_34_%,age_covid_35_59_%,age_covid_60+_%,age_covid_unknown_%,gender_covid_f_%,gender_covid_m_%,gender_covid_unknown_%,Sterberate_%
+Kreis,ID_LK_SK,LK_SK,Bundesland,age_covid_0_34_%,age_covid_35_59_%,age_covid_60+_%,age_covid_unknown_%,gender_covid_f_%,gender_covid_m_%,gender_covid_unknown_%,Sterberate_%
 LK Ahrweiler,7131,LK,Rheinland-Pfalz,42.05128205128205,41.02564102564102,15.897435897435896,1.0256410256410255,45.93023255813954,51.74418604651163,2.3255813953488373,0.5128205128205128
 LK Aichach-Friedberg,9771,LK,Bayern,28.79177377892031,43.958868894601544,27.249357326478147,0.0,50.69444444444444,49.30555555555556,0.0,5.141388174807198
 LK Alb-Donau-Kreis,8425,LK,Baden-Württemberg,24.84375,49.375,25.78125,0.0,55.85585585585585,44.14414414414414,0.0,4.0625

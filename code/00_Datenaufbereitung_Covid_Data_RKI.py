@@ -187,21 +187,24 @@ data_frame = data_frame[cols]
 # Umbenennen der Spalte IdLandkreis
 data_frame.rename(columns={'IdLandkreis': 'ID_LK_SK'}, inplace=True)
 
+# Umbennen von Landkreis in Kreis
+data_frame.index.names = ['Kreis']
+
 #####################
 # Daten exportieren #
 #####################
 
 data_frame.to_csv("../data/01_RKI_Kreise_Sterberate.csv")
 
-#####################
-# Datenbank beladen # 
-#####################
+##################################
+# Daten in MySQL-Datenbank laden # 
+##################################
 
 engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con     = engine.connect()
 
 data_frame.to_sql(name='kreise_sterberate',          con=engine, if_exists='replace',
-                  dtype={"Landkreis":                db.types.NVARCHAR(length=100),
+                  dtype={"Kreis":                    db.types.NVARCHAR(length=100),
                          "ID_LK_SK":                 db.types.INTEGER(),
                          "LK_SK":                    db.types.NVARCHAR(length=5),
                          "Bundesland":               db.types.NVARCHAR(length=100),

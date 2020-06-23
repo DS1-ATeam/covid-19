@@ -11,6 +11,8 @@
 # Bibliotheken importieren #
 ############################
 
+import sqlalchemy as db
+
 from sklearn.model_selection import train_test_split
 
 from sklearn.linear_model import Lasso, LassoCV
@@ -26,13 +28,32 @@ import numpy as np
 
 from datetime import datetime
 
-import matplotlib.pyplot as plt
+import matplotlib.pyplot as 
+
+'''
+###################################
+# Daten aus MySQL-Datenbank laden #
+###################################
+
+engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
+con     = engine.connect()
+
+metadata    = db.MetaData()
+table       = db.Table('Gesamt', metadata, autoload=True, autoload_with=engine)
+query       = db.select([table])
+results     = con.execute(query).fetchall()
+df          = pd.DataFrame(results)
+df.columns  = results[0].keys()
+df.drop(columns=['index'], inplace=True)
+df.info()
+'''
 
 ##################
 # Daten einlesen #
 ##################
 
-df = pd.read_csv("../data/02_Daten_merged.csv")
+df = pd.read_csv("../data/02_Gesamt.csv")
+df.info()
 
 ################################
 # mögliche Features für Modell #
@@ -366,7 +387,7 @@ features_raw_6 = features_raw[X_6]
 features_raw_6["Sterberate_modelliert"]  = regr_6.predict(features_raw_6)
 features_raw_6["Sterberate_%"] = targets_raw
 features_raw_6["Differenz"] = abs(features_raw_6["Sterberate_%"] - features_raw_6["Sterberate_modelliert"])
-features_raw_6["Kreis"] = df["Landkreis"]
+features_raw_6["Kreis"] = df["Kreis"]
 mean_all = features_raw_6["Differenz"].mean()
 
 print("\nDurchschnittliche Abweichung Trainingsdaten in Prozentpunkten:", round(mean_train, 2))

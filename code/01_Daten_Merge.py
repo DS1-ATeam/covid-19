@@ -47,11 +47,11 @@ df_merge = pd.merge(df_merge, kreise_mindestens_eine_Vorerkrankungen, on='ID_LK_
 # Daten exportieren #
 #####################
 
-df_merge.to_csv("../data/02_Daten_merged.csv")
+df_merge.to_csv("../data/02_Gesamt.csv")
 
-#####################
-# Datenbank beladen # 
-#####################
+##################################
+# Daten in MySQL-Datenbank laden # 
+##################################
 
 engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
 con     = engine.connect()
@@ -59,7 +59,7 @@ con     = engine.connect()
 df_merge.to_sql(name='Gesamt', con=engine, if_exists='replace',
                 dtype={"ID_LK_SK":                                     db.types.INTEGER(),
                        "LK_SK":                                        db.types.NVARCHAR(length=5),
-                       "Landkreis":                                    db.types.NVARCHAR(length=100),
+                       "Kreis":                                        db.types.NVARCHAR(length=100),
                        "Bundesland":                                   db.types.NVARCHAR(length=100),
                        "age_covid_0_34_%":                             db.types.Float(precision=3, asdecimal=True),
                        "age_covid_35_59_%":                            db.types.Float(precision=3, asdecimal=True),

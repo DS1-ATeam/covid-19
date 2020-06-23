@@ -11,6 +11,9 @@
 # Bibliotheken importieren #
 ############################
 
+import sqlalchemy as db
+
+
 from sklearn.model_selection import train_test_split
 
 from sklearn.ensemble import RandomForestRegressor
@@ -23,11 +26,30 @@ from itertools import combinations
 
 import matplotlib.pyplot as plt
 
+'''
+###################################
+# Daten aus MySQL-Datenbank laden #
+###################################
+
+engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
+con     = engine.connect()
+
+metadata    = db.MetaData()
+table       = db.Table('Gesamt', metadata, autoload=True, autoload_with=engine)
+query       = db.select([table])
+results     = con.execute(query).fetchall()
+df          = pd.DataFrame(results)
+df.columns  = results[0].keys()
+df.drop(columns=['index'], inplace=True)
+df.info()
+'''
+
 ##################
 # Daten einlesen #
 ##################
 
-df = pd.read_csv("../data/02_Daten_merged.csv")
+df = pd.read_csv("../data/02_Gesamt.csv")
+df.info()
 
 ################################
 # mögliche Features für Modell #
@@ -317,6 +339,24 @@ fea_impor_ran_for_6.sort_values(by='Feature_Importance', ascending=False, inplac
 print("\n")
 print(fea_impor_ran_for_6)
 
+'''
+----------------------------
+Finales Modell
+----------------------------
+
+Score Trainingsdaten 0.7460064944570559
+Score Testdaten 0.47740379921726045
+
+
+                   Feature_Importance
+age_covid_35_59_%            0.465871
+age_covid_0_34_%             0.407989
+age_60+_%                    0.054201
+age_35_59_%                  0.034379
+Herzinsuffizienz             0.020758
+COPD                         0.016802
+'''
+
 
 ###############################################################################
 # Modell Auswertung                                                           #
@@ -350,7 +390,7 @@ def print_fea_import(data, text, x):
     
     plt.title('Feature Importance Random Forest Regressor', fontsize=12, fontweight="semibold")
     plt.tight_layout()
-    plt.savefig('../Datenanalyses/'+text+'.png')
+    plt.savefig('../Datenanalysen/'+text+'.png')
     plt.show()
 
 print_fea_import(data=fea_impor_ran_for_6, text='Feature_Importance_Random_Forest_Regressor', x=9)
@@ -376,7 +416,7 @@ features_raw_6 = features_raw[X_6]
 features_raw_6["Sterberate_modelliert"]  = regr_6.predict(features_raw_6)
 features_raw_6["Sterberate_%"] = targets_raw
 features_raw_6["Differenz"] = abs(features_raw_6["Sterberate_%"] - features_raw_6["Sterberate_modelliert"])
-features_raw_6["Kreis"] = df["Landkreis"]
+features_raw_6["Kreis"] = df["Kreis"]
 mean_all = features_raw_6["Differenz"].mean()
 
 print("\nDurchschnittliche Abweichung Trainingsdaten in Prozentpunkten:", round(mean_train, 2))

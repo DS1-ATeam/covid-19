@@ -11,10 +11,35 @@
 # Bibliotheken importieren #
 ############################
 
+import sqlalchemy as db
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv("../data/02_Daten_merged.csv")
+'''
+###################################
+# Daten aus MySQL-Datenbank laden #
+###################################
+
+engine  = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
+con     = engine.connect()
+
+metadata    = db.MetaData()
+table       = db.Table('Gesamt', metadata, autoload=True, autoload_with=engine)
+query       = db.select([table])
+results     = con.execute(query).fetchall()
+df          = pd.DataFrame(results)
+df.columns  = results[0].keys()
+df.drop(columns=['index'], inplace=True)
+df.info()
+'''
+
+##################
+# Daten einlesen #
+##################
+
+df = pd.read_csv("../data/02_Gesamt.csv")
+df.info()
    
 ######################
 # Korrelationsmatrix #
