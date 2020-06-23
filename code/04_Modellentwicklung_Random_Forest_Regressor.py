@@ -386,7 +386,7 @@ def print_fea_import(data, text, x):
     
     plt.title('Feature Importance Random Forest Regressor', fontsize=12, fontweight="semibold")
     plt.tight_layout()
-    plt.savefig('../img/data_analysis_diagrams/'+text+'.png')
+    plt.savefig('../img/models/'+text+'.png')
     plt.show()
 
 print_fea_import(data=fea_impor_ran_for_6, text='Feature_Importance_Random_Forest_Regressor', x=9)

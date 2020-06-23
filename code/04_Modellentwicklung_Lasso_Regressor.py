@@ -354,7 +354,7 @@ def print_fea_import(data, text, x):
     
     plt.title('Regressionskoeffizienten Lasso-Regressor', fontsize=12, fontweight="semibold")
     plt.tight_layout()
-    plt.savefig('../img/data_analysis_diagrams/'+text+'.png')
+    plt.savefig('../img/models/'+text+'.png')
     plt.show()
     
 print_fea_import(data=linReg_L1_coef_alle, text='Regressionskoeffizienten_Lasso_Regressor', x=9)
