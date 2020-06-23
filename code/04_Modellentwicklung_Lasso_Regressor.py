@@ -13,22 +13,15 @@
 
 import sqlalchemy as db
 
+from itertools import combinations
+import numpy as np
+from datetime import datetime
+import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-
 from sklearn.linear_model import Lasso, LassoCV
-
 from sklearn.preprocessing import StandardScaler
-
 import pandas as pd
 pd.options.mode.chained_assignment = None
-
-from itertools import combinations
-
-import numpy as np
-
-from datetime import datetime
-
-import matplotlib.pyplot as 
 
 '''
 ###################################

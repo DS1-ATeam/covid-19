@@ -117,7 +117,7 @@ df2.to_csv("../data/01_AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe.csv")
 ##################################
 
 engine = db.create_engine('mysql://ateam:5araPGQ7TTjHSKo6BHxO4fdDk5C2MDKyQvnVC7Sb@37.221.198.242:3308/data_science')
-con    = engine.connect()
+con = engine.connect()
 
 df2.to_sql(name='AOK_mindestens_eine_Vorerkrankung_schwere_Verläufe', con=engine, if_exists='replace',
            dtype={"ID_LK_SK":             db.types.INTEGER(),

@@ -12,18 +12,14 @@
 ############################
 
 import sqlalchemy as db
-
+import matplotlib.pyplot as plt
+from itertools import combinations
 from sklearn.model_selection import train_test_split
-
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import RandomizedSearchCV
-
 import pandas as pd
 pd.options.mode.chained_assignment = None
 
-from itertools import combinations
-
-import matplotlib.pyplot as plt
 
 '''
 ###################################

@@ -1,2 +1,4 @@
 # Vergleich von Random Forest und linearer Regression zur Bestimmung der COVID-19 Sterberate
 #### Data Science 1 | Goethe-Universität Frankfurt am Main | Tilo Flasche, Luis Hohmann, Stefan Klug
+
+Wir möchten die Sterberate der COVID-19 Erkrankten pro Kreis mittels einer L1-regularisierten linearen Regression (Lasso-Regression) und einem Random Forest modellieren. Hierfür fassen wir Daten aus drei unterschiedlichen Quellen mit Informationen auf Ebene der Kreise zusammen, sodass etliche Merkmale zu jedem Kreis vorliegen. $80 \%$ des Datensatzes verwenden wir, um unsere Modelle zu trainieren und die restlichen $20 \%$ dienen als Testdaten zur Evaluation. Es stellt sich heraus, dass die Lasso-Regression die etwas bessere Performance aufweist. Die Sterberate pro Kreis wird bei beiden Modellen indirekt am stärksten durch den prozentualen Anteil der über 59 Jährigen an COVID-19 erkrankten Personen beeinflusst. 

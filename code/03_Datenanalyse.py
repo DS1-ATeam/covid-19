@@ -12,7 +12,6 @@
 ############################
 
 import sqlalchemy as db
-
 import pandas as pd
 import matplotlib.pyplot as plt
 

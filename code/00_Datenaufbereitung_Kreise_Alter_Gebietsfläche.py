@@ -11,10 +11,9 @@
 # Bibliotheken importieren #
 ############################
 
+import sqlalchemy as db
 import pandas as pd
 pd.options.mode.chained_assignment = None
-
-import sqlalchemy as db
 
 ##################
 # Daten einlesen #
@@ -92,4 +91,3 @@ data_new_final.to_sql(name='kreise_altersverteilung', con=engine, if_exists='rep
                              "age_35_59_%":           db.types.Float(precision=3, asdecimal=True),
                              "age_60+_%":             db.types.Float(precision=3, asdecimal=True),
                              "Einw_pro_qm":           db.types.Float(precision=3, asdecimal=True)})
-
