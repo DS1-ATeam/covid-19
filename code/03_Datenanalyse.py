@@ -66,7 +66,7 @@ plt.bar(x_age, y1_age, color='darkorange')
 plt.title("durchschnittliche Altersverteilung der Kreise", fontsize=12, fontweight="semibold")
 plt.xticks(x_age, rotation='vertical')
 plt.tight_layout()
-plt.savefig('../Datenanalysen/Altersverteilung.png')
+plt.savefig('../img/data_analysis_diagrams/Altersverteilung.png')
 plt.show()    
     
 #########
@@ -91,7 +91,7 @@ plt.bar(x_covid, y1_covid, color='darkorange')
 plt.title("durchschnittliche Altersverteilung der Covid Patienten", fontsize=12, fontweight="semibold")
 plt.xticks(x_covid, rotation='vertical')
 plt.tight_layout()
-plt.savefig('../Datenanalysen/Altersverteilung_Covid.png')
+plt.savefig('../img/data_analysis_diagrams/Altersverteilung_Covid.png')
 plt.show()
 
 ##########
@@ -115,7 +115,7 @@ plt.bar(x_gender, y1_gender, color='darkorange')
 plt.title("durschnittliche Geschlechterverteilung der Covid Patienten", fontsize=12, fontweight="semibold") 
 plt.xticks(x_gender, rotation='vertical')
 plt.tight_layout()
-plt.savefig('../Datenanalysen/Geschlechterverteilung_Covid.png')
+plt.savefig('../img/data_analysis_diagrams/Geschlechterverteilung_Covid.png')
 plt.show()    
 
 #############
@@ -139,7 +139,7 @@ plt.bar(x_prävalenz, y1_prävalenz, color='darkorange')
 plt.title("Durchschnittswerte der Prävalenz", fontsize=12, fontweight="semibold")
 plt.xticks(x_prävalenz, rotation=45)
 plt.tight_layout()
-plt.savefig('../Datenanalysen/Prävalenz.png')
+plt.savefig('../img/data_analysis_diagrams/Prävalenz.png')
 plt.show()
        
 #######################
@@ -196,7 +196,7 @@ for el in metrisch:
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.9])
     plt2.set_ylabel('Sterberate in %')
     plt.tight_layout()
-    plt.savefig('../Datenanalysen/Sterberate_' + el + '.png')
+    plt.savefig('../img/data_analysis_diagrams/Sterberate_' + el + '.png')
     plt.show()
 
 #########################
@@ -225,6 +225,6 @@ for el in kategorial:
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.9])
     plt2.set_ylabel('Sterberate in %')
     plt.tight_layout()
-    plt.savefig('../Datenanalysen/Sterberate_' + el + '.png')
+    plt.savefig('../img/data_analysis_diagrams/Sterberate_' + el + '.png')
     plt.show()
     

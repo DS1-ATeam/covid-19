@@ -88,5 +88,5 @@ sns.heatmap(total_metrisch.corr(method='pearson'), annot=True, fmt='.2f',
 ax.set_xticklabels(ax.get_xticklabels(), rotation=80)  #"horizontal")
 ax.set_yticklabels(ax.get_yticklabels(), rotation="horizontal")
 plt.tight_layout()
-plt.savefig('../Datenanalysen/Korrelationsmatrix.png')
+plt.savefig('../img/data_analysis_diagrams/Korrelationsmatrix.png')
 plt.show()
