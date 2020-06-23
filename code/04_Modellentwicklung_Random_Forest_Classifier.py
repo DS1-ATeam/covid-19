@@ -168,10 +168,10 @@ fea_impor_ran_for_alle.sort_values(by='Feature_Importance', ascending=False, inp
 print("\n")
 print(fea_impor_ran_for_alle)
 
-'''
-#######################################################
-# Bestes Modell mit sechs Einflussvariablen finden    #
-#######################################################
+
+####################################################
+# Bestes Modell mit sechs Einflussvariablen finden #
+####################################################
 
 # Feature Selection liefert diese zwölf Features
 X_12 = ["age_covid_0_34_%",
@@ -244,7 +244,7 @@ print('-------------------------------------')
 print('Bestes Modell mit 6 Einflussvariablen')        
 print('-------------------------------------')
 print(ergebnisse[position])
-'''
+
 '''
 -------------------------------------
 Bestes Modell mit 6 Einflussvariablen
@@ -257,7 +257,6 @@ Diabetes                   0.131144
 age_60+_%                  0.130089
 Asthma                     0.125255]]
 '''
-
 
 #############################
 # finales Modell optimieren #

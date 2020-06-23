@@ -186,7 +186,7 @@ ergebnisse = []
 counter = 0
 
 # Modell für jede der 54264 Kombinationen schätzen
-for komb in [['age_covid_0_34_%', 'age_covid_35_59_%', 'Diabetes', 'Krebs', 'Lebererkrankungen', 'Immunschwäche']] :#kombinationen_6:
+for komb in kombinationen_6:
         
     counter  = counter +1
     if counter % 10000 == 0:
@@ -303,6 +303,7 @@ linReg_L1_coef_alle.sort_values(by='absolut', ascending=False, inplace=True)
 
 print("\n")
 print(linReg_L1_coef_alle)
+
 '''
 ----------------------------
 Finales Modell
@@ -384,8 +385,8 @@ features_raw_6["Kreis"] = df["Kreis"]
 mean_all = features_raw_6["Differenz"].mean()
 
 print("\nDurchschnittliche Abweichung Trainingsdaten in Prozentpunkten:", round(mean_train, 2))
-print("Durchschnittliche Abweichung Testdaten in Prozentpunkten:",        round(mean_test, 2))
-print("Durchschnittliche Abweichung aller Daten in Prozentpunkten:",      round(mean_all, 2))
+print("Durchschnittliche Abweichung Testdaten in Prozentpunkten:",        round(mean_test,  2))
+print("Durchschnittliche Abweichung aller Daten in Prozentpunkten:",      round(mean_all,   2))
 
 # Durchschnitt Abweichung Trainingsdaten in Prozentpunkten: 1.25
 # Durchschnitt Abweichung Testdaten in Prozentpunkten: 1.45
@@ -400,8 +401,8 @@ maximale_differenz_test  = max(X_test_6["Differenz"])
 maximale_differenz_all   = max(features_raw_6["Differenz"])
 
 print("\nGrößte Abweichung Trainingsdaten:", round(maximale_differenz_train, 2))
-print("Größte Abweichung Testdaten:",        round(maximale_differenz_test, 2))
-print("Größte Abweichung aller Daten:",      round(maximale_differenz_all, 2))
+print("Größte Abweichung Testdaten:",        round(maximale_differenz_test,  2))
+print("Größte Abweichung aller Daten:",      round(maximale_differenz_all,   2))
 
 # Größte Abweichung Trainingsdaten: 5.98
 # Größte Abweichung Testdaten: 6.69

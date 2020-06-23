@@ -62,24 +62,31 @@ df["Sanity_check_covid_age"]     = (df["age_covid_0_34_%"] + df["age_covid_35_59
 
 df["Sanity_check_covid_gender"]  = (df["gender_covid_f_%"] + df["gender_covid_m_%"] + df["gender_covid_unknown_%"])/100
 
+flag = 0
 
 if sum(df["Sanity_check_age"]) != len(df["Sanity_check_age"]):
     print("\n------------------------------------------------")
     print("Sanity_check_age")
     print("Werte summieren sich nicht zu 100!")
     print("------------------------------------------------")
+    flag = 1
 
 if sum(df["Sanity_check_covid_age"]) != len(df["Sanity_check_covid_age"]):
     print("\n------------------------------------------------")
     print("Sanity_check_covid_age")
     print("Werte summieren sich nicht zu 100!")
     print("------------------------------------------------")
+    flag = 1
     
 if sum(df["Sanity_check_covid_gender"]) != len(df["Sanity_check_covid_gender"]):
     print("\n------------------------------------------------")
     print("Sanity_check_covid_gender")
     print("Werte summieren sich nicht zu 100!")
     print("------------------------------------------------")
+    flag = 1
+
+if flag == 0:
+    print("\nAlles OK!")
     
 df.drop(columns=['Sanity_check_age', 'Sanity_check_covid_age', 'Sanity_check_covid_gender'])
     
@@ -121,29 +128,40 @@ prozent = ["age_0_34_%",
            "Lebererkrankungen",
            "Immunschwäche"]
 
+flag = 0
 for el in prozent:
     if min(df[el]) < 0:
         print("\n------------------------------------------------")
         print(el)
         print("Wert(e) kleiner 0!")
         print("------------------------------------------------")
+        flag = 1
 
     if max(df[el]>100):
         print("\n------------------------------------------------")
         print(el)
         print("Wert(e) größer 100!")
         print("------------------------------------------------")
+        flag = 1
+        
+if flag == 0:
+    print("\nAlles OK!")
     
     
 #############################################
 # alle Werte in Einw_pro_qm größer gleich 0 #
 #############################################
         
+flag = 0
 if min(df["Einw_pro_qm"]) < 0:
     print("\n------------------------------------------------")
     print("Einw_pro_qm")
     print("Wert(e) kleiner 0!")
     print("------------------------------------------------")
+    flag = 1
+    
+if flag == 0:
+    print("\nAlles OK!")
 
 ###########################
 # Bundesländer überprüfen #
@@ -167,19 +185,25 @@ bundeslaender = ["Baden-Württemberg",
                  "Thüringen"]
 
 bundeslaender_in_df = df["Bundesland"].unique()
-     
+  
+flag = 0   
 for bundesland in bundeslaender:
     if bundesland not in bundeslaender_in_df:
         print("\n------------------------------------------------")
         print(bundesland)
         print("Nicht im Datensatz enthalten!")
         print("------------------------------------------------")
+        flag = 1
         
 if len(bundeslaender) != len(bundeslaender_in_df):
     print("\n------------------------------------------------")
     print("Bundesland")
     print("Ungültige Werte!")
     print("------------------------------------------------")
+    flag = 1
+
+if flag == 0:
+    print("\nAlles OK!")
          
 #########
 # LK SK #
@@ -189,38 +213,54 @@ LK_SK = ["LK", "SK"]
 
 LK_SK_in_df = df["LK_SK"].unique()
 
+flag = 0
 for el in LK_SK:
     if el not in LK_SK_in_df:
         print("\n------------------------------------------------")
         print(el)
         print("Nicht im Datensatz enthalten!")
         print("------------------------------------------------")
+        flag = 1
 
 if len(LK_SK) != len(LK_SK_in_df):
     print("\n------------------------------------------------")
     print("LK_SK")
     print("Ungültige Werte!")
     print("------------------------------------------------")
+    flag = 1
+
+if flag == 0:
+    print("\nAlles OK!")
 
 #########################
 # Missings bei ID_LK_SK #
 #########################
 
+flag = 0
 if df["ID_LK_SK"].isnull().sum() > 0:
     print("\n------------------------------------------------")
     print("ID_LK_SK")
     print("Missing Values!")
     print("------------------------------------------------") 
+    flag = 1
+    
+if flag == 0:
+    print("\nAlles OK!")
  	
 ######################
 # Missings bei Kreis #
 ######################
 
+flag = 0
 if df["Kreis"].isnull().sum() > 0:
     print("\n------------------------------------------------")
     print("Kreis")
     print("Missing Values!")
     print("------------------------------------------------")    
+    flag = 1
+    
+if flag == 0:
+    print("\nAlles OK!")
 
 
 ##########################################################
