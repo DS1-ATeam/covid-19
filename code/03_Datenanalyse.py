@@ -186,11 +186,11 @@ for el in metrisch:
     grafikdaten     = temp.groupby(["bins"])['Sterberate_%'].mean() 
     # Anzahl der Beobachtungen pro Bin
     grafikdaten     = pd.concat([grafikdaten, temp["bins"].value_counts()], axis=1, join='inner')
-                 
+    # y1-Achse: Anzahl der Beobachtungen pro Bin             
     plt.bar(grafikdaten.index.values.astype(str), grafikdaten["bins"], color='darkorange')
     plt.title(el, fontsize=12, fontweight="semibold")
     plt.xticks(grafikdaten.index.values.astype(str), rotation='vertical')
-
+    # y2-Achse: durchschnittliche Sterberate pro Bin
     plt2 = plt.twinx()
     plt2.plot(grafikdaten.index.values.astype(str), grafikdaten['Sterberate_%'], color='dodgerblue', marker='o', label='Sterberate in %')
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.9])
@@ -216,10 +216,11 @@ for el in kategorial:
     # Anzahl der Beobachtungen pro Kategorie
     grafikdaten = pd.concat([grafikdaten, df[el].value_counts()], axis=1, join='inner')
     grafikdaten.sort_values(by=['Sterberate_%'], inplace=True)
-          
+    # y1-Achse: Anzahl der Beobachtungen pro Kategorie       
     plt.bar(grafikdaten.index.values.astype(str), grafikdaten[el], color='darkorange')
     plt.title(el, fontsize=12, fontweight="semibold")
     plt.xticks(grafikdaten.index.values.astype(str), rotation='vertical')
+    # y2-Achse: durchschnittliche Sterberate pro Kategorie
     plt2 = plt.twinx()
     plt2.plot(grafikdaten.index.values.astype(str), grafikdaten['Sterberate_%'], color='dodgerblue', marker='o', label='Sterberate in %')
     plt2.set_ylim([0, max(grafikdaten["Sterberate_%"])+0.9])

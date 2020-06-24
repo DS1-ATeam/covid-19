@@ -85,7 +85,7 @@ sns.set(font_scale=1.25)
 sns.heatmap(total_metrisch.corr(method='pearson'), annot=True, fmt='.2f',
             cmap=plt.get_cmap('Oranges'), cbar=False, ax=ax, square=True)
 
-ax.set_xticklabels(ax.get_xticklabels(), rotation=80)  #"horizontal")
+ax.set_xticklabels(ax.get_xticklabels(), rotation=80)
 ax.set_yticklabels(ax.get_yticklabels(), rotation="horizontal")
 plt.tight_layout()
 plt.savefig('../img/data_analysis_diagrams/Korrelationsmatrix.png')
