@@ -12,10 +12,8 @@
 ############################
 
 import sqlalchemy as db
-
 from itertools import combinations
 import numpy as np
-from datetime import datetime
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import Lasso, LassoCV
@@ -183,18 +181,8 @@ for k in kombinationen:
 # Liste für alle 54264 Ergebnisse
 ergebnisse = []
 
-counter = 0
-
 # Modell für jede der 54264 Kombinationen schätzen
 for komb in kombinationen_6:
-        
-    counter  = counter +1
-    if counter % 10000 == 0:
-        print(counter)
-        now = datetime.now()
-        current_time = now.strftime("%H:%M:%S")
-        print("Current Time =", current_time)
-        print("\n")
     
     # Datensatz auf mögliche Variablen begrenzen
     train_df_6_komb = X_train[komb]

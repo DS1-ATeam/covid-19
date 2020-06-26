@@ -12,7 +12,6 @@
 ############################
 
 import sqlalchemy as db
-import matplotlib.pyplot as plt
 from itertools import combinations
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier

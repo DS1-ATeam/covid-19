@@ -190,14 +190,8 @@ for k in kombinationen:
 # Liste für alle 3003 Ergebnisse
 ergebnisse = []
 
-counter = 0
-
 # Modell für jede der 3003 Kombinationen schätzen
 for komb in kombinationen_6:
-    
-    counter  = counter +1
-    if counter % 500 == 0:
-        print(counter)
     
     # Datensatz auf mögliche Variablen begrenzen
     train_df_6_komb = X_train[komb]  
@@ -206,7 +200,6 @@ for komb in kombinationen_6:
     # Modelldefinition
     regr = RandomForestRegressor(n_estimators       = 100,
                                  max_depth          = None,
-                                 #min_samples_leaf   = 15, # leichte Regularisierung der Bäume -> Schutz vor Overfitting
                                  n_jobs             = -1, 
                                  random_state       = 0)
 
