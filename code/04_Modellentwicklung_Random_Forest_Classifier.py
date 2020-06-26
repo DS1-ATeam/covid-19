@@ -2,10 +2,10 @@
 """
 @author: ATeam
 """
-########################
-# Modell Random Forest #
-########################
 
+###################################
+# Modell Random Forest Classifier #
+###################################
 
 ############################
 # Bibliotheken importieren #
@@ -150,18 +150,18 @@ print("Testing set has {} samples.".format(X_test.shape[0]))
 # Feature Selecetion #
 ######################
 
-regr = RandomForestClassifier(max_depth         = None,
-                              min_samples_leaf  = 100,
-                              n_estimators      = 100,
-                              n_jobs            = -1,
-                              random_state      = 0)
-regr.fit(X_train, y_train)
+classi = RandomForestClassifier(max_depth         = None,
+                                min_samples_leaf  = 100,
+                                n_estimators      = 100,
+                                n_jobs            = -1,
+                                random_state      = 0)
+classi.fit(X_train, y_train)
 
-print("\nScore Trainingsdaten", regr.score(X_train, y_train))
-print("Score Testdaten", regr.score(X_test, y_test))
+print("\nScore Trainingsdaten", classi.score(X_train, y_train))
+print("Score Testdaten",        classi.score(X_test, y_test))
 
 # Feature Importance
-fea_impor_ran_for_alle = pd.DataFrame(regr.feature_importances_.transpose(), X_train.columns, columns=['Feature_Importance'])
+fea_impor_ran_for_alle = pd.DataFrame(classi.feature_importances_.transpose(), X_train.columns, columns=['Feature_Importance'])
 fea_impor_ran_for_alle.sort_values(by='Feature_Importance', ascending=False, inplace=True)
 
 print("\n")
@@ -209,20 +209,20 @@ for komb in kombinationen_6:
     test_df_6_komb  = X_test[komb]
     
     # Modelldefinition
-    regr = RandomForestClassifier(n_estimators       = 100,
-                                  max_depth          = None,
-                                  n_jobs             = -1, 
-                                  random_state       = 0)
+    classi = RandomForestClassifier(n_estimators       = 100,
+                                    max_depth          = None,
+                                    n_jobs             = -1, 
+                                    random_state       = 0)
 
     # Modelltraining
-    regr.fit(train_df_6_komb, y_train)
+    classi.fit(train_df_6_komb, y_train)
     
     # Accuracy Ratios Trainings- und Testdaten
-    ar_train_6_komb = regr.score(train_df_6_komb, y_train)
-    ar_test_6_komb  = regr.score(test_df_6_komb,  y_test)
+    ar_train_6_komb = classi.score(train_df_6_komb, y_train)
+    ar_test_6_komb  = classi.score(test_df_6_komb,  y_test)
     
     # Feature Importance
-    fea_import_ran_for_6_komb = pd.DataFrame(regr.feature_importances_.transpose(), train_df_6_komb.columns, columns=['Feature_Importance'])
+    fea_import_ran_for_6_komb = pd.DataFrame(classi.feature_importances_.transpose(), train_df_6_komb.columns, columns=['Feature_Importance'])
     fea_import_ran_for_6_komb.sort_values(by='Feature_Importance', ascending=False, inplace=True)
     
     # Ergebnisse in Liste einfügen
@@ -276,9 +276,9 @@ X_6 = ["age_0_34_%",
 X_train_6 = X_train[X_6]  
 X_test_6  = X_test[X_6]
 
-regr_6 = RandomForestClassifier(n_estimators=100,
-                                n_jobs=-1,
-                                random_state=0)
+classi_6 = RandomForestClassifier(n_estimators = 100,
+                                  n_jobs       = -1,
+                                  random_state = 0)
 
 ##################################################
 # finde beste Hyperparamter mit Kreuzvalidierung #
@@ -295,7 +295,7 @@ random_grid = {'n_estimators':      n_estimators,
                'max_depth':         max_depth,
                'min_samples_leaf':  min_samples_leaf}
 
-rf_random = RandomizedSearchCV(estimator            = regr_6,
+rf_random = RandomizedSearchCV(estimator            = classi_6,
                                param_distributions  = random_grid,
                                n_iter               = 100,
                                cv                   = 5,
@@ -319,18 +319,18 @@ print("\n----------------------------")
 print("Finales Modell")
 print("----------------------------")
 
-regr_6 = RandomForestClassifier(max_depth        = 7,
-                                min_samples_leaf = 11,
-                                n_estimators     = 60,
-                                n_jobs           = -1,
-                                random_state     = 0)
-regr_6.fit(X_train_6, y_train)
+classi_6 = RandomForestClassifier(max_depth        = 7,
+                                  min_samples_leaf = 11,
+                                  n_estimators     = 60,
+                                  n_jobs           = -1,
+                                  random_state     = 0)
+classi_6.fit(X_train_6, y_train)
 
-print("\nScore Trainingsdaten", regr_6.score(X_train_6, y_train))
-print("Score Testdaten",        regr_6.score(X_test_6, y_test))
+print("\nScore Trainingsdaten", classi_6.score(X_train_6, y_train))
+print("Score Testdaten",        classi_6.score(X_test_6,  y_test))
 
 # Feature Importance
-fea_impor_ran_for_6 = pd.DataFrame(regr_6.feature_importances_.transpose(), X_train_6.columns, columns=['Feature_Importance'])
+fea_impor_ran_for_6 = pd.DataFrame(classi_6.feature_importances_.transpose(), X_train_6.columns, columns=['Feature_Importance'])
 fea_impor_ran_for_6.sort_values(by='Feature_Importance', ascending=False, inplace=True)
 
 print("\n")

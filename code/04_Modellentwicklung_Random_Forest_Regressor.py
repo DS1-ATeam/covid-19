@@ -2,10 +2,10 @@
 """
 @author: ATeam
 """
-########################
-# Modell Random Forest #
-########################
 
+##################################
+# Modell Random Forest Regressor #
+##################################
 
 ############################
 # Bibliotheken importieren #
